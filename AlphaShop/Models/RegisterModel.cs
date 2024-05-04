@@ -21,5 +21,6 @@ namespace AlphaShop.Models
         [Required]
         public bool? Gender { get; set; }
         public string? AccessId { get; set; } = "1";
+        public string? Address { get; set; }
     }
 }

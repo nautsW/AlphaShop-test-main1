@@ -33,7 +33,10 @@ namespace AlphaShop.Controllers
                 _accountService.Customer = usercheck;
                 _accountService.Customer.Cart = _context.Carts.SingleOrDefault(x => x.CartId == usercheck.CtrId);
                 _accountService.Customer.Cart.CartDetails = _context.CartDetails.Where(x => x.CartId == usercheck.CtrId).ToList();
-
+                foreach(CartDetail a in  _context.CartDetails)
+                {
+                    _accountService.Customer.Cart.CartQuantity += a.Quantity;
+                }    
                 
 
                 
@@ -45,7 +48,6 @@ namespace AlphaShop.Controllers
                 return View();
             }
         }
-
 
         public IActionResult Register()
         {
@@ -77,12 +79,20 @@ namespace AlphaShop.Controllers
                     CtrPhonenumber = registerModel.PhoneNumber,
                     CtrGender = registerModel.Gender,
                     CtrAccess = 1,
+                    CtrAddress = registerModel.Address,
                     CtrId = _context.Customers.Count(),
                     CtrUsed = 0,
                     CtrImage = null
 
 
                 }
+            );
+            await _context.Carts.AddAsync(
+            new Cart
+            {
+                CartId = _context.Customers.Count(),
+                CartQuantity = 0,
+            }
             );
             _context.SaveChanges();
             //await _context.Database.ExecuteSqlRawAsync($"set IDENTITY_INSERT dbo.CUSTOMER off;");
@@ -93,8 +103,6 @@ namespace AlphaShop.Controllers
         {
             _accountService.IsLoggedIn = false;
             _accountService.Customer = null;
-            _accountService.Customer.Cart = null;
-            _accountService.Customer.Cart.CartDetails = null;
             return RedirectToAction("Index", "Home");
         }
     }

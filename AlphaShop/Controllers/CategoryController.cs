@@ -19,21 +19,28 @@ namespace AlphaShop.Controllers
             objProduct_Category.ListProduct = lstProduct;
             return View(objProduct_Category);
         }
-        [HttpPost]
-        public IActionResult Index(Product product)
-        {
-            objproductModel.CgrId = product.CgrId;
-            objproductModel.PrdName = product.PrdName;
-            objproductModel.PrdId = product.PrdId;
-            objproductModel.PrdImage = product.PrdImage;
-            objproductModel.PrdDaubuoi = 1;
-            return RedirectToAction("DrinkInfo");
-        }
+        //[HttpPost]
+        //public IActionResult Index(Product product)
+        //{
+        //    objproductModel.CgrId = product.CgrId;
+        //    objproductModel.PrdName = product.PrdName;
+        //    objproductModel.PrdId = product.PrdId;
+        //    objproductModel.PrdImage = product.PrdImage;
+        //    objproductModel.PrdDaubuoi = 1;
+        //    return RedirectToAction("DrinkInfo");
+        //}
         
         public IActionResult DrinkInfo(int? id)
         {
            var product = objModel.Products.FirstOrDefault(x => x.PrdId == id);
-           return View(product);
+            ProductModel objProduct = new ProductModel
+            {
+                product = product,
+                option_size = 0,
+                option_type = 0,
+            };
+
+           return View(objProduct);
         }
     }
 }
