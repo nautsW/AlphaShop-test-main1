@@ -1,3 +1,5 @@
+@using AlphaShop.Models
+@model AlphaShop.Models.OrderModel
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5,16 +7,17 @@
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <title>Home</title>
 </head>
-
+@inject AccountService _AccountService
+<form>
 <div class="CustomerInfoBox">
         <div class="CustomerRect"></div>
         <div class="InfoText" id = "CustomerInfo">Thông tin giao hàng</div>
-        <div class="InfoText" id = "Name">Tên người nhận: Nguyễn Hữu Khoa</div>
+        <div class="InfoText" id = "Name">Tên người nhận: @_AccountService.Customer.CtrUsername</div>
         <div class="Line" id = "Line1"></div>
         <div class="Line" id = "Line2"></div>
         <div class="Line" id = "Line3"></div>
-        <div class="InfoText" id = "Phone">Số điện thoại: 0338104272</div>
-        <div class="InfoText" id = "Address">Giao đến: ?????</div>
+        <div class="InfoText" id = "Phone">Số điện thoại: @_AccountService.Customer.CtrPhonenumber</div>
+        <div class="InfoText" id = "Address">Giao đến: @Model.destination</div>
         <div class="InfoText" id = "GhiChu">Ghi chú</div>
         <div class="GhiChuBox">
             <textarea class="inputGhichu" id="inputGhichu" placeholder="Nhập ghi chú tại đây (vd: thêm đường,...)"></textarea>
@@ -29,52 +32,39 @@
         <div class="InfoText" id = "OrderInfo">Thông tin đơn hàng</div>
         <div class="Line" id = "Line4"></div>
         <ul class = "OrderList" id = "OrderList">
-            <li class="OrderItem">
-                <div class="Itembox"></div>
-                <div class="DrinkImg" id = "DrinkImg"></div>
-                <div class="InfoText" id = "DrinkName">Kem ly dâu sữa</div>
-                <div class="Price">25000$ x1 = 25000$</div>
-                <div class="Size">Size L</div>
-            </li>
+        
+            @foreach (var item in _AccountService.Customer.Cart.CartDetails)
+            {
 
             <li class="OrderItem">
                 <div class="Itembox"></div>
-                <div class="DrinkImg" id = "DrinkImg"></div>
-                <div class="InfoText" id = "DrinkName">Kem ly dâu sữa</div>
-                <div class="Price">25000$ x1 = 25000$</div>
-                <div class="Size">Size L</div>
+                <img class="DrinkImg" id = "DrinkImg" src="~/@item.PrdImage">
+                <div class="InfoText" id = "DrinkName">@item.PrdName</div>
+                <div class="Price">@item.PrdPrice x @item.Quantity</div>
+                <div class="Size">@item.OptionSize</div>
             </li>
+        }
+        
 
-            <li class="OrderItem">
-                <div class="Itembox"></div>
-                <div class="DrinkImg" id = "DrinkImg"></div>
-                <div class="InfoText" id = "DrinkName">Kem ly dâu sữa</div>
-                <div class="Price">25000$ x1 = 25000$</div>
-                <div class="Size">Size L</div>
-            </li>
-
-            <li class="OrderItem">
-                <div class="Itembox"></div>
-                <div class="DrinkImg" id = "DrinkImg"></div>
-                <div class="InfoText" id = "DrinkName">Kem ly dâu sữa</div>
-                <div class="Price">25000$ x1 = 25000$</div>
-                <div class="Size">Size L</div>
-            </li>
+            
 
             <li class = "Line" id = "Line5"></li>
 
-            <li class="InfoText" id = "Soluong">Số lượng: x cốc </li>
-            <li class="InfoText" id = "TotalDrink">Tổng:    </li>
-            <li class="InfoText" id = "TransportCost" >Phí vận chuyển:</li>
-            <li class="InfoText" id = "Total">Tổng cộng:</li>
+            <li class="InfoText" id = "Soluong">Số lượng: @Model.quantity cốc </li>
+            <li class="InfoText" id = "TotalDrink">Tổng:  </li>
+            <li class="InfoText" id = "TransportCost" >Phí vận chuyển: </li>
+            <li class="InfoText" id = "Total">Tổng cộng: </li>
             <li class = "Line" id = "Line6"></li>
-            <li class = "xxxxx" id = "TotalDrinkPrice">xxxxxx$</li>
-            <li class = "xxxxx" id = "TransportPrice">xxxxxx$</li>
-            <li class = "xxxxx" id = "TotalPrice">xxxxxx$</li>
+            <li class="xxxxx" id="TotalDrinkPrice">@Model.Total</li>
+            <li class="xxxxx" id = "TransportPrice">45.000</li>
+            <li class="xxxxx" id="TotalPrice">@Model.Shipping</li>
 
             <li class="OrderBox">
                 <div class="Rectbackground"></div>
-                <button class="Btn">Đặt hàng</button>
+
+                @* <input type="submit" value="Đặt hàng" class="Btn"/> *@
+                <button asp-action="Ordered" asp-controller="Order" asp-route-destination=@Model.destination asp-route-quantity="@Model.quantity" asp-route-price="@Model.Shipping" class="Btn" >Đặt hàng</button>
+
             </li>
         </ul>
         <script>
@@ -108,6 +98,7 @@
         </script>
     </div>
 
+
     <div class="PaymentBox">
         <div class="PaymentRect"></div>
         <div class="InfoText" id = "PaymentInfo">Phương thức thanh toán</div>
@@ -115,4 +106,9 @@
         <button class="codImg" id = "codImg"></button>
         <div class="InfoText" id = "MomoText">Momo</div>
         <div class="InfoText" id = "CodText">Thanh toán khi nhận hàng</div>
+</div>
+
+</form>
+<div class="footer">
+    <p>© 2024 Hỏa Tiễn 101</p>
 </div>

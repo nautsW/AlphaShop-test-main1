@@ -282,11 +282,11 @@ body{
     transform: scale(1.1);
 }
 /* CSS cho footer */
-footer {
+footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #f8f9fa; /* Màu nền cho footer */
+    background-color: #000000; /* Màu nền cho footer */
     padding: 20px; /* Padding cho footer */
     text-align: center; /* Căn giữa nội dung trong footer */
     font-family: 'JetBrains Mono', monospace; /* Font chữ cho footer */

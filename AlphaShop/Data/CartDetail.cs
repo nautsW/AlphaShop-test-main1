@@ -17,6 +17,12 @@ public partial class CartDetail
 
     public string? Note { get; set; }
 
+    public decimal? PrdPrice { get; set; }
+
+    public string? PrdName { get; set; }
+
+    public string? PrdImage { get; set; }
+
     public virtual Cart Cart { get; set; } = null!;
 
     public virtual Product Prd { get; set; } = null!;

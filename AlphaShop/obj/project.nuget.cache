@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jMDSJyLgDzCMZUP8WVp7fqU26QM71Q/biJdTdRG+MiTwAxqJvWmTDNmXj+hPsubxg92+YQ0sKsEARfwn2ywRLg==",
+  "dgSpecHash": "/yMeTeEVZ7n4d3VdlQHf+/3sv+TzrGU8kKKJOE4NcMiNkHPNCBA5iKfSV/tSvfk+iVXckOriltQ0Cm70Lj8qSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main12\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\AlphaShop.csproj",
+  "projectFilePath": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\AlphaShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nauts\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\nauts\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

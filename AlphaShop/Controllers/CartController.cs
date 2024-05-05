@@ -22,71 +22,122 @@ namespace AlphaShop.Controllers
         {
             return View(Cart);
         }
-        public IActionResult AddToCart(int id)
+        
+        public IActionResult AddToCart(int optsize, int opttype, int id)
         {
 
             CartDetail item = new CartDetail
             {
                 CartId = _accountService.Customer.CtrId,
                 PrdId = id,
-                OptionSize = 0,
-                OptionType = 0,
+                OptionSize = optsize,
+                OptionType = opttype,
                 Quantity = 1,
+                PrdPrice = db.Products.FirstOrDefault(x=>x.PrdId == id).PrdPrice,
+                PrdName = db.Products.FirstOrDefault(x => x.PrdId == id).PrdName,
+                PrdImage = db.Products.FirstOrDefault(x => x.PrdId == id).PrdImage,
             };
             var check = db.CartDetails.SingleOrDefault(x => x.CartId == item.CartId && x.PrdId == item.PrdId && x.OptionSize == item.OptionSize && x.OptionType == item.OptionType);
             if (check == null)
             {
                 _accountService.Customer.Cart.CartDetails.Add(item);
-                
+
                 db.CartDetails.Add(item);
             }
             else
             {
-                item.Quantity++;
+                check.Quantity++;
                 foreach (CartDetail huukhoa in _accountService.Customer.Cart.CartDetails)
                 {
                     if (huukhoa.PrdId == id)
-                        huukhoa.Quantity = item.Quantity;
+                        huukhoa.Quantity = check.Quantity;
                 }
-                db.Database.ExecuteSqlAsync($"Update dbo.CART_DETAIL SET QUANTITY = '{item.Quantity}' WHERE CART_ID = '{item.CartId}', PRD_ID = '{item.PrdId}', OPTION_SIZE = '{item.OptionSize}', OPTION_TYPE = '{item.OptionType}';");
+                db.Entry(check).State = EntityState.Modified;
             }
 
-            db.SaveChanges();
+            db.SaveChangesAsync();
+
+
+            //var item = new CartDetail
+            //{
+            //    CartId = _accountService.Customer.CtrId, 
+            //    PrdId = productModel.product.PrdId,
+            //    OptionSize = productModel.option_size,
+            //    OptionType = productModel.option_type,
+            //    Quantity = 1,
+            //};
+
+            
+            //var check = db.CartDetails.SingleOrDefault(x => x.PrdId == item.PrdId && x.OptionSize == item.OptionSize && x.OptionType == item.OptionType);
+            //if (check == null)
+            //{
+                
+            //    _accountService.Customer.Cart.CartDetails.Add(item);
+            //    db.CartDetails.Add(item);
+            //}
+            //else
+            //{
+               
+            //    item.Quantity++;
+            //    db.CartDetails.Add(item);
+            //}
+
+            //db.SaveChanges();
 
             return RedirectToAction("Index");
         }
-
-        public IActionResult UpdateCart(int id)
+        [HttpPost]
+        public async Task<IActionResult> DeleteCartItem(int cartid, int prdid, int optsize, int opttype)
         {
-           
+            var cartDetail = db.CartDetails.SingleOrDefault(x => x.CartId == cartid && x.PrdId == prdid && x.OptionSize == optsize && x.OptionType == opttype);
+            if (db.CartDetails == null)
+            {
+                return Problem("Entity set 'AspLearningContext.Movie'  is null.");
+            }
+            //var cartDetail = await db.CartDetails.FindAsync(cartid, prdid, optsize, opttype);
+            if (cartDetail != null)
+            {
+                db.CartDetails.Remove(cartDetail);
+            }
 
-                CartDetail item = new CartDetail
-                {   
-                    CartId = _accountService.Customer.CtrId,
-                    PrdId = id,
-                    OptionSize = 0,
-                    OptionType = 0,
-                    Quantity = 1,
-                };
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+      
+        public IActionResult UpdateCart(int optsize, int opttype, int id)
+        {
+
+
+            CartDetail item = new CartDetail
+            {
+                CartId = _accountService.Customer.CtrId,
+                PrdId = id,
+                OptionSize =optsize,
+                OptionType = opttype,
+                Quantity = 1,
+                PrdPrice = db.Products.FirstOrDefault(x => x.PrdId == id).PrdPrice,
+                PrdName = db.Products.FirstOrDefault(x => x.PrdId == id).PrdName,
+                PrdImage = db.Products.FirstOrDefault(x => x.PrdId == id).PrdImage,
+            };
             var check = db.CartDetails.SingleOrDefault(x => x.CartId == item.CartId && x.PrdId == item.PrdId && x.OptionSize == item.OptionSize && x.OptionType == item.OptionType);
-            if(check == null)
+            if (check == null)
             {
                 _accountService.Customer.Cart.CartDetails.Add(item);
+
                 db.CartDetails.Add(item);
             }
             else
             {
-                int? a = item.Quantity++;
-                foreach(CartDetail huukhoa in _accountService.Customer.Cart.CartDetails)
+                check.Quantity++;
+                foreach (CartDetail huukhoa in _accountService.Customer.Cart.CartDetails)
                 {
-                    if (huukhoa.PrdId == id )
-                    huukhoa.Quantity = a;
+                    if (huukhoa.PrdId == id)
+                        huukhoa.Quantity = check.Quantity;
                 }
-                
-                db.Database.ExecuteSqlRawAsync($"Update dbo.CART_DETAIL SET QUANTITY = '{a}' WHERE CART_ID = '{item.CartId}', PRD_ID = '{item.PrdId}', OPTION_SIZE = '{item.OptionSize}', OPTION_TYPE = '{item.OptionType}';");
+                db.Entry(check).State = EntityState.Modified;
             }
-            db.SaveChanges();
-            
+
+            db.SaveChangesAsync();
 
             return RedirectToAction("Index", "Category");
         }

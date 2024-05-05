@@ -189,20 +189,44 @@ body{
 
 }
 
-.size_box
-{
-    width: 45px; 
-    height: 30px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
-    background: transparent; 
-    border-radius: 10px; 
+.size_box {
+    width: 45px;
+    height: 30px;
+    display: inline-block;
+    background: transparent;
+    border-radius: 10px;
     border: 2px rgba(0, 0, 0, 0.77) solid;
-    font-size: 15px; 
+    font-size: 15px;
     font-weight: 700;
-    word-wrap: break-word;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
 }
+
+#boxdacbiet {
+    width: 170px;
+}
+
+
+.size_box:hover {
+    background-color: black;
+    color: white;
+}
+
+.size_radio {
+    display: none; /* Ẩn radio button */
+}
+
+    .size_radio:checked + .size_box {
+        background-color: black;
+        color: white;
+    }
+
+    .size_radio:hover + .size_box {
+        background-color: black;
+        color: white;
+    }
+
 
 .loai_box
 {

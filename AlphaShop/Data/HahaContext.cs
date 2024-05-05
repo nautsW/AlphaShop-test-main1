@@ -17,6 +17,8 @@ public partial class HahaContext : DbContext
 
     public virtual DbSet<Access> Accesses { get; set; }
 
+    public virtual DbSet<Address> Addresses { get; set; }
+
     public virtual DbSet<Cart> Carts { get; set; }
 
     public virtual DbSet<CartDetail> CartDetails { get; set; }
@@ -54,6 +56,24 @@ public partial class HahaContext : DbContext
                 .HasColumnName("ACC_NAME");
         });
 
+        modelBuilder.Entity<Address>(entity =>
+        {
+            entity.HasKey(e => new { e.CtrId, e.AddId });
+
+            entity.ToTable("ADDRESS");
+
+            entity.Property(e => e.CtrId).HasColumnName("CTR_ID");
+            entity.Property(e => e.AddId).HasColumnName("ADD_ID");
+            entity.Property(e => e.AddressName)
+                .HasColumnType("text")
+                .HasColumnName("ADDRESS_NAME");
+
+            entity.HasOne(d => d.Ctr).WithMany(p => p.Addresses)
+                .HasForeignKey(d => d.CtrId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_CUSTOMER__ADDRESS");
+        });
+
         modelBuilder.Entity<Cart>(entity =>
         {
             entity.HasKey(e => e.CartId).HasName("PK_CART_ID");
@@ -84,6 +104,15 @@ public partial class HahaContext : DbContext
             entity.Property(e => e.Note)
                 .HasColumnType("text")
                 .HasColumnName("NOTE");
+            entity.Property(e => e.PrdImage)
+                .HasColumnType("text")
+                .HasColumnName("PRD_IMAGE");
+            entity.Property(e => e.PrdName)
+                .HasMaxLength(40)
+                .HasColumnName("PRD_NAME");
+            entity.Property(e => e.PrdPrice)
+                .HasColumnType("decimal(6, 3)")
+                .HasColumnName("PRD_PRICE");
             entity.Property(e => e.Quantity).HasColumnName("QUANTITY");
 
             entity.HasOne(d => d.Cart).WithMany(p => p.CartDetails)
@@ -146,6 +175,9 @@ public partial class HahaContext : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("CTR_ID");
             entity.Property(e => e.CtrAccess).HasColumnName("CTR_ACCESS");
+            entity.Property(e => e.CtrAddress)
+                .HasColumnType("text")
+                .HasColumnName("CTR_ADDRESS");
             entity.Property(e => e.CtrEmail)
                 .HasMaxLength(30)
                 .IsUnicode(false)
@@ -192,7 +224,7 @@ public partial class HahaContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("ORD_DATE");
             entity.Property(e => e.OrdDest)
-                .HasMaxLength(50)
+                .HasColumnType("text")
                 .HasColumnName("ORD_DEST");
             entity.Property(e => e.OrdNote)
                 .HasColumnType("text")

@@ -1,15 +1,12 @@
-﻿namespace AlphaShop.Models
+﻿using AlphaShop.Data;
+
+namespace AlphaShop.Models
 {
     public class ProductModel
     {
-        public int PrdId { get; set; }
+        public Product? product { get; set; }
+        public int option_type { get; set; }
+        public int option_size { get; set; }
 
-        public int CgrId { get; set; }
-
-        public string PrdName { get; set; }
-
-        public int PrdDaubuoi { get; set; }
-
-        public string PrdImage { get; set; }
     }
 }

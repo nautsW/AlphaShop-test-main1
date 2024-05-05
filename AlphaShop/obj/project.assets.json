@@ -8123,11 +8123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main12\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\AlphaShop.csproj",
+      "projectUniqueName": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\AlphaShop.csproj",
       "projectName": "AlphaShop",
-      "projectPath": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main12\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\AlphaShop.csproj",
+      "projectPath": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\AlphaShop.csproj",
       "packagesPath": "C:\\Users\\nauts\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main12\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\obj\\",
+      "outputPath": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nauts\\AppData\\Roaming\\NuGet\\NuGet.Config",

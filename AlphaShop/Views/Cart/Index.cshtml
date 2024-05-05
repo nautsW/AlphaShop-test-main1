@@ -12,14 +12,14 @@
     <img class="cartImg" src="~/assets/img/cart/cart.png" />
     <ul class="CartList" id="CartList">
         @foreach(var item in _AccountService.Customer.Cart.CartDetails)
-        {
+        {   
             <li class="CartItem">
                 <div class="Itembox"></div>
-                <img class="ItemImg" src="~/assets/img/drinklist/image-holder2.png" />
-                <div class="ItemName">@item.PrdId'</div>
-                <div class="Total"> So luong: @item.Quantity</div>
-                <div class="Size">@item.OptionSize</div>
-                <button class="X"></button>
+                <img class="ItemImg" src="~/@item.PrdImage" />
+                <div class="ItemName">@item.PrdName'</div>
+                <div class="Total"> Total: @item.PrdPrice x @item.Quantity</div>
+                <div class="Size"> ID: @item.OptionSize @item.OptionType</div>
+                <button asp-action="DeleteCartItem" asp-controller="Cart" asp-route-cart = "@item.CartId" asp-route-id ="@item.PrdId" asp-route-option = "@item.OptionSize" asp-route-type = "@item.OptionType" class="X"></button>
             </li>
         }
         
@@ -27,7 +27,7 @@
         <li class="Line"></li>
         <li class="OrderBox">
             <div class="Rectbackground"></div>
-            <form><button asp-area="" asp-controller="Order" asp-action="Cart" class="Btn">Đặt hàng ngay</button></form>
+            <form><button asp-area="" asp-controller="Order" asp-action="Index" class="Btn">Đặt hàng ngay</button></form>
         </li>
     </ul>
 
