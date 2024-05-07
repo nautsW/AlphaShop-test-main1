@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\AlphaShop.csproj": {}
+    "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\AlphaShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\AlphaShop.csproj": {
+    "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\AlphaShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\AlphaShop.csproj",
+        "projectUniqueName": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\AlphaShop.csproj",
         "projectName": "AlphaShop",
-        "projectPath": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\AlphaShop.csproj",
-        "packagesPath": "C:\\Users\\nauts\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nauts\\Downloads\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop-test-main\\AlphaShop\\obj\\",
+        "projectPath": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\AlphaShop.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nauts\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

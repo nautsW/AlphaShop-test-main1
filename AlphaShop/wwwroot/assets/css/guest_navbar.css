@@ -94,7 +94,9 @@ body {
         background-color: black;
         color: white;
     }
-
+    #nav__login{
+        margin-right: 10px;
+    }
 .nav__bar--2 {
     background-color: black;
     color: white;
@@ -135,7 +137,7 @@ body {
     margin-left: 50px;
     margin-right: 5px;
     width: 30px;
-    height: 25px;
+    height: 30px;
 }
 
 #cart_icon {
@@ -153,7 +155,6 @@ footer {
     width: 100%;
     background-color: #f8f9fa; /* Màu nền cho footer */
     padding: 20px; /* Padding cho footer */
-    text-align: center; /* Căn giữa nội dung trong footer */
-    font-family: 'JetBrains Mono', monospace; /* Font chữ cho footer */
+    text-align: center; /* Căn giữa nội dung trong footer */ /* Font chữ cho footer */
     z-index: 999; /* Đảm bảo footer hiển thị trên tất cả các phần tử khác */
 }

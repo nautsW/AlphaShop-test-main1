@@ -9,7 +9,7 @@ public partial class Address
 
     public int AddId { get; set; }
 
-    public string AddressName { get; set; } = null!;
+    public string? AddressName { get; set; }
 
     public virtual Customer Ctr { get; set; } = null!;
 }

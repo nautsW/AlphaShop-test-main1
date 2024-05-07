@@ -25,6 +25,8 @@ public partial class Customer
 
     public string? CtrImage { get; set; }
 
+    public int? CtrStatus { get; set; }
+
     public string? CtrAddress { get; set; }
 
     public virtual ICollection<Address> Addresses { get; set; } = new List<Address>();

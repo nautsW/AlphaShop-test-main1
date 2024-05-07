@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/assets/css/guest_navbar.css" runat="server">
+    <link rel="stylesheet" href="~/assets/css/guest_navbar.css" runat="server" asp-append-version="true">
+    <link href="~/assets/css/dropdown.css" rel="stylesheet" runat="server" asp-append-version="true">
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <title>Home</title>
 </head>
@@ -53,11 +54,58 @@
 
                 @if (AccountService.IsLoggedIn)
                 {
-                    <form class="nav__acc">
-                        <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
-                        <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Xin chào, @AccountService.Customer.CtrUsername</a>
-                        <button asp-action="Logout" asp-controller="Log" class="__main--btn" id="Logout">Đăng xuất</button>
-                    </form>
+                    if(AccountService.Customer.CtrAccess == 1)
+                    {
+                        @* <form class="nav__acc">
+                            <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
+                            <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Xin chào, @AccountService.Customer.CtrUsername</a>
+                            <button asp-action="Logout" asp-controller="Log" class="__main--btn" id="Logout">Đăng xuất</button>
+                        </form> *@
+
+                        @* new *@
+                        <form class="nav__acc">
+                            <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
+                            <div class="dropdown">
+                                <button class="dropbtn">Xin chào, @AccountService.Customer.CtrUsername</button>
+                                <div class="dropdown-content">
+                                    <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Thông tin tài khoản</a>
+                                    <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Đăng xuất</a>
+                                </div>
+                            </div>
+                            <button asp-action="Logout" asp-controller="Log" class="__main--btn" id="Logout">Đăng xuất</button>
+                        </form>
+                        @* new *@
+                    }
+                    else if (AccountService.Customer.CtrAccess == 2)
+                    {
+                        <form class="nav__acc">
+                            <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
+                            <div class="dropdown">
+                                <button class="dropbtn">Xin chào, @AccountService.Customer.CtrUsername</button>
+                                <div class="dropdown-content">
+                                    <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Thông tin tài khoản</a>
+                                    <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Quản lí nhận đơn</a>
+                                    <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Đăng xuất</a>
+                                </div>
+                            </div>
+                            <button asp-action="Logout" asp-controller="Log" class="__main--btn" id="Logout">Đăng xuất</button>
+                        </form>
+                    }
+                    else if (AccountService.Customer.CtrAccess == 3)
+                    {
+                        <form class="nav__acc">
+                            <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
+                            <div class="dropdown">
+                                <button class="dropbtn">Xin chào, @AccountService.Customer.CtrUsername</button>
+                                <div class="dropdown-content">
+                                    <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Thông tin tài khoản</a>
+                                    <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Quản lí</a>
+                                    <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Đăng xuất</a>
+                                </div>
+                            </div>
+                            <button asp-action="Logout" asp-controller="Log" class="__main--btn" id="Logout">Đăng xuất</button>
+                        </form>
+                    }
                 }
                 else
                 {

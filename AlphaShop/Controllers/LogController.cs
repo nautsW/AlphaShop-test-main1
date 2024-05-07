@@ -18,6 +18,10 @@ namespace AlphaShop.Controllers
         }
         public IActionResult Login()
         {
+            if(_accountService.IsLoggedIn == true)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
         [HttpPost]
@@ -51,6 +55,10 @@ namespace AlphaShop.Controllers
 
         public IActionResult Register()
         {
+            if (_accountService.IsLoggedIn == true)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
         [HttpPost]
@@ -79,6 +87,7 @@ namespace AlphaShop.Controllers
                     CtrPhonenumber = registerModel.PhoneNumber,
                     CtrGender = registerModel.Gender,
                     CtrAccess = 1,
+                    CtrStatus = 1,
                     CtrAddress = registerModel.Address,
                     CtrId = _context.Customers.Count(),
                     CtrUsed = 0,
