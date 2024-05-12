@@ -70,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFN0YWZmTWFuYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Manage/Statistic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFN0YXRpc3RpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Order/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,6 +90,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Shared/_AccountCE.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50Q0UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Shared/_AccountInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50SW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Shared/_AccountInfo_1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50SW5mb18xLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Shared/_AddDrink.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZGREcmluay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Shared/_CategoryAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXRlZ29yeUFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Shared/_DrinkInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ecmlua0luZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -100,6 +128,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Shared/_LoggedinNavbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dnZWRpbk5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Shared/_ManageBars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYW5hZ2VCYXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Huukhoa/NAM 2/KI 2/PBL3/huaxian101/AlphaShop/Views/Shared/_NavBar.cshtml]

@@ -19,6 +19,8 @@ public partial class Product
 
     public string? PrdImage { get; set; }
 
+    public bool? PrdVisible { get; set; }
+
     public virtual ICollection<CartDetail> CartDetails { get; set; } = new List<CartDetail>();
 
     public virtual Category Cgr { get; set; } = null!;

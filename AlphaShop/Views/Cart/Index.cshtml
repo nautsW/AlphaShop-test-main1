@@ -1,4 +1,5 @@
 ﻿@using AlphaShop.Models
+@model AlphaShop.Models.CartModel
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,12 +7,12 @@
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <title>Home</title>
 </head>
-@inject AccountService _AccountService
+@* @inject AccountService _AccountService *@
 <div class="Cart" style="margin-top : 30px;">
     <div class="cartText">Giỏ hàng</div>
     <img class="cartImg" src="~/assets/img/cart/cart.png" />
     <ul class="CartList" id="CartList">
-        @foreach(var item in _AccountService.Customer.Cart.CartDetails)
+        @foreach(var item in Model.cartDetail)
         {   
             <li class="CartItem">
                 <div class="Itembox"></div>
@@ -19,7 +20,7 @@
                 <div class="ItemName">@item.PrdName'</div>
                 <div class="Total"> Total: @item.PrdPrice x @item.Quantity</div>
                 <div class="Size"> ID: @item.OptionSize @item.OptionType</div>
-                <button asp-action="DeleteCartItem" asp-controller="Cart" asp-route-cart = "@item.CartId" asp-route-id ="@item.PrdId" asp-route-option = "@item.OptionSize" asp-route-type = "@item.OptionType" class="X"></button>
+                <button asp-action="DeleteCartItem" asp-controller="Cart" asp-route-option="@item.OptionSize" asp-route-type="@item.OptionType" asp-route-id="@item.PrdId" class="X"></button>
             </li>
         }
         

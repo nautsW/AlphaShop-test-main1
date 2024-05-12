@@ -1,0 +1,131 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using AlphaShop.Data
+@model DrinkAddVM
+<div id="modal3" class="modal" style="display: none;">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body3">
+        <div class="modal__inner">
+            <div class="staff_info">
+                <div class="rectangle"></div>
+                <h2>Thông tin thức uống</h2>
+                <div class="group__drink">
+                        @* dữ liệu *@
+                    <div class="staff_group">
+                        <div class="name">ID:</div>
+                        <div class="name" id="st__value_0">PrdId</div>
+                    </div>
+                    <div class="staff_group">
+                        <div class="name">Tên:</div>
+                        <div class="name" id="st__value_1">Kem ly dâu sữa</div>
+                    </div>
+                    <div class="staff_group">
+                        <div class="pri">Giá tiền:</div>
+                        <div class="pri" id="st__value_2">10000</div>
+                    </div>
+                    <div class="staff_group">
+                        <div class="sts">Tình trạng:</div>
+                        <div class="sts" id="st__value_3">Còn hàng</div>
+                    </div>
+                        @* dữ liệu *@
+
+                </div>
+                <img class="logo" id="image-perform"/>
+
+                <div class="comp">
+                    <div class="holder">
+                        <button class="btn2" id="upd_btn">Chỉnh sửa thông tin</button>
+                        <button class="btn2" id="del_btn">Xóa thức uống này</button>
+                        <button class="btn2" id="close_btn">Thoát</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* ---------- *@
+    <div id="modal4" class="modal" style="display: none;">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body4">
+            <div class="modal__inner">
+                <form class="drink-add" method="post" asp-action="Update" asp-controller="Manage" enctype="multipart/form-data">
+                    <div class="main-text">Chỉnh sửa thức uống</div>
+                    <div class="input_area">
+                        <div class="staff_group" style="display: none;">
+                            <input type="hidden" asp-for=idForUpdate id="change__0"/>
+                        </div>
+                        <div class="input_area-1">
+                            <label for="name-box" class="label--1">Tên thức uống</label>
+                            <input type="text" asp-for=PrdName class="name-box" id="change__1" required />
+                        </div>
+                        <div class="input_area-1">
+                            <label for="price-box" class="label--1">Giá tiền</label>
+                            <input type="text" asp-for=PrdPrice class ="price-box" id="change__2" required/>
+                        </div>
+                        <div class="input_area-1">
+                            <label for="radio-box" class="label--1">Tình trạng</label>
+                            <div class="radio-box">
+                                <input type="radio" asp-for=PrdStatus class="radio__btn" id="rd__3" value="1" style="display: unset;">
+                                <label for="rd__1" class="label--2">Còn hàng</label>
+
+                                <input type="radio" asp-for=PrdStatus class="radio__btn" id="rd__4" value="0" style="display: unset;">
+                                <label for="rd__2" class="label--2">Hết hàng</label>
+                            </div>
+                        </div>
+                        <label for="img-opt__holder" class="label--3">Ảnh</label>
+                    </div>
+                    <div class="img-opt__holder">
+                        <img class="image-holder" id="image-perform-1"/>
+                        <!-- <label class="label--2" for="file__btn">Chọn ảnh</label> -->
+                        <input type="file" class="file__btn" id="imageFile" accept="image/*" asp-for="PrdImage">
+                    </div>
+                    <div class="label--3">Mô tả</div>
+                    <textarea asp-for=PrdDesc class ="desc-box" id="desc-input" placeholder="Nhập mô tả"></textarea>
+                    <button type="submit" class="__main--btn" id="btn-OK_2">OK</button>
+                    <button type="button" class="__main--btn" id="btn-Cancel_2">Hủy</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="modal5" class="modal" style="display: none;">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body5">
+            <div class="modal__inner">
+                <form method="post" asp-action="Delete" asp-controller="Manage" class="confirm_box">
+                    <div class="text">Xác nhận xóa thức uống này</div>
+                    
+                        <input type="hidden" asp-for="idForUpdate" id="change__4"/>
+                        <button type="submit" class="__main--btn" id="btn-OK_3">OK</button>
+                        <button type="button" class="__main--btn" id="btn-Cancel_3">Hủy</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function handleImageUpload(event) {
+        const image = event.target.files[0];
+
+        if (image && image.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const preview = document.getElementById('imagePreview');
+                preview.innerHTML = `<img class="image-holder" src="${e.target.result}" alt="Uploaded Image" />`;
+            };
+            reader.readAsDataURL(image);
+        } else {
+            // Handle invalid image selection (optional)
+            alert("Please select a valid image file.");
+        }
+    }
+
+    document.getElementById('imageFile').addEventListener('change', handleImageUpload);
+
+</script>
+
+

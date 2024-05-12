@@ -3,24 +3,35 @@ using AlphaShop.Models;
 using Microsoft.AspNetCore.Mvc;
 using AlphaShop.Helpers;
 using Microsoft.EntityFrameworkCore;
+
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+
 namespace AlphaShop.Controllers
 {
+
+    [Authorize]
     public class CartController : Controller
     {
         private readonly HahaContext db;
         private readonly AccountService _accountService;
-
+       
         public CartController(AccountService accountService)
         {
             db = new HahaContext();
             _accountService = accountService;
             
         }
-        const string CART_KEY = "MYCART";
-        public List<CartItem> Cart => HttpContext.Session.Get<List<CartItem>>(CART_KEY) ?? new List<CartItem>();
         public IActionResult Index()
         {
-            return View(Cart);
+            int CartId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
+            CartModel cartModel = new CartModel()
+            {
+                cart = db.Carts.SingleOrDefault(p => p.CartId == CartId),
+                cartDetail = db.CartDetails.Where(p => p.CartId == CartId).ToList(),
+            };
+            return View(cartModel);
         }
         
         public IActionResult AddToCart(int optsize, int opttype, int id)
@@ -28,30 +39,30 @@ namespace AlphaShop.Controllers
 
             CartDetail item = new CartDetail
             {
-                CartId = _accountService.Customer.CtrId,
+                CartId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value),
                 PrdId = id,
                 OptionSize = optsize,
                 OptionType = opttype,
                 Quantity = 1,
-                PrdPrice = db.Products.FirstOrDefault(x=>x.PrdId == id).PrdPrice,
-                PrdName = db.Products.FirstOrDefault(x => x.PrdId == id).PrdName,
-                PrdImage = db.Products.FirstOrDefault(x => x.PrdId == id).PrdImage,
+                PrdPrice = db.Products.SingleOrDefault(x=>x.PrdId == id).PrdPrice,
+                PrdName = db.Products.SingleOrDefault(x => x.PrdId == id).PrdName,
+                PrdImage = db.Products.SingleOrDefault(x => x.PrdId == id).PrdImage,
             };
             var check = db.CartDetails.SingleOrDefault(x => x.CartId == item.CartId && x.PrdId == item.PrdId && x.OptionSize == item.OptionSize && x.OptionType == item.OptionType);
             if (check == null)
             {
-                _accountService.Customer.Cart.CartDetails.Add(item);
+                //_accountService.Customer.Cart.CartDetails.Add(item);
 
                 db.CartDetails.Add(item);
             }
             else
             {
                 check.Quantity++;
-                foreach (CartDetail huukhoa in _accountService.Customer.Cart.CartDetails)
-                {
-                    if (huukhoa.PrdId == id)
-                        huukhoa.Quantity = check.Quantity;
-                }
+                //foreach (CartDetail huukhoa in _accountService.Customer.Cart.CartDetails)
+                //{
+                //    if (huukhoa.PrdId == id)
+                //        huukhoa.Quantity = check.Quantity;
+                //}
                 db.Entry(check).State = EntityState.Modified;
             }
 
@@ -87,19 +98,20 @@ namespace AlphaShop.Controllers
             return RedirectToAction("Index");
         }
         [HttpPost]
-        public async Task<IActionResult> DeleteCartItem(int cartid, int prdid, int optsize, int opttype)
+        public async Task<IActionResult> DeleteCartItem(int prdid, int optsize, int opttype)
         {
+            int cartid = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
             var cartDetail = db.CartDetails.SingleOrDefault(x => x.CartId == cartid && x.PrdId == prdid && x.OptionSize == optsize && x.OptionType == opttype);
             if (db.CartDetails == null)
             {
-                return Problem("Entity set 'AspLearningContext.Movie'  is null.");
+                return Problem("Entity set 'HahaContext.D'  is null.");
             }
             //var cartDetail = await db.CartDetails.FindAsync(cartid, prdid, optsize, opttype);
             if (cartDetail != null)
             {
                 db.CartDetails.Remove(cartDetail);
+                db.Entry(cartDetail).State = EntityState.Modified;
             }
-
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
@@ -107,12 +119,12 @@ namespace AlphaShop.Controllers
         public IActionResult UpdateCart(int optsize, int opttype, int id)
         {
 
-
+            int cartid = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
             CartDetail item = new CartDetail
             {
-                CartId = _accountService.Customer.CtrId,
+                CartId = cartid,
                 PrdId = id,
-                OptionSize =optsize,
+                OptionSize = optsize,
                 OptionType = opttype,
                 Quantity = 1,
                 PrdPrice = db.Products.FirstOrDefault(x => x.PrdId == id).PrdPrice,
@@ -122,18 +134,18 @@ namespace AlphaShop.Controllers
             var check = db.CartDetails.SingleOrDefault(x => x.CartId == item.CartId && x.PrdId == item.PrdId && x.OptionSize == item.OptionSize && x.OptionType == item.OptionType);
             if (check == null)
             {
-                _accountService.Customer.Cart.CartDetails.Add(item);
+                //_accountService.Customer.Cart.CartDetails.Add(item);
 
                 db.CartDetails.Add(item);
             }
             else
             {
                 check.Quantity++;
-                foreach (CartDetail huukhoa in _accountService.Customer.Cart.CartDetails)
-                {
-                    if (huukhoa.PrdId == id)
-                        huukhoa.Quantity = check.Quantity;
-                }
+                //foreach (CartDetail huukhoa in _accountService.Customer.Cart.CartDetails)
+                //{
+                //    if (huukhoa.PrdId == id)
+                //        huukhoa.Quantity = check.Quantity;
+                //}
                 db.Entry(check).State = EntityState.Modified;
             }
 

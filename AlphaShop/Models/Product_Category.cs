@@ -4,8 +4,8 @@ namespace AlphaShop.Models
 {
     public class Product_Category
     {
-        
-        public List<Product> ListProduct { get; set; }
-        public List<Category> ListCategory { get; set; }
+        public string? searchString {  get; set; }
+        public List<Product> products { get; set; }
+        public List<Category> categories { get; set; }
     }
 }

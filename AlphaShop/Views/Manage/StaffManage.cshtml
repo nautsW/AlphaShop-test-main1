@@ -1,5 +1,163 @@
-﻿@*
+﻿@using AlphaShop.Data
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    Layout = null;
+    
 }
+@model StaffManageMainVM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="~/assets/css/staffmanage.css" runat="server" asp-append-version="true">
+    <script src="~/assets/js/staffmanage.js" runat="server" asp-append-version="true"></script>
+    <title>Staff Management</title>
+</head>
+<body>
+    @if (TempData["msg"] != null)
+    {
+        @Html.Raw(TempData["msg"]);
+    }
+    <div class="qun-l">
+        <div class="div">
+            <!--bar-->
+            @await Html.PartialAsync("_ManageBars", TempData["Check"])
+            <!--bar-->
+            @* Table *@
+            <div class="text-wrapper">Quản lí nhân viên</div>
+            <!-- <div class="search-bar">
+              <img class="search-icon" src="./assets/img/customerManage/SearchIcon.svg" />
+              <input type="text" class="search-bar--input" placeholder="Tìm kiếm người dùng">
+            </div> -->
+            <input type="text" class="search-bar search-bar--input" placeholder="Tìm kiếm người dùng">
+            <div class="customer__table">
+                <!-- tên cột -->
+                <div class="customer__tuple">
+                    <div class="ctr_text _ct1" id="ctr_id">Mã nhân viên</div>
+                    <div class="ctr_vector _1"></div>
+                    <div class="ctr_text _ct2" id="ctr_username">Tên nhân viên</div>
+                    <div class="ctr_vector _2"></div>
+                    <div class="ctr_text _ct3" id="ctr_phone">Số điện thoại</div>
+                    <div class="ctr_vector _3"></div>
+                    <div class="ctr_text _ct4" id="ctr_address">Tên tài khoản</div>
+                    <div class="ctr_vector _4"></div>
+                    <div class="ctr_text _ct5" id="ctr_status">Trạng thái</div>
+                    <div class="ctr_vector _5"></div>
+                    <div class="ctr_text _ct6" id="ctr_access">Thao tác</div>
+                </div>
+                <!-- tên cột -->
+                @foreach(Customer item in Model.customers.Where(p => p.CtrVisible == true))
+                {
+                    if (item == Model.customers.Last())
+                    {
+                    <!-- khách hàng đầu list-->
+                    
+                        <div class="customer__tuple-2">
+                            <div class="ctr_text" id="ctr_id-1">@item.CtrId</div>
+                            <div class="ctr_vector _1"></div>
+                            <div class="ctr_text" id="ctr_username-1">@item.CtrUsername</div>
+                            <div class="ctr_vector _2"></div>
+                            <div class="ctr_text" id="ctr_phone-1">@item.CtrPhonenumber</div>
+                            <div class="ctr_vector _3"></div>
+                            <div class="ctr_text" id="ctr_address-1">@item.CtrLogusername</div>
+                            <div class="ctr_vector _4"></div>
+                            <div class="ctr_text" id="ctr_status-1">@(item.CtrStatus == 1 ? "Bình thường" : (item.CtrStatus == 2) ? "Hạn chế đặt hàng" : "Vô hiệu")</div>
+                            <div class="ctr_vector _5"></div>
+                            <button class="__main--btn" id="ctr_btn" onclick="Info(@item.CtrId, '@item.CtrUsername', '@item.CtrPhonenumber', @item.CtrStatus, '@item.CtrEmail', '@item.CtrGender', @item.CtrAccess, '@item.CtrAddress', '@item.CtrPassword')">Chi tiết</button>
+                        </div>
+                        <!-- khách hàng đầu list-->
+                    }
+                    else
+                    {
+                        <!-- khách hàng đuôi list-->
+                        <div class="customer__tuple-1">
+                            <div class="ctr_text" id="ctr_id-1">@item.CtrId</div>
+                            <div class="ctr_vector _1"></div>
+                            <div class="ctr_text" id="ctr_username-1">@item.CtrUsername</div>
+                            <div class="ctr_vector _2"></div>
+                            <div class="ctr_text" id="ctr_phone-1">@item.CtrPhonenumber</div>
+                            <div class="ctr_vector _3"></div>
+                            <div class="ctr_text" id="ctr_address-1">@item.CtrLogusername</div>
+                            <div class="ctr_vector _4"></div>
+                            <div class="ctr_text" id="ctr_status-1">@(item.CtrStatus == 1 ? "Bình thường" : (item.CtrStatus == 2) ? "Hạn chế đặt hàng" : "Vô hiệu")</div>
+                            <div class="ctr_vector _5"></div>
+                            <button class="__main--btn" id="ctr_btn" onclick="Info(@item.CtrId, '@item.CtrUsername', '@item.CtrPhonenumber', @item.CtrStatus, '@item.CtrEmail', '@item.CtrGender', @item.CtrAccess, '@item.CtrAddress', '@item.CtrPassword')">Chi tiết</button>
+                        </div>
+                        <!-- khách hàng đuôi list-->
+                    }
+                    
+                }
+                @* <!-- khách hàng đầu list-->
+                <div class="customer__tuple-1">
+                    <div class="ctr_text" id="ctr_id-1">ctr_id</div>
+                    <div class="ctr_vector _1"></div>
+                    <div class="ctr_text" id="ctr_username-1">ctr_username</div>
+                    <div class="ctr_vector _2"></div>
+                    <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
+                    <div class="ctr_vector _3"></div>
+                    <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
+                    <div class="ctr_vector _4"></div>
+                    <div class="ctr_text" id="ctr_status-1">ctr_status</div>
+                    <div class="ctr_vector _5"></div>
+                    <button class="__main--btn" id="ctr_btn">Chi tiết</button>
+                </div>
+                <!-- khách hàng đầu list-->
+                <!-- khách hàng -->
+                <div class="customer__tuple-1">
+                    <div class="ctr_text" id="ctr_id-1">ctr_id</div>
+                    <div class="ctr_vector _1"></div>
+                    <div class="ctr_text" id="ctr_username-1">ctr_username</div>
+                    <div class="ctr_vector _2"></div>
+                    <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
+                    <div class="ctr_vector _3"></div>
+                    <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
+                    <div class="ctr_vector _4"></div>
+                    <div class="ctr_text" id="ctr_status-1">ctr_status</div>
+                    <div class="ctr_vector _5"></div>
+                    <button class="__main--btn" id="ctr_btn">Chi tiết</button>
+                </div>
+                <!-- khách hàng -->
+                <!-- khách hàng đuôi list-->
+                <div class="customer__tuple-2">
+                    <div class="ctr_text" id="ctr_id-1">ctr_id</div>
+                    <div class="ctr_vector _1"></div>
+                    <div class="ctr_text" id="ctr_username-1">ctr_username</div>
+                    <div class="ctr_vector _2"></div>
+                    <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
+                    <div class="ctr_vector _3"></div>
+                    <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
+                    <div class="ctr_vector _4"></div>
+                    <div class="ctr_text" id="ctr_status-1">ctr_status</div>
+                    <div class="ctr_vector _5"></div>
+                    <button class="__main--btn" id="ctr_btn">Chi tiết</button>
+                </div>
+                <!-- khách hàng đuôi list --> *@
+
+            </div>
+            @* Table *@
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+        @* Detail *@
+
+        @* Detail *@
+    @* Create *@
+    @await Html.PartialAsync("_AccountCE", Model.accountAddVM)
+    @* Create *@
+    @* Info *@
+    @await Html.PartialAsync("_AccountInfo", Model.accountAddVM)
+    @* Info *@
+
+</body>
+</html>

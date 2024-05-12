@@ -202,6 +202,7 @@ public partial class HahaContext : DbContext
             entity.Property(e => e.CtrUsername)
                 .HasMaxLength(40)
                 .HasColumnName("CTR_USERNAME");
+            entity.Property(e => e.CtrVisible).HasColumnName("CTR_VISIBLE");
 
             entity.HasOne(d => d.CtrAccessNavigation).WithMany(p => p.Customers)
                 .HasForeignKey(d => d.CtrAccess)
@@ -290,6 +291,7 @@ public partial class HahaContext : DbContext
                 .HasColumnType("decimal(6, 3)")
                 .HasColumnName("PRD_PRICE");
             entity.Property(e => e.PrdStatus).HasColumnName("PRD_STATUS");
+            entity.Property(e => e.PrdVisible).HasColumnName("PRD_VISIBLE");
 
             entity.HasOne(d => d.Cgr).WithMany(p => p.Products)
                 .HasForeignKey(d => d.CgrId)

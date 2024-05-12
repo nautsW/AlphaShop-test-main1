@@ -1,0 +1,188 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model AccountAddVM
+@{
+   
+}
+
+
+
+
+
+@* customer *@
+
+
+
+
+
+
+<div id="modal1" class="modal" style="display: none;">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body">
+        <div class="modal__inner">
+            <div class="rectangle">
+            <div class="staff_info">
+                <h2 style="font-weight: bolder; font-size: 24px;">Thông tin tài khoản</h2>
+                <div class="attr_holder">
+                    <div class="staff_group">
+                        <div class="staff_attr-1">Mã tài khoản: </div>
+                        <div class="staff_attr-2" id="staff_attr-id">Id</div>
+                    </div>
+                    <div class="staff_group">
+                        <div class="staff_attr-1">Tên tài khoản: </div>
+                        <div class="staff_attr-2" id="staff_attr-username">Example</div>
+                    </div>
+                    <div class="staff_group">
+                        <div class="staff_attr-1">SĐT: </div>
+                        <div class="staff_attr-2" id="staff_attr-pn">Example</div>
+                    </div>
+                    <div class="staff_group">
+                        <div class="staff_attr-1">Tình trạng: </div>
+                        <div class="staff_attr-2" id="staff_attr-status">Example</div>
+                    </div>
+                    <div class="staff_group">
+                        <div class="staff_attr-1">Email: </div>
+                        <div class="staff_attr-2" id="staff_attr-email">Example</div>
+                    </div>
+                    <div class="staff_group">
+                        <div class="staff_attr-1">Giới tính </div>
+                        <div class="staff_attr-2" id="staff_attr-sex">Example</div>
+                    </div>
+                    <div class="staff_group">
+                        <div class="staff_attr-1">Địa chỉ </div>
+                        <div class="staff_attr-2" id="staff_attr-addr">Example</div>
+                    </div>
+                </div>
+                
+                <img class="logo" src="assets\img\user\Lmao.png" />
+
+                    <div class="comp">
+                        <div class="holder">
+                            <button class="btn1" id="js_restrict">Hạn chế tài khoản</button>
+                            <button class="btn1" id="js_delete">Xóa tài khoản này</button>
+                            <button class="btn1" id="close_btn">Thoát</button>
+                            <button class="btn1" id="edit_btn">Chỉnh sửa thông tin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+@* edit *@
+
+
+<div id="modal3" class="modal" style="display: none;">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body2">
+        <div class="modal__inner">
+            <div class="drink-add">
+                <div class="main-text">Chỉnh sửa tài khoản</div>
+                <form asp-action="EditAccount" asp-controller="Manage" method="post" class="input_area">
+                    <input asp-for="idForUpdate" type="hidden" id="staff_attr-id-1" />
+                    <div class="input_area-1">
+                        <label for="n-box" class="label--1">Tên thật</label>
+                        <input asp-for="ctrUsername" type="text" class="n-box" id="staff_attr-username-1" placeholder="Nhập tên thật" required />
+                    </div>
+                    <div class="input_area-1">
+                        <label for="pass-box" class="label--1">Mật khẩu</label>
+                        <input asp-for="ctrPassword" type="text" class="pass-box" id="staff_attr-pass" placeholder="Nhập mật khẩu" required />
+                    </div>
+                    <div class="input_area-1">
+                        <label for="pass-box" class="label--1">Số điện thoại</label>
+                        <input asp-for="ctrPhonenumber" type="text" class="pass-box" id="staff_attr-pn-1" placeholder="Số điện thoại" required />
+                    </div>
+                    <div class="input_area-1">
+                        <label for="radio-box" class="label--1">Giới tính</label>
+                        <div class="radio-box">
+                            <input asp-for="ctrGender" type="radio" class="radio__btn" id="rd__1" style="display:unset;" value="true" required>
+                            <label for="rd__1" class="label--2">Nam</label>
+
+                            <input asp-for="ctrGender" type="radio" class="radio__btn" id="rd__2" style="display:unset;" value="false">
+                            <label for="rd__2" class="label--2">Nữ</label>
+                        </div>
+                    </div>
+                    <div class="input_area-1">
+                        <label for="radio-box__2" class="label--1">Phân quyền</label>
+                        <div class="radio-box__2">
+                            <input asp-for="ctrAccess" type="radio" class="radio__btn" id="rd__3" value="1" style="display:unset;" required>
+                            <label for="rd__3" class="label--2">Customer</label>
+
+                            <input asp-for="ctrAccess" type="radio" class="radio__btn" id="rd__4" value="2" style="display:unset;">
+                            <label for="rd__4" class="label--2">Staff</label>
+                        </div>
+                    </div>
+                    <div class="input_area-1">
+                        <label for="email_box" class="label--1">Email</label>
+                        <input asp-for="ctrEmail" type="email" class="email-box" id="staff_attr-email-1" placeholder="Nhập email" />
+                    </div>
+                    <div class="input_area-1">
+                        <label for="desc-box" class="label--1">Địa chỉ</label>
+                        <textarea asp-for="ctrAddress" class="desc-box" id="staff_attr-addr-1" placeholder="Nhập địa chỉ"></textarea>
+                    </div>
+
+                    <button type="submit" class="__main--btn" id="btn-OK">OK</button>
+                    <button class="__main--btn" id="btn-Cancel__1">Hủy</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@* edit *@
+
+@* delete *@
+<div id="modal5" class="modal" style="display: none;">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body5">
+        <div class="modal__inner">
+            <form method="post" asp-action="AccDelete" asp-controller="Manage" class="confirm_box">
+                <div class="text">Xác nhận xóa tài khoản này?</div>
+                <input type="hidden" asp-for="idForUpdate" id="change__4" />
+                <button type="submit" class="__main--btn" id="btn-OK_3">OK</button>
+                <button type="button" class="__main--btn" id="btn-Cancel_3">Hủy</button>
+            </form>
+        </div>
+    </div>
+</div>
+@* delete *@
+
+@* restrict *@
+<div id="modal_restrict" class="modal" style="display: none;">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body3">
+        <div class="modal__inner">
+            <form method="post" class="drink-add1" asp-action="Restrict" asp-controller="Manage">
+                <input type="hidden" asp-for="idForUpdate" id="change__5" />
+                <div class="main-text">Hạn chế tài khoản</div>
+                <div class="text1">Hạn chế hoạt động của tài khoản</div>
+                <div class="text2">Chọn loại hạn chế</div>
+                <div class="input_area">
+                    <div class="input_area-1">
+                        <div class="radio-box1">
+                            <input asp-for="ctrStatus" type="radio" class="radio__btn" id="rd__5" value="2">
+                            <label for="rd__5" class="label--2">Hạn chế đặt hàng</label>
+                            <input asp-for="ctrStatus" type="radio" class="radio__btn" id="rd__6" value="1">
+                            <label for="rd__6" class="label--2">Gỡ hạn chế</label>
+                            <input asp-for="ctrStatus" type="radio" class="radio__btn" id="rd__7" value="0">
+                            <label for="rd__7" class="label--2">Ngừng tài khoản</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="__main--btn" id="btn-OK1">OK</button>
+                    <button type="button" class="__main--btn" id="btn-Cancel1">Hủy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@* restrict *@

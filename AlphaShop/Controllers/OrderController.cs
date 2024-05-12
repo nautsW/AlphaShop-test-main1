@@ -2,6 +2,10 @@
 using AlphaShop.Models;
 using Microsoft.AspNetCore.Mvc;
 
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+
 namespace AlphaShop.Controllers
 {
     public class OrderController : Controller
@@ -17,27 +21,37 @@ namespace AlphaShop.Controllers
         public IActionResult Index()
         {
             decimal? total = 0;
-            foreach(CartDetail item in _context.CartDetails)
+            int CtrId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
+            foreach (CartDetail item in _context.CartDetails)
             {
-                if(item.CartId == _accountService.Customer.CtrId)
+                if(item.CartId == CtrId)
                 {
                     total += item.Quantity * item.PrdPrice;
                 }
             }
-
+            Customer customer = _context.Customers.SingleOrDefault(p => p.CtrId ==  CtrId);
+            CartModel cartModel = new CartModel()
+            {
+                cart = _context.Carts.SingleOrDefault(p => p.CartId == CtrId),
+                cartDetail = _context.CartDetails.Where(p => p.CartId == CtrId).ToList(),
+            };
             OrderModel orderModel = new OrderModel
             {
-                destination = _accountService.Customer.CtrAddress,
+                destination = _context.Customers.SingleOrDefault(p => p.CtrId == CtrId).CtrAddress,
                 note = "",
-                quantity = (int)_accountService.Customer.Cart.CartQuantity,
+                Cart = cartModel,
                 Total = total,
-                Shipping = total + 45
-
+                Shipping = total + 45,
+                customer = customer,
             };
             return View(orderModel);
         }
+        public IActionResult Ordered()
+        {
+            return View();
+        }
         [HttpPost]
-        public async Task<IActionResult> Index(OrderModel orderModel)
+        public IActionResult Ordered(OrderModel orderModel) 
         {
             Ord ord = new Ord
             {
@@ -45,17 +59,18 @@ namespace AlphaShop.Controllers
                 OrdDate = DateTime.Now,
                 OrdDest = orderModel.destination,
                 OrdStatus = false,
-                CartId = _accountService.Customer.CtrId,
+                CartId = orderModel.Cart.cart.CartId,
                 OrdNote = orderModel.note,
                 OrdPrice = orderModel.Total,
             };
-            await _context.Ords.AddAsync(ord);
-            foreach(var item in _context.CartDetails)
+            _context.Ords.Add(ord);
+            _context.SaveChanges();
+            foreach (var item in _context.CartDetails.ToList())
             {
-                if (item.CartId == _accountService.Customer.CtrId)
+                if (item.CartId == orderModel.Cart.cart.CartId)
                 {
 
-                        OrdDetail ordDetail = new OrdDetail
+                    OrdDetail ordDetail = new OrdDetail
                     {
                         OrdId = ord.OrdId,
                         Note = item.Note,
@@ -67,13 +82,8 @@ namespace AlphaShop.Controllers
                     _context.OrdDetails.Add(ordDetail);
                 }
             }
-            await _context.SaveChangesAsync();
-            return Ordered();
-        }
-        public IActionResult Ordered() 
-        {
-            return View(); 
-        
+            _context.SaveChanges();
+            return View();
         }
 
     }

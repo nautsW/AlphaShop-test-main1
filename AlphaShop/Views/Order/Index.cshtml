@@ -12,11 +12,11 @@
 <div class="CustomerInfoBox">
         <div class="CustomerRect"></div>
         <div class="InfoText" id = "CustomerInfo">Thông tin giao hàng</div>
-        <div class="InfoText" id = "Name">Tên người nhận: @_AccountService.Customer.CtrUsername</div>
+        <div class="InfoText" id = "Name">Tên người nhận: @Model.customer.CtrUsername</div>
         <div class="Line" id = "Line1"></div>
         <div class="Line" id = "Line2"></div>
         <div class="Line" id = "Line3"></div>
-        <div class="InfoText" id = "Phone">Số điện thoại: @_AccountService.Customer.CtrPhonenumber</div>
+        <div class="InfoText" id="Phone">Số điện thoại: @Model.customer.CtrPhonenumber</div>
         <div class="InfoText" id = "Address">Giao đến: @Model.destination</div>
         <div class="InfoText" id = "GhiChu">Ghi chú</div>
         <div class="GhiChuBox">
@@ -33,7 +33,7 @@
         <div class="Line" id = "Line4"></div>
         <ul class = "OrderList" id = "OrderList">
         
-            @foreach (var item in _AccountService.Customer.Cart.CartDetails)
+            @foreach (var item in Model.Cart.cartDetail)
             {
 
             <li class="OrderItem">
@@ -50,7 +50,7 @@
 
             <li class = "Line" id = "Line5"></li>
 
-            <li class="InfoText" id = "Soluong">Số lượng: @Model.quantity cốc </li>
+            <li class="InfoText" id = "Soluong">Số lượng: @Model.Cart.cart.CartQuantity cốc </li>
             <li class="InfoText" id = "TotalDrink">Tổng:  </li>
             <li class="InfoText" id = "TransportCost" >Phí vận chuyển: </li>
             <li class="InfoText" id = "Total">Tổng cộng: </li>
@@ -63,7 +63,9 @@
                 <div class="Rectbackground"></div>
 
                 @* <input type="submit" value="Đặt hàng" class="Btn"/> *@
-                <button asp-action="Ordered" asp-controller="Order" asp-route-destination=@Model.destination asp-route-quantity="@Model.quantity" asp-route-price="@Model.Shipping" class="Btn" >Đặt hàng</button>
+                <form>
+                    <button asp-action="Ordered" asp-controller="Order" class="Btn">Đặt hàng</button>
+                </form>
 
             </li>
         </ul>

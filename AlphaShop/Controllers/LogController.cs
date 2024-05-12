@@ -1,8 +1,12 @@
-﻿using AlphaShop.Data
-;
+﻿using AlphaShop.Data;
 using AlphaShop.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace AlphaShop.Controllers
 {
@@ -16,41 +20,78 @@ namespace AlphaShop.Controllers
             _context = context;
             _accountService = accountService; // Lưu trữ reference đến AccountService
         }
+
+        //public IActionResult Login()
+        //{
+        //    if(_accountService.IsLoggedIn == true)
+        //    {
+        //        return RedirectToAction("Index", "Home");
+        //    }
+        //    return View();
+        //}
+        //[HttpPost]
+        //[HttpPost]
+        //public IActionResult Login(LoginModel loginModel)
+        //{
+        //    var taikhoanForm = loginModel.Name;
+        //    var matkhauForm = loginModel.Password;
+        //    var usercheck = _context.Customers.SingleOrDefault(x => x.CtrLogusername == taikhoanForm && x.CtrPassword == matkhauForm);
+        //    if (usercheck != null)
+        //    {
+        //        _accountService.IsLoggedIn = true;
+        //        _accountService.Customer = usercheck;
+        //        _accountService.Customer.Cart = _context.Carts.SingleOrDefault(x => x.CartId == usercheck.CtrId);
+        //        _accountService.Customer.Cart.CartDetails = _context.CartDetails.Where(x => x.CartId == usercheck.CtrId).ToList();
+        //        foreach(CartDetail a in  _context.CartDetails)
+        //        {
+        //            _accountService.Customer.Cart.CartQuantity += a.Quantity;
+        //        }    
+        //        return RedirectToAction("Index", "Home");
+        //    }
+        //    else
+        //    {
+        //        ViewBag.LoginFail = "Failed to log";
+        //        return View();
+        //    }
+        //}
         public IActionResult Login()
         {
-            if(_accountService.IsLoggedIn == true)
+            ClaimsPrincipal claims = HttpContext.User;
+            if (claims.Identity.IsAuthenticated)
             {
                 return RedirectToAction("Index", "Home");
             }
             return View();
         }
         [HttpPost]
-        [HttpPost]
-        public IActionResult Login(LoginModel loginModel)
+        public async Task<IActionResult> Login(LoginModel loginModel)
         {
             var taikhoanForm = loginModel.Name;
             var matkhauForm = loginModel.Password;
             var usercheck = _context.Customers.SingleOrDefault(x => x.CtrLogusername == taikhoanForm && x.CtrPassword == matkhauForm);
-            if (usercheck != null)
+            if (usercheck != null && usercheck.CtrVisible == true)
             {
-                _accountService.IsLoggedIn = true;
-                _accountService.Customer = usercheck;
-                _accountService.Customer.Cart = _context.Carts.SingleOrDefault(x => x.CartId == usercheck.CtrId);
-                _accountService.Customer.Cart.CartDetails = _context.CartDetails.Where(x => x.CartId == usercheck.CtrId).ToList();
-                foreach(CartDetail a in  _context.CartDetails)
+                List<Claim> claims = new List<Claim>()
                 {
-                    _accountService.Customer.Cart.CartQuantity += a.Quantity;
-                }    
+                    new Claim(ClaimTypes.Name, usercheck.CtrUsername.ToString()),
+                    new Claim(ClaimTypes.Role, usercheck.CtrAccess.ToString()),
+                    new Claim("CtrId", usercheck.CtrId.ToString())
+                };
+                ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 
-
+                AuthenticationProperties properties = new AuthenticationProperties()
+                {
+                    AllowRefresh = true,
+                    IsPersistent = false,
+                };
+                //singleton cũ
                 
+                //singleton cũ
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), properties);
                 return RedirectToAction("Index", "Home");
             }
-            else
-            {
-                ViewBag.LoginFail = "Failed to log";
-                return View();
-            }
+            ViewBag.LoginFail = "Failed to log";
+            return View();
         }
 
         public IActionResult Register()
@@ -91,7 +132,8 @@ namespace AlphaShop.Controllers
                     CtrAddress = registerModel.Address,
                     CtrId = _context.Customers.Count(),
                     CtrUsed = 0,
-                    CtrImage = null
+                    CtrImage = null,
+                    CtrVisible = true
 
 
                 }
@@ -108,11 +150,18 @@ namespace AlphaShop.Controllers
             _context.Database.BeginTransaction();
             return RedirectToAction("Login");
         }
-        public IActionResult Logout()
+        //public IActionResult Logout()
+        //{
+        //    _accountService.IsLoggedIn = false;
+        //    _accountService.Customer = null;
+        //    return RedirectToAction("Index", "Home");
+        //}
+
+        public async Task<IActionResult> Logout()
         {
-            _accountService.IsLoggedIn = false;
-            _accountService.Customer = null;
-            return RedirectToAction("Index", "Home");
+            
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login", "Log");
         }
     }
 }

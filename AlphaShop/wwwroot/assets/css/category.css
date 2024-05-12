@@ -131,7 +131,7 @@ body{
     word-wrap: break-word;
 }
 
-.Support {
+/*.Support {
     width: 70px;
     height: 70px;
     left: 1360px;
@@ -219,8 +219,8 @@ body{
     font-size: 15px;
     font-weight: 500;
     position: absolute;
-    left: 250px; /* Đặt số ở phía bên phải của hộp chứa */
-}
+    left: 250px;*/ /* Đặt số ở phía bên phải của hộp chứa */
+/*}
 
 
 
@@ -240,9 +240,9 @@ body{
 .Searchicon {
     width: 16px;
     height: 15px;
-    margin-left: 10px; /* Đặt khoảng cách từ biểu tượng tìm kiếm đến biên trái của hộp chứa */
-    position: relative; /* Đặt position thành relative */
-}
+    margin-left: 10px;*/ /* Đặt khoảng cách từ biểu tượng tìm kiếm đến biên trái của hộp chứa */
+    /*position: relative;*/ /* Đặt position thành relative */
+/*}
 
 .Searchicon .Line3 {
     width: 6.94px;
@@ -267,9 +267,9 @@ body{
 }
 
 .inputSearch {
-    position: relative; /* Đặt position thành relative */
-    flex: 1; /* Sử dụng flex để chiếm phần còn lại của .Rectangle19 */
-    height: 100%;
+    position: relative;*/ /* Đặt position thành relative */
+    /*flex: 1;*/ /* Sử dụng flex để chiếm phần còn lại của .Rectangle19 */
+    /*height: 100%;
     border: none;
     outline: none;
     resize: none;
@@ -356,6 +356,216 @@ body{
 
 .Plus:hover
 {
-    border: black;
+    border: black;*/
+/* category */
+.Rectangle18 {
+    width: 395px;
+    height: 350px;
+    left: 103px;
+    top: 239px;
+    position: absolute;
+    background: #FEFFC8;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
+#drinkList {
+    top: 20px;
+    left: -5%;
+    list-style-type: none;
+    margin: 0;
+    position: relative;
+}
+
+    #drinkList button {
+        margin-bottom: 10px;
+        font-size: 16px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    #drinkList li {
+        margin-bottom: 10px;
+        font-size: 16px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+.MenuHiNTI {
+    top: -80px;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+}
+
+.DrinkName {
+    top: -70px;
+    left: -80px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    border: transparent;
+    background-color: transparent;
+    position: absolute;
+}
+
+.number {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    left: 250px; /* Đặt số ở phía bên phải của hộp chứa */
+}
+/* category */
+
+/* drink */
+
+.drinkListHolder {
+    top: 310px;
+    left: 550px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    border: transparent;
+    background-color: transparent;
+    position: absolute;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CategoryName {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.holder__main {
+    display: flex;
+    flex-direction: row;
+    margin-left: -30px;
+}
+
+.Drinkunit {
+    width: 185px;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 30px;
+    /* position: absolute; */
+    display: flex;
+}
+
+.Drinkbox {
+    width: 180px;
+    height: 230px;
+    /* margin-left: 20px; */
+    /* position: absolute; */
+    background: white;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border-color: transparent;
+    /* border: 1px solid #000000; */
+}
+
+    .Drinkbox:hover {
+        border: 1px solid #000000;
+    }
+
+.BoxTitle {
+    /* left: 120px;
+    top: 230px; */
+    /* margin-top: -40px; */
+    /* margin-left: 40px; */
+    /* position: absolute; */
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left: 10px;
+    margin-top: 3px;
+    text-align: left;
+}
+
+.price {
+    /* left: 120px;
+    top: 250px; */
+    margin-top: 2px;
+    margin-left: 10px;
+    /* margin-top: -40px; */
+    /* margin-left: 40px; */
+    /* position: absolute; */
+    color: #e100ff;
+    font-size: 13px;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+
+.Imageholder {
+    width: 155px;
+    height: 155px;
+    /* position: absolute; */
+    border-radius: 10px;
+}
+
+.holder__1 {
+    flex: 2
+}
+
+.Plus {
+    width: 30px;
+    height: 30px;
+    margin-top: 190px;
+    margin-left: -45px;
+    flex: 1;
+    /* position: absolute; */
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: transparent;
+    background-image: url("..\\img\\drinklist\\plus.png");
+}
+
+/*text*/
+.text-wrapper {
+    position: absolute;
+    top: 130px;
+    left: 550px;
+    font-weight: bolder;
+    color: #000000;
+    font-size: 32px;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: normal;
+}
+/*text*/
+/*search*/
+.search-bar {
+    position: absolute;
+    width: 815px;
+    height: 32px;
+    top: 195px;
+    left: 550px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #000000;
+    padding-left: 10px;
+}
+
+.search-icon {
+    position: absolute;
+    width: 17px;
+    height: 15px;
+    top: 8px;
+    left: 9px;
+}
+/*search*/

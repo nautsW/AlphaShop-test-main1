@@ -1,5 +1,6 @@
 using AlphaShop.Data;
 using AlphaShop.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,8 +16,19 @@ builder.Services.AddSession(options =>
 });
 
 builder.Services.AddSingleton<AccountService>();
-builder.Services.AddSingleton<ProductModel>();
 builder.Services.AddControllersWithViews();
+
+//test authen
+builder.Services.AddAuthentication(
+    CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(
+    option =>
+    {
+        option.LoginPath = "/Log/Login";
+        option.ExpireTimeSpan = TimeSpan.FromMinutes(10);
+    }
+    );
+//test authen
+
 builder.Services.AddDbContext<HahaContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("PBL3") ?? throw new InvalidOperationException("Connection string 'PBL3' not found.")));
 var app = builder.Build();
@@ -34,7 +46,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+//test authen
+app.UseAuthentication();
+//test authen
 app.UseAuthorization();
 
 //app.MapControllerRoute(
@@ -81,4 +95,9 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+//test authen
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Log}/{action=Login}/{id?}");
+//test authen
 app.Run();

@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\AlphaShop.bundle.scp.css"
     },
     {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\adminhome.html",
+      "PackagePath": "staticwebassets\\adminhome.html"
+    },
+    {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\Dropdown.css",
       "PackagePath": "staticwebassets\\assets\\css\\Dropdown.css"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\adminhome.css",
+      "PackagePath": "staticwebassets\\assets\\css\\adminhome.css"
     },
     {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\cartinfo.css",
@@ -21,8 +29,16 @@
       "PackagePath": "staticwebassets\\assets\\css\\creat.css"
     },
     {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\customerManage.css",
+      "PackagePath": "staticwebassets\\assets\\css\\customerManage.css"
+    },
+    {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\drinkinfo.css",
       "PackagePath": "staticwebassets\\assets\\css\\drinkinfo.css"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\drinkmanage.css",
+      "PackagePath": "staticwebassets\\assets\\css\\drinkmanage.css"
     },
     {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\guest_navbar.css",
@@ -41,8 +57,16 @@
       "PackagePath": "staticwebassets\\assets\\css\\main.css"
     },
     {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\ordermanage.css",
+      "PackagePath": "staticwebassets\\assets\\css\\ordermanage.css"
+    },
+    {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\orderpage.css",
       "PackagePath": "staticwebassets\\assets\\css\\orderpage.css"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\staffmanage.css",
+      "PackagePath": "staticwebassets\\assets\\css\\staffmanage.css"
     },
     {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\css\\userpage.css",
@@ -85,6 +109,38 @@
       "PackagePath": "staticwebassets\\assets\\img\\content\\content2__1.png"
     },
     {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\customerManage\\SearchIcon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\customerManage\\SearchIcon.svg"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\14.-Ca-phe-nau.png",
+      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\14.-Ca-phe-nau.png"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\2bb89f49-b748-4c41-bd7a-e6bf6bb0fd86-TRA-DAU-GHEP-ANH-scaled.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\2bb89f49-b748-4c41-bd7a-e6bf6bb0fd86-TRA-DAU-GHEP-ANH-scaled.jpg"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\2ea184e8-d79a-4669-917c-226ed6aad422-14.-Ca-phe-nau.png",
+      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\2ea184e8-d79a-4669-917c-226ed6aad422-14.-Ca-phe-nau.png"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\566c9979-d7fd-46ef-bd15-15190e545e9d-14.-Ca-phe-nau.png",
+      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\566c9979-d7fd-46ef-bd15-15190e545e9d-14.-Ca-phe-nau.png"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\5b1d0a5a-051c-4d2c-918b-589772ad609a-image-holder3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\5b1d0a5a-051c-4d2c-918b-589772ad609a-image-holder3.png"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\c3c97c47-bf39-46de-84be-4efa01426c16-image-holder.png",
+      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\c3c97c47-bf39-46de-84be-4efa01426c16-image-holder.png"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\ecec1ccf-23e3-4d89-8f8b-2a2d3f5626f0-14.-Ca-phe-nau.png",
+      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\ecec1ccf-23e3-4d89-8f8b-2a2d3f5626f0-14.-Ca-phe-nau.png"
+    },
+    {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\image-holder.png",
       "PackagePath": "staticwebassets\\assets\\img\\drinklist\\image-holder.png"
     },
@@ -99,6 +155,10 @@
     {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\plus.png",
       "PackagePath": "staticwebassets\\assets\\img\\drinklist\\plus.png"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png"
     },
     {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\Group1.png",
@@ -153,8 +213,28 @@
       "PackagePath": "staticwebassets\\assets\\img\\user\\Lmao.png"
     },
     {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\js\\DrinkInfo.js",
+      "PackagePath": "staticwebassets\\assets\\js\\DrinkInfo.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\js\\customerManage.js",
+      "PackagePath": "staticwebassets\\assets\\js\\customerManage.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\js\\drinkmanage.js",
+      "PackagePath": "staticwebassets\\assets\\js\\drinkmanage.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\js\\ordermanage.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ordermanage.js"
+    },
+    {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\js\\script.js",
       "PackagePath": "staticwebassets\\assets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\assets\\js\\staffmanage.js",
+      "PackagePath": "staticwebassets\\assets\\js\\staffmanage.js"
     },
     {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\cartinfo.html",
@@ -175,6 +255,10 @@
     {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\drinkInfo.html",
       "PackagePath": "staticwebassets\\drinkInfo.html"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\drinkmanage.html",
+      "PackagePath": "staticwebassets\\drinkmanage.html"
     },
     {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\favicon.ico",
@@ -425,8 +509,16 @@
       "PackagePath": "staticwebassets\\login.html"
     },
     {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\ordermanage.html",
+      "PackagePath": "staticwebassets\\ordermanage.html"
+    },
+    {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\orderpage.html",
       "PackagePath": "staticwebassets\\orderpage.html"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\staffmanage.html",
+      "PackagePath": "staticwebassets\\staffmanage.html"
     },
     {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\wwwroot\\userpage.html",

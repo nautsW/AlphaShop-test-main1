@@ -15,8 +15,8 @@ namespace AlphaShop.Controllers
             var lstProduct =objModel.Products.ToList();
 
             Product_Category objProduct_Category = new Product_Category();
-            objProduct_Category.ListCategory = lstCategory;
-            objProduct_Category.ListProduct = lstProduct;
+            objProduct_Category.categories = lstCategory;
+            objProduct_Category.products = lstProduct;
             return View(objProduct_Category);
         }
         //[HttpPost]
