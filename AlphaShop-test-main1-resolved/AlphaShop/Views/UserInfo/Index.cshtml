@@ -1,0 +1,280 @@
+@using AlphaShop.Models
+@using System.Security.Claims
+@model UserInfoVM
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">ge.css">
+    <link rel="stylesheet" href="~/assets/css/userpage.css" runat="server" asp-append-version="true" />
+    <script src="~/assets/js/script.js" runat="server" asp-append-version="true"></script>
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+@{  
+    // var name = Context.User.Identity.Name;
+    // var ctrImageClaim = Context.User.FindFirst("CtrImage")?.Value; // Lấy giá trị của Claim "CtrImage"
+
+    // var emailClaim = Context.User.FindFirst(ClaimTypes.Email)?.Value; // Lấy giá trị của Claim "Email"
+
+    // var phoneNumberClaim = Context.User.FindFirst(ClaimTypes.MobilePhone)?.Value; // Lấy giá trị của Claim "MobilePhone"
+
+    // var ctrPassword = Context.User.FindFirst(ClaimTypes.SerialNumber)?.Value; // Không lấy password từ Claims
+
+    // var ctrAddress = Context.User.FindFirst(ClaimTypes.StreetAddress)?.Value; // Lấy giá trị của Claim "StreetAddress"
+
+
+}
+<script>
+
+    
+
+    function countAndReplace() {
+        // Lấy giá trị của mật khẩu từ Razor View và chuyển thành một chuỗi JavaScript
+        var pass = "@Model.customer.CtrPassword"; // Sử dụng ký tự ' để đảm bảo chuỗi được đọc đúng cách
+
+        // Đếm số ký tự trong mật khẩu
+        var soKyTu = pass.length;
+
+        // Tạo chuỗi mới với ký tự *
+        var newPassword = "*".repeat(soKyTu);
+
+        // Hiển thị mật khẩu mới
+        document.getElementById("password").innerText = newPassword;
+         
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Gọi hàm countAndReplace() khi trang đã tải xong
+        countAndReplace();
+
+        // Gán sự kiện click cho nút "Đổi ảnh"
+        document.getElementById("img_btn").addEventListener("click", function () {
+            // Hiển thị hộp thoại chọn tệp ảnh khi nhấn vào nút
+            document.getElementById("imageInput").click();
+        });
+
+        // Gán sự kiện change cho input type="file"
+        document.getElementById("imageInput").addEventListener("change", function () {
+            var fileInput = document.getElementById("imageInput");
+            if (fileInput.files && fileInput.files[0]) {
+                var file = fileInput.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    var imageData = e.target.result;
+                    // Assuming the image is stored in a folder named "uploads" relative to the application root
+                    var relativePath = "uploads/" + file.name;
+                    document.getElementById("imageFolderPath").value = relativePath;
+                    document.getElementById("uploadForm").submit();
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+</script>
+@if (TempData["Alert"] != null)
+{
+    @Html.Raw(TempData["Alert"])
+ 
+}
+<div class="Userpage">
+    <div class="Uinfor">Thông tin người dùng</div>
+    <img class="logo" src="@Model.customer.CtrImage">
+    <div class="button-container">
+        <button class="btn" id="img_btn">Đổi ảnh</button>
+        <!-- Thêm input type="file" để chọn tệp ảnh -->
+        @*partial view change image*@
+        @await Html.PartialAsync("_changeimage", Model.imageModel)
+        @*partial view change image*@
+
+    </div>
+
+    <div class="User">
+        <div class="Rec">
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="userinfor">@Model.customer.CtrUsername</div>
+        </div>
+    </div>
+
+    <div class="Password">
+        <div class="Rec">
+            <div class="icon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div id="password" class="userinfor"></div>
+            <div class="button-container">
+                <button class="btn" id="btncp">Đổi mật khẩu</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="SDT_User">
+        <div class="Rec">
+            <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="userinfor">@Model.customer.CtrPhonenumber</div>
+            <div class="button-container">
+                <button class="btn" id="btncs">Đổi SDT</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="email_User">
+        <div class="Rec">
+            <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="userinfor">@Model.customer.CtrEmail</div>
+            <div class="button-container">
+                <button class="btn" id="btnce">Đổi email</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="Addr_user">
+        <div class="Rec">
+            <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="userinfor">Danh sách địa chỉ</div>
+            <div class="button-container">
+                <button class="btn" id="btncx">Chi tiết</button>
+            </div>
+        </div>
+    </div>
+
+    <form>
+        <a asp-action="OrderList" asp-controller="UserInfo" class="LGD">
+            <div class="Rec">
+                <div class="icon">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+                <div class="userinfor">Lịch sử đơn hàng</div>
+            </div>
+        </a>
+    </form>
+    
+</div>
+
+@*partial view change pass*@
+@await Html.PartialAsync("_changePassword", Model.ChangePassword)
+@*partial view change pass*@
+
+@*PartialView Change PhoneNumb*@
+@await Html.PartialAsync("_changePhoneNumber")
+@*PartialView Change PhoneNumb*@
+
+@*PartialView Change email*@
+
+<div id="modal3" class="modal">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body">
+        <div class="modal__inner">
+            <div class="container">
+                <div class="login-box">
+                    <h2>Đổi email</h2>
+                    <div class="input-group">
+                        <label for="new_email">Nhập email mới</label>
+                        <input type="text" class="input" name="new" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="new_pass1">Mã xác nhận</label>
+                        <input type="text" class="input1" name="new" required>
+                        <button class="btn1">Gửi mã</button>
+                    </div>
+                    <button class="btn1">Đồng ý</button>
+                    <button class="btn1" id="ev2">Hủy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*PartialView Change email*@
+
+<div id="modal4" class="modal">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body4">
+        <div class="modal__inner">
+            <div class="addr_page">
+                <div class="list">Danh sách địa chỉ</div>
+                <div class="using">Đang sử dụng</div>
+                <div class="Addr_use">
+                    <div class="Rec1">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="userinfor">CrtAddress - 1</div>
+                        <div class="button-container">
+                            <button class="btnch" id="btnn">Chỉnh sửa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all">Tất cả địa chỉ</div>
+                <div class="All_addr1">
+                    <div class="Rec1">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="userinfor">Address.CtrAddressname - 1</div>
+                        <div class="button-container">
+                            <button class="btnch" id="btnn">Chỉnh sửa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="All_addr2">
+                    <div class="Rec1">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="userinfor">Address.CtrAddressname - 2</div>
+                        <div class="button-container">
+                            <button class="btnch" id="btnn">Chỉnh sửa</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="add_addr" id="btnadd">
+                    <div class="Rec1">
+                        <div class="icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="userinfor">Thêm địa chỉ</div>
+                    </div>
+                </div>
+                <div class="btn_group">
+                    <button class="btn2">Đồng ý</button>
+                    <button class="btn2" id="ev3">Thoát</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body5">
+        <div class="modal__inner">
+            <div class="container_add">
+                <div class="login-box">
+                    <h2>Thêm địa chỉ</h2>
+                    <div class="input-group1">
+                        <input type="text" class="input" name="new_password" placeholder="Nhập tên địa chỉ mới tại đây..." required>
+                    </div>
+                    <button class="btn1">Đồng ý</button>
+                    <button class="btn1" id="ev4">Hủy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

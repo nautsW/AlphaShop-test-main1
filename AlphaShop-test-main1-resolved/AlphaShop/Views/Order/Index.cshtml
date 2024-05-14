@@ -1,0 +1,124 @@
+@using AlphaShop.Models
+@model AlphaShop.Models.OrderModel
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/orderpage.css" runat="server" asp-append-version="true">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <title>Home</title>
+</head>
+@inject AccountService _AccountService
+
+<div class="CustomerInfoBox">
+        <div class="CustomerRect"></div>
+        <div class="InfoText" id = "CustomerInfo">Thông tin giao hàng</div>
+        <div class="InfoText" id = "Name">Tên người nhận: @Model.customer.CtrUsername</div>
+        <div class="Line" id = "Line1"></div>
+        <div class="Line" id = "Line2"></div>
+        <div class="Line" id = "Line3"></div>
+        <div class="InfoText" id="Phone">Số điện thoại: @Model.customer.CtrPhonenumber</div>
+        <div class="InfoText" id = "Address">Giao đến: @Model.destination</div>
+        <div class="InfoText" id = "GhiChu">Ghi chú</div>
+        <div class="GhiChuBox">
+            <textarea class="inputGhichu" id="inputGhichu" placeholder="Nhập ghi chú tại đây (vd: thêm đường,...)"></textarea>
+        </div>
+        <div class="icon" id = "icon1"></div>
+        <div class="icon" id = "icon2"></div>
+        <div class="icon" id = "icon3"></div>
+    </div>
+
+    <div class="OrderInfoBox">
+        <div class="OrderRect" ></div>
+        <div class="InfoText" id = "OrderInfo">Thông tin đơn hàng</div>
+        <div class="Line" id = "Line4"></div>
+        <ul class = "OrderList" id = "OrderList">
+        
+            @foreach (var item in Model.Cart.cartDetail)
+            {
+
+            <li class="OrderItem">
+                <div class="Itembox"></div>
+                <img class="DrinkImg" id = "DrinkImg" src="~/@item.PrdImage">
+                <div class="InfoText" id = "DrinkName">@item.PrdName</div>
+                <div class="Price">@item.PrdPrice x @item.Quantity</div>
+                <div class="Size">@item.OptionSize</div>
+            </li>
+        }
+        
+
+            
+
+            <li class = "Line" id = "Line5"></li>
+
+            <li class="InfoText" id = "Soluong">Số lượng: @Model.Cart.cart.CartQuantity cốc </li>
+            <li class="InfoText" id = "TotalDrink">Tổng:  </li>
+            <li class="InfoText" id = "TransportCost" >Phí vận chuyển: </li>
+            <li class="InfoText" id = "Total">Tổng cộng: </li>
+            <li class = "Line" id = "Line6"></li>
+            <li class="xxxxx" id="TotalDrinkPrice">@Model.Total</li>
+            <li class="xxxxx" id = "TransportPrice">45.000</li>
+            <li class="xxxxx" id="TotalPrice">@Model.Shipping</li>
+
+            <li class="OrderBox">
+                <div class="Rectbackground"></div>
+
+                @* <input type="submit" value="Đặt hàng" class="Btn"/> *@
+                <form enctype="multipart/form-data" method="post" asp-action="ProcessOrder" asp-controller="Order">
+                    <input type="hidden" name="destination" value="@Model.destination" />
+                    <input type ="hidden" name="note" value="@Model.note" />
+                    <input type ="hidden" name="quantity" value="@Model.quantity" />
+                    <input type ="hidden" name="Total" value="@Model.Total" />
+                    <input type ="hidden" name="Shipping" value="@Model.Shipping" />
+                    <input type="hidden" name="customer" value= "@Model.customer"/>
+                    <input type="hidden" name="Cart" value="@Model.Cart"/>
+
+                    @* <input type="submit" value="Đặt hàng" class="Btn"/> *@
+                    <button type="submit" class="Btn">Đặt hàng</button>
+                </form>
+
+            </li>
+        </ul>
+        <script>
+            var drinkunits = document.querySelectorAll('#OrderList .OrderItem');
+            var unitsPerColumn = 100; 
+            var itemHeight = 100; 
+            var topPosition = 0;
+            var currentColumn = 0;
+
+            for (var i = 0; i < drinkunits.length; i++) {
+                drinkunits[i].style.top = topPosition + 'px';
+
+                currentColumn++;
+                if (currentColumn === unitsPerColumn) {
+                    topPosition += itemHeight;
+                    currentColumn = 0;
+                }
+            }
+
+            window.onload = function() {
+            var itemHeight = 100; // Chiều cao của mỗi mục OrderItem
+            var topPosition = 0;
+
+            // Tính toán chiều cao của OrderRect dựa trên số lượng OrderItem
+            var orderRectHeight = drinkunits.length * itemHeight + 300;
+
+            // Thiết lập chiều cao cho OrderRect
+            var orderRect = document.querySelector('.OrderRect');
+            orderRect.style.height = orderRectHeight + 'px';
+            };
+        </script>
+    </div>
+
+
+    <div class="PaymentBox">
+        <div class="PaymentRect"></div>
+        <div class="InfoText" id = "PaymentInfo">Phương thức thanh toán</div>
+        <button class="momoImg" id = "momoImg"></button>
+        <button class="codImg" id = "codImg"></button>
+        <div class="InfoText" id = "MomoText">Momo</div>
+        <div class="InfoText" id = "CodText">Thanh toán khi nhận hàng</div>
+</div>
+
+<div class="footer">
+    <p>© 2024 Hỏa Tiễn 101</p>
+</div>

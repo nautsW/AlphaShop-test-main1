@@ -1,0 +1,641 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "JetBrains Mono";
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 2px 3px #000000;
+    z-index: 999;
+}
+
+.nav__bar--1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+}
+
+.nav__flag--lang {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__flag {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 30px;
+    height: 25px;
+}
+
+    .nav__flag:hover {
+        opacity: 0.5;
+    }
+
+#nav__flag1 {
+    background-image: url("..\\img\\nav-bar\\vietnam.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+
+#nav__flag2 {
+    background-image: url("..\\img\\nav-bar\\england.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+
+#nav__flag3 {
+    background-image: url("..\\img\\nav-bar\\china.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+
+.nav__logo {
+    background-image: url("..\\img\\nav-bar\\Group1.png");
+    background-size: 100%;
+    margin-top: 5px;
+    width: 200px;
+    height: 69px;
+}
+
+.nav__acc {
+    margin-top: 20px;
+}
+
+.__main--btn {
+    border-radius: 10px;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+}
+
+    .__main--btn:hover {
+        background-color: black;
+        color: white;
+    }
+
+.nav__bar--2 {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.nav__item {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+    .nav__item:hover {
+        color: black;
+        background-color: white;
+    }
+
+.footer {
+    /* position: absolute; */
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.order-manage {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+    .order-manage .div {
+        background-color: #ffffff;
+        width: 1440px;
+        height: 1024px;
+        position: relative;
+    }
+
+    .order-manage .text-wrapper {
+        position: absolute;
+        top: 134px;
+        left: 511px;
+        font-weight: 700;
+        color: #000000;
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    .order-manage .icon {
+        position: absolute;
+        font-size: 20px;
+        top: 156px;
+        left: 480px;
+        right 100px;
+    }
+
+    .order-manage .text-wrapper-2 {
+        position: absolute;
+        top: 214px;
+        left: 80px;
+        font-weight: 700;
+        font-style: italic;
+        color: #000000;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+
+
+
+
+
+
+
+
+    .order-manage .ng-nhp {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 10px;
+        left: 1039px;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+
+    .order-manage .ng-nh-p {
+        position: absolute;
+        width: 77px;
+        top: 6px;
+        left: 11px;
+        font-weight: 700;
+        font-style: italic;
+        color: #000000;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+    }
+
+    .order-manage .ng-nh-p-wrapper {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 10px;
+        left: 919px;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+
+    .order-manage .div-wrapper {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 10px;
+        left: 1159px;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+
+    .order-manage .frame-2 {
+        top: 331px;
+        left: 81px;
+        position: absolute;
+        width: 1279px;
+        height: 50px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        overflow: hidden;
+        border: 1px solid;
+        border-color: #000000;
+        box-shadow: 0px 2px 0px #00000040;
+    }
+
+.frame {
+    top: 261px;
+    left: 80px;
+    position: relative;
+    width: 1279px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 2px 0px #00000040;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#ord__btn {
+    margin-right: 10px;
+}
+
+#ord__btn1 {
+    margin-right: 10px;
+}
+
+.ord__btn1 {
+    margin-right: 10px;
+}
+
+.prop__holder {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.text-wrapper-4 {
+    top: 14px;
+    left: 444px;
+    font-weight: 700;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 14px;
+    margin-right: 20px;
+}
+
+.ord__btn--holder {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.item__holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.modal {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal__body {
+    width: 100px;
+    height: 1000px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.container {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    margin-left: 230px;
+    margin-top: 150px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 35px;
+}
+
+.OrderInfoBox {
+    width: 630px;
+    height: 700px;
+    left: 10px;
+    top: 251px;
+    position: relative;
+}
+
+.OrderRect {
+    width: 630px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+}
+
+#OrderInfo {
+    top: 10px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.OrderList {
+    width: 100%;
+    top: 40px;
+    position: relative;
+}
+
+.OrderItem {
+    width: 100%;
+    height: 100px;
+    right: -30px;
+    position: relative;
+}
+
+.Itembox {
+    width: 500px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+    border: 1px #D9D9D9 solid;
+}
+
+.DrinkImg {
+    width: 90px;
+    height: 90px;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    background: transparent;
+}
+
+#DrinkImg {
+    background-size: 100%;
+    background-position: 0px;
+}
+
+#OrderList li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#DrinkName {
+    left: 108px;
+    top: 12px;
+    font-size: 12px;
+}
+
+.Size {
+    left: 108px;
+    top: 42px;
+    position: absolute;
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+    font-family: JetBrains Mono;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Price {
+    left: 108px;
+    top: 72px;
+    position: absolute;
+    text-align: center;
+    color: #D4B959;
+    font-size: 12px;
+    font-family: JetBrains Mono;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.InfoText {
+    position: absolute;
+    text-align: center;
+    color: black;
+    word-wrap: break-word;
+}
+
+.total__DH {
+    width: 630px;
+    left: 100px;
+    position: absolute;
+}
+
+#Soluong {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+#TotalDrink {
+    margin-top: 20px;
+    font-size: 12px;
+    margin-left: 350px;
+}
+
+#TransportCost {
+    margin-top: 40px;
+    font-size: 12px;
+    margin-left: 350px;
+}
+
+#Total {
+    margin-top: 60px;
+    font-size: 12px;
+    margin-left: 350px;
+}
+
+#Line6 {
+    margin-top: 100px;
+}
+
+.xxxxx {
+    position: relative;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+#TotalDrinkPrice {
+    font-size: 12px;
+    margin-left: 450px;
+    margin-top: 17px;
+}
+
+#TransportPrice {
+    font-size: 12px;
+    margin-left: 450px;
+    margin-top: 7px;
+}
+
+#TotalPrice {
+    font-size: 12px;
+    margin-left: 450px;
+    margin-top: 7px;
+}
+
+.Line {
+    display: inline-flex;
+    width: 870px;
+    height: 0px;
+    left: 25px;
+    position: absolute;
+    border: 1px rgba(0, 0, 0, 0.25) solid;
+}
+
+#Line1 {
+    top: 240px;
+}
+
+#Line2 {
+    top: 520px;
+    margin-top: 200px;
+}
+
+.P_btn {
+    margin-top: 100px;
+    margin-left: 610px;
+    width: 500px
+}
+
+.P_btn1 {
+    margin-top: -25px;
+    margin-left: 355px;
+    width: 550px;
+}
+.P_btn2 {
+    margin-top: -25px;
+    margin-left: 495px;
+    width: 500px;
+}
+
+.btn1 {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    font-size: 15px;
+    width: 100px;
+    height: 25px;
+    background: transparent;
+}
+
+    .btn1:hover {
+        background-color: black;
+        color: white;
+    }
+
+
+.modal__inner {
+    position: relative;
+}
+
+
+
+.accept_btn {
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    right: 200px;
+    cursor: pointer;
+}
+
+.Detail {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: white;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px black solid;
+}
+
+.user_info {
+    left: 105px;
+    top: 100px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.box_info {
+    width: 500px;
+    height: 90.57px;
+    left: 105px;
+    top: 135px;
+    position: absolute;
+}
+
+.user_name {
+    display: flex;
+    position: relative;
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.user_number {
+    display: flex;
+    position: relative;
+    top: 14px;
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.user_addr {
+    display: flex;
+    position: relative;
+    top: 26px;
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
