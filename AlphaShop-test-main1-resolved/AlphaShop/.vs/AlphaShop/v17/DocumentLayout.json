@@ -1,0 +1,1330 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_changeimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_changeimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\userinfo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\userinfo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|d:\\bach khoa lame\\nam 2\\pbl3\\managealphashop\\alphashop-test-main1-resolved\\alphashop\\controllers\\userinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:controllers\\userinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\category\\drinkinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\category\\drinkinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\drinkinfo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\css\\drinkinfo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\staff\\orderdetailmanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\staff\\orderdetailmanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\staffiordermanagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\staffiordermanagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\staff\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\staff\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\data\\ord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:data\\ord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\data\\hahacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:data\\hahacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\staffmanagemainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\staffmanagemainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\orderlist.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\css\\orderlist.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\userinfo\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\userinfo\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\ordermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\ordermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\product_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\product_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\userinfovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\userinfovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\drinkaddvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\drinkaddvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\accountaddvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\accountaddvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\changeimagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\changeimagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\userinfo\\orderlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\userinfo\\orderlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\controllers\\productoptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:controllers\\productoptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\data\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:data\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\data\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:data\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\category.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\css\\category.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_categoryadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_categoryadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\manage\\drinkmanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\manage\\drinkmanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\drinkmanage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\js\\drinkmanage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_drinkinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_drinkinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_changephonenumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_changephonenumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\ordermanage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\js\\ordermanage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\userpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\css\\userpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\ordersuccess.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\css\\ordersuccess.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\order\\ordered.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\order\\ordered.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\manage\\staffmanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\manage\\staffmanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\ordermanage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\ordermanage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\staffmanage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\staffmanage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\manage\\customermanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\manage\\customermanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_accountinfo_1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_accountinfo_1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\staffmanage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\css\\staffmanage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_accountinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_accountinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\customermanage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\js\\customermanage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\drinkmanage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\css\\drinkmanage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\staffmanage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\js\\staffmanage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_adddrink.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_adddrink.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_accountce.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_accountce.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\dropdown.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\css\\dropdown.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\drinkmanage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\drinkmanage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\drinkmanagemainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\drinkmanagemainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\customermanage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\css\\customermanage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_managebars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_managebars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\guest_navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:wwwroot\\assets\\css\\guest_navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_layoutloggedin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_layoutloggedin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\models\\categoryaddvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:models\\categoryaddvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\manage\\statistic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\manage\\statistic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\log\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\log\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\views\\shared\\_layoutguest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8C4DEC5-BD36-4C1F-9BB7-6CFC585C2C40}|AlphaShop.csproj|solutionrelative:views\\shared\\_layoutguest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 528,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StaffIOrderManageVM.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\StaffIOrderManageVM.cs",
+              "RelativeDocumentMoniker": "Models\\StaffIOrderManageVM.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\StaffIOrderManageVM.cs",
+              "RelativeToolTip": "Models\\StaffIOrderManageVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:17:46.487Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StaffController.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "Controllers\\StaffController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwD8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:12:31.55Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderDetailManage.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Staff\\OrderDetailManage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Staff\\OrderDetailManage.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Staff\\OrderDetailManage.cshtml",
+              "RelativeToolTip": "Views\\Staff\\OrderDetailManage.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGwAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T03:01:13Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Staff\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Staff\\Index.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Staff\\Index.cshtml",
+              "RelativeToolTip": "Views\\Staff\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T02:13:08.219Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_changeImage.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_changeImage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_changeImage.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_changeImage.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_changeImage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T09:46:20.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LogController.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\LogController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LogController.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\LogController.cs",
+              "RelativeToolTip": "Controllers\\LogController.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAUwJgAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:41:14.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\UserInfo\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserInfo\\Index.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\UserInfo\\Index.cshtml",
+              "RelativeToolTip": "Views\\UserInfo\\Index.cshtml",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAFkAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T05:41:12.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserInfoController.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\UserInfoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserInfoController.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\UserInfoController.cs",
+              "RelativeToolTip": "Controllers\\UserInfoController.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAIUAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T05:38:38.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DrinkInfo.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Category\\DrinkInfo.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\DrinkInfo.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Category\\DrinkInfo.cshtml",
+              "RelativeToolTip": "Views\\Category\\DrinkInfo.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAGEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T01:35:23.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ManageController.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "Controllers\\ManageController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:41:04.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "drinkinfo.css",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\drinkinfo.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\drinkinfo.css",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\drinkinfo.css",
+              "RelativeToolTip": "wwwroot\\assets\\css\\drinkinfo.css",
+              "ViewState": "AQIAAI4BAAAAAAAAAAAowO8BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-14T01:33:50.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HahaContext.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Data\\HahaContext.cs",
+              "RelativeDocumentMoniker": "Data\\HahaContext.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Data\\HahaContext.cs",
+              "RelativeToolTip": "Data\\HahaContext.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAiwCcAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:40:31.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:11:39.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Ord.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Data\\Ord.cs",
+              "RelativeDocumentMoniker": "Data\\Ord.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Data\\Ord.cs",
+              "RelativeToolTip": "Data\\Ord.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T05:03:31.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "orderlist.css",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\orderlist.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\orderlist.css",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\orderlist.css",
+              "RelativeToolTip": "wwwroot\\assets\\css\\orderlist.css",
+              "ViewState": "AQIAAAcCAAAAAAAAAAAcwBkCAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T05:57:59.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StaffManageMainVM.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\StaffManageMainVM.cs",
+              "RelativeDocumentMoniker": "Models\\StaffManageMainVM.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\StaffManageMainVM.cs",
+              "RelativeToolTip": "Models\\StaffManageMainVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:15:46.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderDetail.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\UserInfo\\OrderDetail.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserInfo\\OrderDetail.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\UserInfo\\OrderDetail.cshtml",
+              "RelativeToolTip": "Views\\UserInfo\\OrderDetail.cshtml",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAIwHUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T05:59:35.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAmwGYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T06:02:49.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderManage.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\OrderManage.cs",
+              "RelativeDocumentMoniker": "Models\\OrderManage.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\OrderManage.cs",
+              "RelativeToolTip": "Models\\OrderManage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T03:06:33.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Product_Category.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\Product_Category.cs",
+              "RelativeDocumentMoniker": "Models\\Product_Category.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\Product_Category.cs",
+              "RelativeToolTip": "Models\\Product_Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:40:31.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderModel.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\OrderModel.cs",
+              "RelativeDocumentMoniker": "Models\\OrderModel.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\OrderModel.cs",
+              "RelativeToolTip": "Models\\OrderModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T04:57:51.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductModel.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\ProductModel.cs",
+              "RelativeDocumentMoniker": "Models\\ProductModel.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\ProductModel.cs",
+              "RelativeToolTip": "Models\\ProductModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T03:02:18.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserInfoVM.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\UserInfoVM.cs",
+              "RelativeDocumentMoniker": "Models\\UserInfoVM.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\UserInfoVM.cs",
+              "RelativeToolTip": "Models\\UserInfoVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:15:56.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterModel.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\RegisterModel.cs",
+              "RelativeToolTip": "Models\\RegisterModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:18:31.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DrinkAddVM.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\DrinkAddVM.cs",
+              "RelativeDocumentMoniker": "Models\\DrinkAddVM.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\DrinkAddVM.cs",
+              "RelativeToolTip": "Models\\DrinkAddVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:40:31.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AccountAddVM.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\AccountAddVM.cs",
+              "RelativeDocumentMoniker": "Models\\AccountAddVM.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\AccountAddVM.cs",
+              "RelativeToolTip": "Models\\AccountAddVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:40:31.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ChangeImageModel.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\ChangeImageModel.cs",
+              "RelativeDocumentMoniker": "Models\\ChangeImageModel.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\ChangeImageModel.cs",
+              "RelativeToolTip": "Models\\ChangeImageModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:16:11.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ChangePasswordModel.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\ChangePasswordModel.cs",
+              "RelativeDocumentMoniker": "Models\\ChangePasswordModel.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\ChangePasswordModel.cs",
+              "RelativeToolTip": "Models\\ChangePasswordModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:16:10.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_NavBar.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_NavBar.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_NavBar.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OrderList.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\UserInfo\\OrderList.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserInfo\\OrderList.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\UserInfo\\OrderList.cshtml",
+              "RelativeToolTip": "Views\\UserInfo\\OrderList.cshtml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAYwDYAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T02:13:42.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAIwBsAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T06:25:28.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProductOptionController.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\ProductOptionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductOptionController.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\ProductOptionController.cs",
+              "RelativeToolTip": "Controllers\\ProductOptionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:11:42.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "category.css",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\category.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\category.css",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\category.css",
+              "RelativeToolTip": "wwwroot\\assets\\css\\category.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T02:40:31.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Data\\Customer.cs",
+              "RelativeDocumentMoniker": "Data\\Customer.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Data\\Customer.cs",
+              "RelativeToolTip": "Data\\Customer.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwCcAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T03:15:53.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Index.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "Views\\Category\\Index.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T11:53:29.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Address.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Data\\Address.cs",
+              "RelativeDocumentMoniker": "Data\\Address.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Data\\Address.cs",
+              "RelativeToolTip": "Data\\Address.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:00:26.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "_CategoryAdd.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_CategoryAdd.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_CategoryAdd.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_CategoryAdd.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_CategoryAdd.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DrinkManage.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Manage\\DrinkManage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\DrinkManage.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Manage\\DrinkManage.cshtml",
+              "RelativeToolTip": "Views\\Manage\\DrinkManage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "drinkmanage.js",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\drinkmanage.js",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\js\\drinkmanage.js",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\drinkmanage.js",
+              "RelativeToolTip": "wwwroot\\assets\\js\\drinkmanage.js",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAswD0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-12T10:56:49.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_DrinkInfo.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_DrinkInfo.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_DrinkInfo.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_DrinkInfo.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_DrinkInfo.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T10:44:37.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "_changePassword.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_changePassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_changePassword.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_changePassword.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_changePassword.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T09:40:56.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_changePhoneNumber.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_changePhoneNumber.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_changePhoneNumber.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_changePhoneNumber.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_changePhoneNumber.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T09:43:09.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "script.js",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\script.js",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\js\\script.js",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\script.js",
+              "RelativeToolTip": "wwwroot\\assets\\js\\script.js",
+              "ViewState": "AQIAABMAAAAAAAAAAAAkwBwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-12T07:33:26.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ordermanage.js",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\ordermanage.js",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\js\\ordermanage.js",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\ordermanage.js",
+              "RelativeToolTip": "wwwroot\\assets\\js\\ordermanage.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-12T02:40:31.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "userpage.css",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\userpage.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\userpage.css",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\userpage.css",
+              "RelativeToolTip": "wwwroot\\assets\\css\\userpage.css",
+              "ViewState": "AQIAAMIBAAAAAAAAAAAIwM0BAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T06:48:42.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T03:39:35.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\AccountService.cs",
+              "RelativeDocumentMoniker": "Models\\AccountService.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\AccountService.cs",
+              "RelativeToolTip": "Models\\AccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T06:05:56.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ordersuccess.css",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\ordersuccess.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\ordersuccess.css",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\ordersuccess.css",
+              "RelativeToolTip": "wwwroot\\assets\\css\\ordersuccess.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T04:22:30.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CartModel.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\CartModel.cs",
+              "RelativeDocumentMoniker": "Models\\CartModel.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\CartModel.cs",
+              "RelativeToolTip": "Models\\CartModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T03:40:07.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "StaffManage.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Manage\\StaffManage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\StaffManage.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Manage\\StaffManage.cshtml",
+              "RelativeToolTip": "Views\\Manage\\StaffManage.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAE4AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:30.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Manage\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\Index.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Manage\\Index.cshtml",
+              "RelativeToolTip": "Views\\Manage\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAABgAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:30.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Ordered.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Order\\Ordered.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\Ordered.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Order\\Ordered.cshtml",
+              "RelativeToolTip": "Views\\Order\\Ordered.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T04:21:32.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ordermanage.html",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\ordermanage.html",
+              "RelativeDocumentMoniker": "wwwroot\\ordermanage.html",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\ordermanage.html",
+              "RelativeToolTip": "wwwroot\\ordermanage.html",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAABIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-12T03:22:17.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "staffmanage.html",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\staffmanage.html",
+              "RelativeDocumentMoniker": "wwwroot\\staffmanage.html",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\staffmanage.html",
+              "RelativeToolTip": "wwwroot\\staffmanage.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-12T02:40:31.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "CustomerManage.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Manage\\CustomerManage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\CustomerManage.cshtml",
+              "ToolTip": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\Views\\Manage\\CustomerManage.cshtml*",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Huukhoa\\NAM 2\\KI 2\\PBL3\\huaxian101\\AlphaShop\\Views\\Manage\\CustomerManage.cshtml*",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFUAAACpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "_AccountCE.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_AccountCE.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AccountCE.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_AccountCE.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AccountCE.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:30.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "staffmanage.css",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\staffmanage.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\staffmanage.css",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\staffmanage.css",
+              "RelativeToolTip": "wwwroot\\assets\\css\\staffmanage.css",
+              "ViewState": "AQIAABIBAAAAAAAAAAAMwB4BAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T02:40:31.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "_AccountInfo_1.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_AccountInfo_1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AccountInfo_1.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_AccountInfo_1.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AccountInfo_1.cshtml",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAALMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "_AccountInfo.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_AccountInfo.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AccountInfo.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_AccountInfo.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AccountInfo.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAG8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "customerManage.js",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\customerManage.js",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\js\\customerManage.js",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\customerManage.js",
+              "RelativeToolTip": "wwwroot\\assets\\js\\customerManage.js",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADkAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-12T02:40:31.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "drinkmanage.css",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\drinkmanage.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\drinkmanage.css",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\drinkmanage.css",
+              "RelativeToolTip": "wwwroot\\assets\\css\\drinkmanage.css",
+              "ViewState": "AQIAAL0CAAAAAAAAAAAMwL0CAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T02:40:31.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "staffmanage.js",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\staffmanage.js",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\js\\staffmanage.js",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\staffmanage.js",
+              "RelativeToolTip": "wwwroot\\assets\\js\\staffmanage.js",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-12T02:40:31.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "_AddDrink.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_AddDrink.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AddDrink.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_AddDrink.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AddDrink.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "drinkmanage.html",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\drinkmanage.html",
+              "RelativeDocumentMoniker": "wwwroot\\drinkmanage.html",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\drinkmanage.html",
+              "RelativeToolTip": "wwwroot\\drinkmanage.html",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-12T02:40:31.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Dropdown.css",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\Dropdown.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\Dropdown.css",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\Dropdown.css",
+              "RelativeToolTip": "wwwroot\\assets\\css\\Dropdown.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T02:40:31.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "DrinkManageMainVM.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\DrinkManageMainVM.cs",
+              "RelativeDocumentMoniker": "Models\\DrinkManageMainVM.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\DrinkManageMainVM.cs",
+              "RelativeToolTip": "Models\\DrinkManageMainVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:40:31.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:40:31.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "customerManage.css",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\customerManage.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\customerManage.css",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\customerManage.css",
+              "RelativeToolTip": "wwwroot\\assets\\css\\customerManage.css",
+              "ViewState": "AQIAACABAAAAAAAAAAAQwCABAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T02:40:31.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAADfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-12T02:40:31.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "_ManageBars.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_ManageBars.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ManageBars.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_ManageBars.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ManageBars.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "guest_navbar.css",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\guest_navbar.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\guest_navbar.css",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\guest_navbar.css",
+              "RelativeToolTip": "wwwroot\\assets\\css\\guest_navbar.css",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T02:40:31.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "_LayoutLoggedin.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_LayoutLoggedin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutLoggedin.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_LayoutLoggedin.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LayoutLoggedin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "CategoryAddVM.cs",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\CategoryAddVM.cs",
+              "RelativeDocumentMoniker": "Models\\CategoryAddVM.cs",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Models\\CategoryAddVM.cs",
+              "RelativeToolTip": "Models\\CategoryAddVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:40:31.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Statistic.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Manage\\Statistic.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manage\\Statistic.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Manage\\Statistic.cshtml",
+              "RelativeToolTip": "Views\\Manage\\Statistic.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Log\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Log\\Login.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Log\\Login.cshtml",
+              "RelativeToolTip": "Views\\Log\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "_LayoutGuest.cshtml",
+              "DocumentMoniker": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_LayoutGuest.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutGuest.cshtml",
+              "ToolTip": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\Views\\Shared\\_LayoutGuest.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LayoutGuest.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:40:31.262Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 85,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

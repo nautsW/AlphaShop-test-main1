@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/staffmanage.css" />
+    <script src="./assets/js/staffmanage.js"></script>
+      <title>Staff Management</title>
+  </head>
+  <body>
+      <div class="qun-l">
+          <div class="div">
+              <div class="horizontal-bar">
+                  <div class="option__holder">
+                      <a href="" class="text-wrapper-2">Trang chủ</a>
+                      <a href="" class="text-wrapper-2">Quản lí khách hàng</a>
+                      <a href="" class="text-wrapper-2">Quản lí nhân viên</a>
+                      <a href="" class="text-wrapper-2">Quản lí thức uống</a>
+                  </div>
+                  <a href="" class="account__name">Xin chào, Nguyễn Hữu Khoa</a>
+              </div>
+              <div class="vertical-bar">
+                  <img class="group" src="./assets/img/nav-bar/Group1.png" />
+                  <button class="component __main--btn" id="creat_acc">Tạo tài khoản</button>
+                  <div class="text-wrapper-6">Quản lí nhân viên</div>
+              </div>
+              <div class="text-wrapper">Quản lí nhân viên</div>
+              <!-- <div class="search-bar">
+              <img class="search-icon" src="./assets/img/customerManage/SearchIcon.svg" />
+              <input type="text" class="search-bar--input" placeholder="Tìm kiếm người dùng">
+            </div> -->
+              <input type="text" class="search-bar search-bar--input" placeholder="Tìm kiếm người dùng">
+              <div class="customer__table">
+                  <!-- tên cột -->
+                  <div class="customer__tuple">
+                      <div class="ctr_text _ct1" id="ctr_id">Mã nhân viên</div>
+                      <div class="ctr_vector _1"></div>
+                      <div class="ctr_text _ct2" id="ctr_username">Tên nhân viên</div>
+                      <div class="ctr_vector _2"></div>
+                      <div class="ctr_text _ct3" id="ctr_phone">Số điện thoại</div>
+                      <div class="ctr_vector _3"></div>
+                      <div class="ctr_text _ct4" id="ctr_address">Tên tài khoản</div>
+                      <div class="ctr_vector _4"></div>
+                      <div class="ctr_text _ct5" id="ctr_status">Trạng thái</div>
+                      <div class="ctr_vector _5"></div>
+                      <div class="ctr_text _ct6" id="ctr_access">Thao tác</div>
+                  </div>
+                  <!-- tên cột -->
+                  <!-- khách hàng đầu list-->
+                  <div class="customer__tuple-1">
+                      <div class="ctr_text" id="ctr_id-1">ctr_id</div>
+                      <div class="ctr_vector _1"></div>
+                      <div class="ctr_text" id="ctr_username-1">ctr_username</div>
+                      <div class="ctr_vector _2"></div>
+                      <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
+                      <div class="ctr_vector _3"></div>
+                      <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
+                      <div class="ctr_vector _4"></div>
+                      <div class="ctr_text" id="ctr_status-1">ctr_status</div>
+                      <div class="ctr_vector _5"></div>
+                      <button class="__main--btn" id="ctr_btn">Chi tiết</button>
+                  </div>
+                  <!-- khách hàng đầu list-->
+                  <!-- khách hàng -->
+                  <div class="customer__tuple-1">
+                      <div class="ctr_text" id="ctr_id-1">ctr_id</div>
+                      <div class="ctr_vector _1"></div>
+                      <div class="ctr_text" id="ctr_username-1">ctr_username</div>
+                      <div class="ctr_vector _2"></div>
+                      <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
+                      <div class="ctr_vector _3"></div>
+                      <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
+                      <div class="ctr_vector _4"></div>
+                      <div class="ctr_text" id="ctr_status-1">ctr_status</div>
+                      <div class="ctr_vector _5"></div>
+                      <button class="__main--btn" id="ctr_btn">Chi tiết</button>
+                  </div>
+                  <!-- khách hàng -->
+                  <!-- khách hàng đuôi list-->
+                  <div class="customer__tuple-2">
+                      <div class="ctr_text" id="ctr_id-1">ctr_id</div>
+                      <div class="ctr_vector _1"></div>
+                      <div class="ctr_text" id="ctr_username-1">ctr_username</div>
+                      <div class="ctr_vector _2"></div>
+                      <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
+                      <div class="ctr_vector _3"></div>
+                      <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
+                      <div class="ctr_vector _4"></div>
+                      <div class="ctr_text" id="ctr_status-1">ctr_status</div>
+                      <div class="ctr_vector _5"></div>
+                      <button class="__main--btn" id="ctr_btn">Chi tiết</button>
+                  </div>
+                  <!-- khách hàng đuôi list -->
+
+              </div>
+          </div>
+      </div>
+      
+      <!--info-->
+      <div id="modal1" class="modal">
+          <div class="modal__overlay">
+          </div>
+          <div class="modal__body">
+              <div class="modal__inner">
+                  <div class="staff_info">
+                      <div class="rectangle"></div>
+                      <h2>Thông tin nhân viên</h2>
+                      <div class="staff_group">
+                          <div class="staff_name">Tên tài khoản: Nguyễn Hữu Khoa</div>
+                      </div>
+                      <div class="staff_group">
+                          <div class="staff_id">Mã khách hàng: huaxian101</div>
+                      </div>
+                      <div class="staff_group">
+                          <div class="staff_addr">Địa chỉ: Liên Chiểu, Đà Nẵng</div>
+                      </div>
+                      <div class="staff_group">
+                          <div class="staff_phonenumber">Số điện thoại: 0338104272</div>
+                      </div>
+                      <img class="logo" src="assets\img\user\Lmao.png" />
+
+                      <div class="comp">
+                          <div class="holder">
+                              <button class="btn1">Hạn chế tài khoản</button>
+                              <button class="btn1">Xóa tài khoản này</button>
+                              <button class="btn1" id="close_btn">Thoát</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--info-->
+
+      <!--Create/Edit-->
+      <div id="modal2" class="modal">
+          <div class="modal__overlay">
+          </div>
+          <div class="modal__body2">
+              <div class="modal__inner">
+                  <div class="drink-add">
+                      <div class="main-text">Tạo tài khoản/Chỉnh sửa tài khoản</div>
+                      <div class="input_area">
+                          <div class="input_area-1">
+                              <label for="name-box" class="label--1">Tên đăng nhập</label>
+                              <input type="text" class="name-box" placeholder="Nhập tên đăng nhập" required />
+                          </div>
+                          <div class="input_area-1">
+                              <label for="n-box" class="label--1">Tên thật</label>
+                              <input type="text" class="n-box" placeholder="Nhập tên thật" required />
+                          </div>
+                          <div class="input_area-1">
+                              <label for="pass-box" class="label--1">Mật khẩu</label>
+                              <input type="text" class="pass-box" placeholder="Nhập mật khẩu" required />
+                          </div>
+                          <div class="input_area-1">
+                              <label for="pass-box" class="label--1">Số điện thoại</label>
+                              <input type="number" class="pass-box" placeholder="số điện thoại" required />
+                          </div>
+                          <div class="input_area-1">
+                              <label for="radio-box" class="label--1">Giới tính</label>
+                              <div class="radio-box">
+                                  <input type="radio" class="radio__btn" id="rd__1" name="gender" value="1" required>
+                                  <label for="rd__1" class="label--2">Nam</label>
+
+                                  <input type="radio" class="radio__btn" name="gender" id="rd__2" value="0">
+                                  <label for="rd__2" class="label--2">Nữ</label>
+                              </div>
+                          </div>
+                          <div class="input_area-1">
+                              <label for="radio-box__2" class="label--1">Phân quyền</label>
+                              <div class="radio-box__2">
+                                  <input type="radio" class="radio__btn" id="rd__3" name="access" value="1">
+                                  <label for="rd__3" class="label--2">Customer</label>
+
+                                  <input type="radio" class="radio__btn" name="access" id="rd__4" value="0">
+                                  <label for="rd__4" class="label--2">Staff</label>
+                              </div>
+                          </div>
+                          <div class="input_area-1">
+                              <label for="email_box" class="label--1">Email</label>
+                              <input type="text" class="email-box" placeholder="Nhập email" />
+                          </div>
+                          <div class="input_area-1">
+                              <label for="desc-box" class="label--1">Địa chỉ</label>
+                              <textarea class="desc-box" placeholder="Nhập địa chỉ"></textarea>
+                          </div>
+
+                          <button class="__main--btn" id="btn-OK">OK</button>
+                          <button class="__main--btn" id="btn-Cancel">Hủy</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--Create/Edit-->
+
+  </body>
+</html>

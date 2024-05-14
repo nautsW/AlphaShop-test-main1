@@ -1,0 +1,222 @@
+@model AlphaShop.Models.ProductModel
+@using AlphaShop.Models
+@{
+    ViewData["Title"] = "Info";
+}
+@inject AccountService AccountService
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/drinkinfo.css">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <script src="~/assets/js/drinkinfo.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <input type="hidden" id="optsize" name="optsize" value="">
+    <input type="hidden" id="opttype" name="opttype" value="">
+
+    <!-- #done-->
+    @* <form method="post" asp-controller="Cart"> *@
+    <!--#drinkChoice-->
+    <img class="DrinkImg" src="~/@Model.product.PrdImage" />
+    <div class="DescChoice">
+
+        <div class="DrinkName">@Model.product.PrdName</div>
+        <div class="Size">Size:</div>
+        <div class="option_btn" style="width: 45px; height: 30px; left: 831px; top: 75px;">
+            <label class="size_label">
+                <input type="radio" name="size" value="1" class="size_radio">
+                <span class="size_box">M</span>
+            </label>
+        </div>
+        <div class="option_btn" style="width: 45px; height: 30px; left: 896px; top: 75px;">
+            <label class="size_label">
+                <input type="radio" name="size" value="2" class="size_radio">
+                <span class="size_box">X</span>
+            </label>
+        </div>
+        <div class="option_btn" style="width: 45px; height: 30px; left: 961px; top: 75px;">
+            <label class="size_label">
+                <input type="radio" name="size" value="3" class="size_radio">
+                <span class="size_box">XL</span>
+            </label>
+        </div>
+
+        <div class="Loai">Loại:</div>
+        <div class="option_btn" style="width: 183px; height: 30px; left: 831px; top: 130px;">
+            <label class="size_label">
+                <input type="radio" name="loai" value="1" class="size_radio">
+                <span class="size_box" id="boxdacbiet">Đá riêng </span>
+            </label>
+        </div>
+        <div class="option_btn" style="width: 217px; height: 30px; left: 1033px; top: 130px;">
+            <label class="size_label">
+                <input type="radio" name="loai" value="2" class="size_radio">
+                <span class="size_box" id="boxdacbiet">Đá chung</span>
+            </label>
+        </div>
+
+        <div class="Ghichu">Ghi chú thêm cho người bán:</div>
+        <div class="ghichu_box">
+            <textarea class="inputGhichu" id="inputGhichu" placeholder="Nhập ghi chú tại đây (vd: thêm đường,...) @Model.option_size @Model.option_type"></textarea>
+        </div>
+        <form class="option_btn" method="post" asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.product.PrdId" style="width:200px; height: 46px; left: 750px; top: 382px;">
+            <input type="hidden" name="optsize" id="optsize_addtocart" value="">
+            <input type="hidden" name="opttype" id="opttype_addtocart" value="">
+            <button type="submit" class="order_box">ĐẶT HÀNG NGAY</button>
+        </form>
+
+        <form class="option_btn" method="post" asp-controller="Cart" asp-action="UpdateCart" asp-route-id="@Model.product.PrdId" style="width: 200px; height: 46px; left: 926px; top: 382px;">
+            <input type="hidden" name="optsize" id="optsize_updatecart" value="">
+            <input type="hidden" name="opttype" id="opttype_updatecart" value="">
+            <button type="submit" class="order_box">THÊM VÀO GIỎ</button>
+        </form>
+
+
+        @if (AccountService.IsLoggedIn)
+        {
+            <div class="option_btn" style="width: 289px; height: 46px; left: 0px; top: 1403px;">
+                <button class="login_box" id="cmt_id">BÌNH LUẬN</button>
+            </div>
+            <div id="modal1" class="modal">
+                <div class="modal__overlay">
+                </div>
+                <div class="modal__body">
+                    <div class="modal__inner">
+                        <div class="container">
+                            <div class="login-box">
+                                <h2>Nhập bình luận của bạn</h2>
+                                <div class="input-group">
+                                    @* <textarea type="text" class="input" name="comment" required> *@
+                                    <textarea class="input" placeholder="Viết gì đó..."></textarea>
+                                </div>
+                                <button class="btn1">Đồng ý</button>
+                                <button class="btn1" id="ev">Hủy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <form class="option_btn" style="width: 289px; height: 46px; left: 0px; top: 1403px;">
+                <button class="login_box" asp-action="Login" asp-controller="Log">ĐĂNG NHẬP ĐỂ NHẬN XÉT</button>
+            </form>
+        }
+
+
+
+        @* <form class="option_btn" style="width:200px; height: 46px; left: 524px; top: 382px;">
+        <button class="order_box" asp-action="AddToCart" asp-controller="Cart" asp-route-optsize="@Model.option_size" asp-route-opttype="@Model.option_type" asp-route-id="@Model.product.PrdId">ĐẶT HÀNG NGAY</button>
+        </form>
+        <form class="option_btn" style="width: 200px; height: 46px; left: 700px; top: 382px;">
+        <button class="order_box" asp-action="UpdateCart" asp-controller="Cart" asp-route-optsize="@Model.option_size" asp-route-opttype="@Model.option_type" asp-route-id="@Model.product.PrdId">THÊM VÀO GIỎ</button>
+        </form> *@
+        @* <form class="option_btn" style="width:200px; height: 46px; left: 524px; top: 382px;">
+        <input type="submit" class="order_box" asp-action="AddToCart" asp-controller="Cart" text value=@Model>ĐẶT HÀNG NGAY</input>
+        </form>
+        <form class="option_btn" style="width: 200px; height: 46px; left: 700px; top: 382px;">
+        <input type="submit" class="order_box" asp-action="UpdateCart" asp-controller="Cart" value=@Model>THÊM VÀO GIỎ</input>
+        </form>
+        <div class="option_btn" style="width: 289px; height: 46px; left: 0px; top: 1403px;">
+        <button class="login_box" >ĐĂNG NHẬP ĐỂ NHẬN XÉT</button>
+        </div>
+        </div>
+        <!--#drinkChoiceEnd-->
+        @* </form> *@
+        <!--ReviewBox-->
+        <div class="Rectangle21" style="width: 100%; height: 40px; left: 0px; top: 799px; position: absolute; background: #8C8A8A"></div>
+        <div class="CustomerReview" style="left: 208px; top: 809px; position: absolute; color: white; font-size: 20px; font-family: JetBrains Mono; font-style: italic; font-weight: 500; line-height: 20px; word-wrap: break-word">Đánh giá của khách hàng</div>
+
+        <ul class="review-list">
+            <il class="Component">
+                <div class="Comment">
+                    <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
+                    <ul class="ratings">
+                        <img class="Star1" src="~/assets/img/review/star-1.png" />
+                        <img class="Star2" src="~/assets/img/review/star-1.png" />
+                        <img class="Star3" src="~/assets/img/review/star-1.png" />
+                        <img class="Star4" src="~/assets/img/review/star-1.png" />
+                        <img class="Star5" src="~/assets/img/review/star-1.png" />
+                    </ul>
+                    <div class="Legiahan617">legiahan617</div>
+                    <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
+                </div>
+            </il>
+
+            <il class="Component">
+                <div class="Comment">
+                    <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
+                    <ul class="ratings">
+                        <img class="Star1" src="~/assets/img/review/star-1.png" />
+                        <img class="Star2" src="~/assets/img/review/star-1.png" />
+                        <img class="Star3" src="~/assets/img/review/star-1.png" />
+                        <img class="Star4" src="~/assets/img/review/star-1.png" />
+                        <img class="Star5" src="~/assets/img/review/star-1.png" />
+                    </ul>
+                    <div class="Legiahan617">legiahan617</div>
+                    <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
+                </div>
+            </il>
+
+            <il class="Component">
+                <div class="Comment">
+                    <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
+                    <ul class="ratings">
+                        <img class="Star1" src="~/assets/img/review/star-1.png" />
+                        <img class="Star2" src="~/assets/img/review/star-1.png" />
+                        <img class="Star3" src="~/assets/img/review/star-1.png" />
+                        <img class="Star4" src="~/assets/img/review/star-1.png" />
+                        <img class="Star5" src="~/assets/img/review/star-1.png" />
+                    </ul>
+                    <div class="Legiahan617">legiahan617</div>
+                    <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
+                </div>
+            </il>
+
+            <il class="Component">
+                <div class="Comment">
+                    <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
+                    <ul class="ratings">
+                        <img class="Star1" src="~/assets/img/review/star-1.png" />
+                        <img class="Star2" src="~/assets/img/review/star-1.png" />
+                        <img class="Star3" src="~/assets/img/review/star-1.png" />
+                        <img class="Star4" src="~/assets/img/review/star-1.png" />
+                        <img class="Star5" src="~/assets/img/review/star-1.png" />
+                    </ul>
+                    <div class="Legiahan617">legiahan617</div>
+                    <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
+                </div>
+            </il>
+        </ul>
+        <!-- Trường ẩn để lưu trữ giá trị của option_size và option_type -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Lắng nghe sự kiện click trên các radio box
+                var radioButtons = document.querySelectorAll('.size_radio, .loai_radio');
+                radioButtons.forEach(function (radioButton) {
+                    radioButton.addEventListener('click', function () {
+                        // Lấy giá trị của radio box được chọn
+                        var sizeValue = document.querySelector('input[name="size"]:checked').value;
+                        var loaiValue = document.querySelector('input[name="loai"]:checked').value;
+
+                        // Cập nhật giá trị trong các trường ẩn của form AddToCart
+                        document.getElementById('optsize_addtocart').value = sizeValue;
+                        document.getElementById('opttype_addtocart').value = loaiValue;
+
+                        // Cập nhật giá trị trong các trường ẩn của form UpdateCart
+                        document.getElementById('optsize_updatecart').value = sizeValue;
+                        document.getElementById('opttype_updatecart').value = loaiValue;
+                    });
+                });
+            });
+
+        </script>
+
+
+
+
+        <!--ReviewBoxEnd-->
+</body>
