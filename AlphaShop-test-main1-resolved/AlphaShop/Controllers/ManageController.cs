@@ -19,7 +19,6 @@ namespace AlphaShop.Controllers
             _context = new HahaContext();
             wwwroot = webHostEnvironment;
         }
-
         public IActionResult Index()
         {
             TempData["Check"] = "Index";
@@ -59,7 +58,7 @@ namespace AlphaShop.Controllers
                     PrdPrice = vM.PrdPrice,
                     PrdDesc = vM.PrdDesc,
                     PrdStatus = vM.PrdStatus,
-                    PrdImage = (vM.PrdImage == null)? "assets/img/drinklist/png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png" : "assets/img/drinklist/" + filename,
+                    PrdImage = (vM.PrdImage == null)? "assets/img/drinklist/png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png" : "assets/img/drinklist/" + "_" + filename,
                     PrdVisible = true
                 };
                 _context.Products.Add(product);
@@ -72,7 +71,7 @@ namespace AlphaShop.Controllers
                 check.PrdPrice = vM.PrdPrice;
                 check.PrdStatus = vM.PrdStatus;
                 check.PrdDesc = vM.PrdDesc;
-                check.PrdImage = (vM.PrdImage == null) ? "assets/img/drinklist/png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png" : "assets/img/drinklist/" + filename;
+                check.PrdImage = (vM.PrdImage == null) ? "assets/img/drinklist/png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png" : "assets/img/drinklist/" + "_" + filename;
                 check.PrdVisible = true;
                 _context.Update(check);
                 _context.Entry(check).State = EntityState.Modified;
@@ -135,7 +134,7 @@ namespace AlphaShop.Controllers
                 check.PrdPrice = vm.PrdPrice;
                 check.PrdStatus = vm.PrdStatus;
                 check.PrdDesc = vm.PrdDesc;
-                if(vm.PrdImage != null) check.PrdImage = "assets/img/drinklist/" + filename; 
+                if(vm.PrdImage != null) check.PrdImage = "assets/img/drinklist/" + "_" + filename;
                 _context.Update(check);
                 _context.Entry(check).State = EntityState.Modified;
                 _context.SaveChanges();
@@ -369,8 +368,134 @@ namespace AlphaShop.Controllers
         }
         public IActionResult Statistic()
         {
+            int TotalWA = 0;
+            int RegisteredAcc = _context.Customers.Count();
+            decimal TotalRevenue = 0;
+            int TotalAcptOrder = _context.Ords.Where(p => p.OrdStatus == 1).Count();
+            int TotalPrd = _context.Products.Count();
+            foreach (WebAccess item in _context.WebAccesses)
+            {
+                TotalWA += item.WaCount;
+            }
+            foreach (Ord item in _context.Ords)
+            {
+                TotalRevenue += (decimal)item.OrdPrice;
+            }
+            StatisticsVM vm = new StatisticsVM
+            {
+                TotalWA = TotalWA,
+                RegisteredAcc = RegisteredAcc,
+                TotalRevenue = TotalRevenue,
+                TotalAcptOrder = TotalAcptOrder,
+                TotalPrd = TotalPrd
+            };
+
+
             TempData["Check"] = "Statistic";
-            return View();
+            return View(vm);
+        }
+
+        public string GetMonthName(int month)
+        {
+            DateTime dateTime = new DateTime(2024, month, 1);
+            return dateTime.ToString("MMMM");
+        }
+        [HttpGet]
+        public IActionResult GetRevenueData(int year)
+        {
+            List<StatisticColumnVM> columns = new List<StatisticColumnVM>();
+            for (int i = 1; i <= 12; i++)
+            {
+                var check = _context.Ords.Where(p => p.OrdDate.Value.Month == i);
+                decimal total = 0;
+                foreach (var item in check)
+                {
+                    total += (decimal)item.OrdPrice;
+                }
+                StatisticColumnVM columnVM = new StatisticColumnVM
+                {
+                    Month = GetMonthName(i),
+                    total = total,
+                };
+                columns.Add(columnVM);
+            }
+            var ls = columns;
+            return Json(ls);
+        }
+
+        [HttpGet]
+        public IActionResult GetWebAccessData(int year)
+        {
+            List<WebAccessListModel> list = new List<WebAccessListModel>();
+            for (int i = 1; i <= 12; i++)
+            {
+                var check = _context.WebAccesses.Where(p => p.WaDate.Month == i && p.WaDate.Year == year);
+                if (check != null)
+                {
+                    int count = 0;
+                    foreach (WebAccess item in check)
+                    {
+                        count += item.WaCount;
+                    }
+                    WebAccessListModel model = new WebAccessListModel
+                    {
+                        Month = GetMonthName(i),
+                        Count = count
+                    };
+                    list.Add(model);
+                }
+            }
+            var ls = list;
+            return Json(ls);
+        }
+        [HttpGet]
+        public IActionResult GetPrdOrdTimeData(int year)
+        {
+            List<WebAccessListModel> columns = new List<WebAccessListModel>();
+            if (_context.Ords.Any(p => p.OrdDate.Value.Year == year) == true)
+            {
+
+                var list = _context.Products.ToList();
+                foreach (Product item in list) //product prdid =...
+                {
+                    int count = 0;
+                    var cd = _context.OrdDetails.Where(p => p.PrdId == item.PrdId).ToList(); //list cd voi prdid
+                    foreach (OrdDetail item2 in cd)
+                    {
+                        if(_context.Ords.Any(p => p.OrdId == item2.OrdId && p.OrdDate.Value.Year == year))
+                        count += (int)item2.Quantity;
+
+                    }
+                    WebAccessListModel vM = new WebAccessListModel
+                    {
+                        Month = item.PrdName,
+                        Count = count
+                    };
+                    columns.Add(vM);
+                }
+            }
+            var ls = columns.OrderByDescending(p => p.Count).Take(5);
+            return Json(ls);
+        }
+        [HttpGet]
+        public IActionResult GetOrdCountData(int year)
+        {
+            List<OrdStatisticsModel> list = new List<OrdStatisticsModel>();
+            for (int i = 1; i <= 12; i++)
+            {
+                var mainlist = _context.Ords.Where(p => p.OrdDate.Value.Month == i);
+                int accept = mainlist.Where(p => p.OrdStatus == 1).Count();
+                int denied = mainlist.Where(p => p.OrdStatus == 0).Count();
+                OrdStatisticsModel ordStatisticsModel = new OrdStatisticsModel
+                {
+                    Month = GetMonthName(i),
+                    Accepted = accept,
+                    Denied = denied
+                };
+                list.Add(ordStatisticsModel);
+            }
+            var ls = list;
+            return Json(ls);
         }
     }
 }

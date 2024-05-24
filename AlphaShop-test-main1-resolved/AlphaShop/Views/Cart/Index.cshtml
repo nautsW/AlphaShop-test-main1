@@ -22,9 +22,27 @@
                     <input type="hidden" name="opttype" value="@item.OptionType" />
                     <div class="Itembox"></div>
                     <img class="ItemImg" src="~/@item.PrdImage" />
-                    <div class="ItemName">@item.PrdName'</div>
+                    <div class="ItemName">@item.PrdName</div>
                     <div class="Total"> Total: @item.PrdPrice x @item.Quantity</div>
-                    <div class="Size"> ID: @item.OptionSize @item.OptionType</div>
+                    @if (item.OptionSize == 1){
+                        <div class="Size"> Size:M</div>
+                    }
+                    @if (item.OptionSize == 2)
+                    {
+                        <div class="Size"> Size:X</div>
+                    }
+                    @if(item.OptionSize == 3){
+                        <div class="Size"> Size:XL</div>
+                    }
+                    @if(item.OptionType == 1)
+                    {
+                        <div class="Option"> Option:Đá riêng</div>
+                    }
+                    @if(item.OptionType == 2)
+                    {
+                        <div class="Option"> Option:Đá chung</div>
+                    }
+                    @* <div class="Size"> Size: @item.OptionSize Option: @item.OptionType</div> *@
                     <button type="submit" class="X"></button>
                 </form>
             </li>

@@ -14,6 +14,7 @@
     <script src="~/assets/js/drinkmanage.js" runat="server" asp-append-version="true"></script>
     @* <script src="~/assets/js/DrinkInfo.js" runat="server" asp-append-version="true"></script> *@
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Drink Manage</title>
 </head>
 <body>
@@ -47,7 +48,7 @@
 
             <div class="drink__holder" id="dholder__js">
                 <div class="text-wrapper">Quản lí thức uống</div>
-                <input type="text" class="search-bar search-bar--input" id="search_js"placeholder="Tìm kiếm thức uống" onkeydown="search()">
+                <input type="text" class="search-bar search-bar--input" id="search_js" placeholder="Tìm kiếm thức uống" onkeydown="search()">
                 <!-- category board -->
                 <div class="Rectangle18">
                     <ul id="drinkList">
@@ -118,41 +119,30 @@
 
 </body>
 </html>
-@* <script>
-    search = function (){
-        const searchstring = document.getElementById('search_js').value;
-        if (a !== null) { 
-            const htmlsearch = document.getElementById('dholder__js');
-            htmlsearch.innerHTML = 
-            '@foreach(var item in Model.addModel.categories)
-                    {
-                        <div class="CategoryName">
-                            <div>@item.CgrName</div>
-                            <div class="holder__main">
-                        @foreach(var item2 in Model.products.Where(p => p.CgrId == item.CgrId && p.PrdVisible == true))
-                        {
-                                    if(item2 != null)
-                                    {
-                                    <div class="Drinkunit">
-                                            <button class="Drinkbox" id="drink_btn" onclick="Info(@item2.PrdId,'@item2.PrdName', @item2.PrdPrice, @item2.PrdStatus, '/assets/img/drinklist/@item2.PrdImage','@item2.PrdDesc')">
-                                            <img class="Imageholder" src="~/assets/img/drinklist/@item2.PrdImage">
-                                            <div class="holder__1">
-                                                <div class="BoxTitle">@item2.PrdName</div>
-                                                <div class="price">@item2.PrdPrice</div>
-                                            </div>
-                                        </button>
-                                        </div>
-                                    }
-                                    else
-                                    {
-                                    <br />
-                                    <div>Không có</div>
-                                        
-                                    }
-                        }
-                            </div>
-                        </div>
-                    }'
+<script>
+    $(document).ready(function () {
+        function Contains(text_one, text_two) {
+            if (text_one.indexOf(text_two) != -1)
+                return true;
         }
-    }
-</script> *@
+        $("#search_js").keyup(function () {
+            var searchText = $("#search_js").val().toLowerCase();
+            $(".holder__main").each(function () {
+                $(this).children(".Drinkunit").each(function () {
+                    if (!Contains($(this).children(".Drinkbox").children(".holder__1").children(".BoxTitle").text().toLowerCase(), searchText)) {
+                        $(this).hide();
+                    }
+                    else {
+                        $(this).show();
+                    }
+                });
+
+
+            });
+        });
+
+
+    });
+
+
+</script>

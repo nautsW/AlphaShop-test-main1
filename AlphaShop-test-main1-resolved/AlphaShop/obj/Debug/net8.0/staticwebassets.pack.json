@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\assets\\css\\Dropdown.css"
     },
     {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\Statistics.css",
+      "PackagePath": "staticwebassets\\assets\\css\\Statistics.css"
+    },
+    {
       "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\adminhome.css",
       "PackagePath": "staticwebassets\\assets\\css\\adminhome.css"
     },
@@ -145,6 +149,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\drinklist\\566c9979-d7fd-46ef-bd15-15190e545e9d-14.-Ca-phe-nau.png"
     },
     {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\5b012e86-3e4c-4404-aa4b-276102e6dc03-407902949_321477414035430_3519260040187782604_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\5b012e86-3e4c-4404-aa4b-276102e6dc03-407902949_321477414035430_3519260040187782604_n.jpg"
+    },
+    {
       "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\5b1d0a5a-051c-4d2c-918b-589772ad609a-image-holder3.png",
       "PackagePath": "staticwebassets\\assets\\img\\drinklist\\5b1d0a5a-051c-4d2c-918b-589772ad609a-image-holder3.png"
     },
@@ -229,80 +237,80 @@
       "PackagePath": "staticwebassets\\assets\\img\\order\\usericon.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\366016412_1022426768779018_3688136470597404410_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\366016412_1022426768779018_3688136470597404410_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\367746031_262577929959161_8639283531881028750_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\367746031_262577929959161_8639283531881028750_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\375585075_1202634850668756_4595484096234248514_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\375585075_1202634850668756_4595484096234248514_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\377293739_254295497018066_6623516974077992523_n.png",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\377293739_254295497018066_6623516974077992523_n.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\377746609_970863090812493_1228628965172028110_n.png",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\377746609_970863090812493_1228628965172028110_n.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\400447154_122111109068094577_7834628910978201993_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\400447154_122111109068094577_7834628910978201993_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\406468597_666046458949146_1778562816782508641_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\406468597_666046458949146_1778562816782508641_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\407902949_321477414035430_3519260040187782604_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\407902949_321477414035430_3519260040187782604_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\408106703_741846807961364_7146286269929988060_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\408106703_741846807961364_7146286269929988060_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\410458536_3477826245860883_1077904512108268470_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\410458536_3477826245860883_1077904512108268470_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\419374291_24447487931562049_1154642393842976593_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\419374291_24447487931562049_1154642393842976593_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\423224311_392178716697675_300880848738751595_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\423224311_392178716697675_300880848738751595_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\425414640_122126788076122716_8025457533247283284_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\425414640_122126788076122716_8025457533247283284_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\432967121_122140130594092704_8626983994602865336_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\432967121_122140130594092704_8626983994602865336_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\434161138_441667771540199_8781139009256119930_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\434161138_441667771540199_8781139009256119930_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\436351838_399853976232335_3412873530645696783_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\436351838_399853976232335_3412873530645696783_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\438871707_423684010421002_9133769408395613058_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\438871707_423684010421002_9133769408395613058_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\46449484_106464573708580_7153179069830397952_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\46449484_106464573708580_7153179069830397952_n.jpg"
-    },
-    {
       "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\IamaTOMIC.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\pfp\\IamaTOMIC.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_366016412_1022426768779018_3688136470597404410_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_366016412_1022426768779018_3688136470597404410_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_367746031_262577929959161_8639283531881028750_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_367746031_262577929959161_8639283531881028750_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_375585075_1202634850668756_4595484096234248514_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_375585075_1202634850668756_4595484096234248514_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_377293739_254295497018066_6623516974077992523_n.png",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_377293739_254295497018066_6623516974077992523_n.png"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_377746609_970863090812493_1228628965172028110_n.png",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_377746609_970863090812493_1228628965172028110_n.png"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_400447154_122111109068094577_7834628910978201993_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_400447154_122111109068094577_7834628910978201993_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_406468597_666046458949146_1778562816782508641_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_406468597_666046458949146_1778562816782508641_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_407902949_321477414035430_3519260040187782604_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_407902949_321477414035430_3519260040187782604_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_408106703_741846807961364_7146286269929988060_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_408106703_741846807961364_7146286269929988060_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_410458536_3477826245860883_1077904512108268470_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_410458536_3477826245860883_1077904512108268470_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_419374291_24447487931562049_1154642393842976593_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_419374291_24447487931562049_1154642393842976593_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_423224311_392178716697675_300880848738751595_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_423224311_392178716697675_300880848738751595_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_425414640_122126788076122716_8025457533247283284_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_425414640_122126788076122716_8025457533247283284_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_432967121_122140130594092704_8626983994602865336_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_432967121_122140130594092704_8626983994602865336_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_434161138_441667771540199_8781139009256119930_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_434161138_441667771540199_8781139009256119930_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_436351838_399853976232335_3412873530645696783_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_436351838_399853976232335_3412873530645696783_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_438871707_423684010421002_9133769408395613058_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_438871707_423684010421002_9133769408395613058_n.jpg"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\_46449484_106464573708580_7153179069830397952_n.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pfp\\_46449484_106464573708580_7153179069830397952_n.jpg"
     },
     {
       "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\latest.png",
@@ -327,6 +335,14 @@
     {
       "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\DrinkInfo.js",
       "PackagePath": "staticwebassets\\assets\\js\\DrinkInfo.js"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\Statistics.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Statistics.js"
+    },
+    {
+      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\chart.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\chart.min.js"
     },
     {
       "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\customerManage.js",

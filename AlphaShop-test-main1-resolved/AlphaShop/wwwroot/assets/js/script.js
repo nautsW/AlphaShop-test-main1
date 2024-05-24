@@ -5,6 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeButton2 = document.getElementById('ev2');
     const closeButton3 = document.getElementById('ev3');
     const closeButton4 = document.getElementById('ev4');
+    const closeButton5 = document.getElementById('ev5');
+    const showBtn = document.getElementsByName("updbtn");
+
+    for (const btn of showBtn) {
+        btn.addEventListener('click', function () {
+            modal6.style.display = 'flex';
+        });
+    }
     btncp.addEventListener('click', function () {
         modal1.style.display = 'flex';
     });
@@ -37,6 +45,13 @@ document.addEventListener('DOMContentLoaded', function () {
     closeButton4.addEventListener('click', function () {
         modal5.style.display = 'none';
     });
+    closeButton5.addEventListener('click', function () {
+        modal6.style.display = 'none';
+    });
 });
-
+Pass = function (id) {
+    console.log(id);
+    document.getElementById('id__js').value = id;
+    document.getElementById('id__js-1').value = id;
+}
 

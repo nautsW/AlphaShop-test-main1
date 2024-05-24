@@ -181,9 +181,12 @@ body {
 
 .button-container {
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: row;
 }
 
 .btn {
@@ -350,6 +353,7 @@ h2 {
     width: 90px;
     height: 30px;
     background: transparent;
+    margin-right: 10px;
 }
 
     .btnch:hover {
@@ -364,12 +368,21 @@ h2 {
     margin-top: 130px;
     background: white;
     margin-left: 300px;
+    overflow-x: scroll;
 }
 
-
+.modal__body4 {
+    width: 1000px;
+    height: 400px;
+    background-color: white;
+    margin: 130px;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+}
 .using {
     left: 83px;
-    top: 50px;
+    top: 65px;
     position: absolute;
     color: black;
     font-size: 20px;
@@ -393,20 +406,21 @@ h2 {
     font-weight: 700;
 }
 
-.All_addr1 {
-    width: 1280px;
-    height: 83px;
+.all-addresses {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
     left: 80px;
     top: 235px;
-    position: absolute;
+    
+
 }
 
-.All_addr2 {
+.address-item {
     width: 1280px;
     height: 83px;
-    left: 80px;
-    top: 330px;
-    position: absolute;
+    position: relative;
 }
 
 .add_addr {
@@ -414,13 +428,14 @@ h2 {
     height: 83px;
     left: 80px;
     top: 420px;
-    position: absolute;
+    position: relative;
+    margin-top: 100px
 }
 
 .btn_group {
-    top: 520px;
-    position: absolute;
+    position: relative;
     left: 690px;
+    top: 50%;
 }
 
 .btn2 {
@@ -452,10 +467,11 @@ h2 {
 .list {
     left: 280px;
     top: 10px;
-    position: absolute;
+    position: relative;
     color: black;
     font-size: 30px;
     font-weight: 700;
+    padding-top:10px;
 }
 
 .modal__body5 {
@@ -481,4 +497,23 @@ h2 {
 .input-group1 {
     width: 100%;
     margin-bottom: 35px;
+}
+.cancle {
+    position: absolute;
+    left: 410px;
+}
+
+.acpt {
+    position: absolute;
+    left: 270px;
+}
+.modal__body6 {
+    width: 800px;
+    height: 250px;
+    background-color: white;
+    margin-top: 200px;
+    margin-left: 350px;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
 }

@@ -40,7 +40,9 @@
         modal5.style.display = "none";
     });
 })
-Info = function (id, username, phonenumber, status, email, gender, access, address, password1) {
+Info = function (id, username, phonenumber, status, email, gender, access, address, password1, image) {
+    const image_change = image.replace('assets', '/assets/').replace('img', 'img/').replace('pfp', 'pfp/');
+    
     document.getElementById('staff_attr-id').textContent = id;
     document.getElementById('staff_attr-username').textContent = username;
     document.getElementById('staff_attr-pn').textContent = phonenumber;
@@ -57,10 +59,10 @@ Info = function (id, username, phonenumber, status, email, gender, access, addre
     }
     else {
         document.getElementById('staff_attr-sex').textContent = 'Nữ';
+    }
         
 
-    }
-
+    document.getElementById('staff_image').src = image_change;
     modal1.style.display = "flex";
     document.getElementById('staff_attr-addr').textContent = address;
 
