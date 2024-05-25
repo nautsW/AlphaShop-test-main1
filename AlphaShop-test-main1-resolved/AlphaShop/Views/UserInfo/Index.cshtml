@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 
-@{  
+@{
     var name = Context.User.Identity.Name;
     // var ctrImageClaim = Context.User.FindFirst("CtrImage")?.Value; // Lấy giá trị của Claim "CtrImage"
 
@@ -39,7 +39,7 @@
 
         // Hiển thị mật khẩu mới
         document.getElementById("password").innerText = newPassword;
-         
+
     }
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -76,7 +76,7 @@
 @if (TempData["Alert"] != null)
 {
     @Html.Raw(TempData["Alert"])
- 
+
 }
 <div class="Userpage">
     <div class="Uinfor">Thông tin người dùng</div>
@@ -157,7 +157,7 @@
             </div>
         </a>
     </form>
-    
+
 </div>
 
 @*partial view change pass*@
@@ -200,71 +200,71 @@
 <div id="modal4" class="modal" style="align-items: center;">
     <div class="modal__overlay">
     </div>
-            <div class="addr_page">
-                <div class="list">Danh sách địa chỉ</div>
-                <div class="using">Đang sử dụng</div>
-                <div class="Addr_use">
+    <div class="addr_page">
+        <div class="list">Danh sách địa chỉ</div>
+        <div class="using">Đang sử dụng</div>
+        <div class="Addr_use">
+            <div class="Rec1">
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="userinfor">@Model.customer.CtrAddress</div>
+                <div class="button-container">
+                    <button class="btnch" id="btnn" name="updbtn">Chỉnh sửa</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="all">Tất cả địa chỉ</div>
+        <div class="all-addresses">
+            @{
+                var count = 1;
+            }
+            @foreach (var item in Model.customer.Addresses)
+            {
+                <div class="address-item">
                     <div class="Rec1">
                         <div class="icon">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                        <div class="userinfor">@Model.customer.CtrAddress</div>
+                        <div class="userinfor">@item.AddressName - @count</div>
                         <div class="button-container">
-                            <button class="btnch" id="btnn" name="updbtn">Chỉnh sửa</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="all">Tất cả địa chỉ</div>
-                <div class="all-addresses">
-                @{
-                    var count = 1;
-                }
-                    @foreach(var item in Model.customer.Addresses)
-                    {
-                         <div class="address-item">
-                            <div class="Rec1">
-                                <div class="icon">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div class="userinfor">@item.AddressName - @count</div> 
-                                <div class="button-container">
                             <form method="post" asp-action="SetAddress" asp-controller="UserInfo">
                                 <input type="hidden" name="address" value="@item.AddressName">
                                 <button type="submit" class="btnch" id="btnn1">Dùng</button>
                             </form>
                             <button class="btnch" id="btnn" name="updbtn" onclick="Pass('@item.AddId')">Chỉnh sửa</button>
-                                </div>
-                            </div>
-                        </div>
-                        count += 1;
-                    }
-
-                    
-
-                     <div class="address-item" id="btnadd">
-                        <div class="Rec1">
-                            <div class="icon">
-                                <i class="fa-solid fa-plus"></i>
-                            </div>
-                            <div class="userinfor">Thêm địa chỉ</div>
                         </div>
                     </div>
-
-                    @* <div class="add_addr" id="btnadd">
-                        <div class="Rec1">
-                            <div class="icon">
-                                <i class="fa-solid fa-plus"></i>
-                            </div>
-                            <div class="userinfor">Thêm địa chỉ</div>
-                        </div>
-                    </div> *@
                 </div>
-                
-                <div class="btn_group">
-                    <button class="btn2" id="ev3">Thoát</button>
+                count += 1;
+            }
+
+
+
+            <div class="address-item" id="btnadd">
+                <div class="Rec1">
+                    <div class="icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="userinfor">Thêm địa chỉ</div>
                 </div>
             </div>
+
+            @* <div class="add_addr" id="btnadd">
+            <div class="Rec1">
+            <div class="icon">
+            <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="userinfor">Thêm địa chỉ</div>
+            </div>
+            </div> *@
+        </div>
+
+        <div class="btn_group">
+            <button class="btn2" id="ev3">Thoát</button>
+        </div>
+    </div>
 </div>
 
 <div id="modal5" class="modal">
@@ -280,13 +280,13 @@
                             <input type="text" class="input" name="new_address" placeholder="Nhập tên địa chỉ mới tại đây..." required>
                         </div>
                         <div class="acpt">
-                        <button type ="submit" class="btn1">Đồng ý</button>
+                            <button type="submit" class="btn1">Đồng ý</button>
                         </div>
                     </form>
-                    <div class= "cancle">
-                    <button class="btn1" id="ev4">Hủy</button>
+                    <div class="cancle">
+                        <button class="btn1" id="ev4">Hủy</button>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

@@ -26,7 +26,7 @@
         <div class="Size">Size:</div>
         <div class="option_btn" style="width: 45px; height: 30px; left: 831px; top: 75px;">
             <label class="size_label">
-                <input type="radio" name="size" value="1" class="size_radio" >
+                <input type="radio" name="size" value="1" class="size_radio">
                 <span class="size_box">M</span>
             </label>
         </div>
@@ -46,7 +46,7 @@
         <div class="Loai">Loại:</div>
         <div class="option_btn" style="width: 183px; height: 30px; left: 831px; top: 130px;">
             <label class="size_label">
-                <input type="radio" name="loai" value="1" class="size_radio" >
+                <input type="radio" name="loai" value="1" class="size_radio">
                 <span class="size_box" id="boxdacbiet">Đá riêng </span>
             </label>
         </div>
@@ -62,7 +62,7 @@
             <textarea class="inputGhichu" id="inputGhichu" placeholder="Nhập ghi chú tại đây (vd: thêm đường,...) @Model.option_size @Model.option_type"></textarea>
         </div>
         <form class="option_btn" method="post" asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.product.PrdId" style="width:200px; height: 46px; left: 750px; top: 382px;">
-            <input type="hidden" name="optsize" id="optsize_addtocart" value="" >
+            <input type="hidden" name="optsize" id="optsize_addtocart" value="">
             <input type="hidden" name="opttype" id="opttype_addtocart" value="">
             <button type="submit" class="order_box">ĐẶT HÀNG NGAY</button>
         </form>

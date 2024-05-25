@@ -20,28 +20,29 @@
 <body>
     @if (TempData["msg"] != null)
     {
-        @Html.Raw(TempData["msg"]);
+        @Html.Raw(TempData["msg"])
+        ;
     }
     <div class="qun-l">
         <div class="div">
             <!--bar-->
             @* <div class="horizontal-bar">
-                <div class="option__holder">
-                    <a href="" class="text-wrapper-2">Trang chủ</a>
-                    <a href="" class="text-wrapper-2">Quản lí khách hàng</a>
-                    <a href="" class="text-wrapper-2">Quản lí nhân viên</a>
-                    <a href="" class="text-wrapper-2">Quản lí thức uống</a>
-                </div>
-                <a href="" class="account__name">Xin chào, Nguyễn Hữu Khoa</a>
+            <div class="option__holder">
+            <a href="" class="text-wrapper-2">Trang chủ</a>
+            <a href="" class="text-wrapper-2">Quản lí khách hàng</a>
+            <a href="" class="text-wrapper-2">Quản lí nhân viên</a>
+            <a href="" class="text-wrapper-2">Quản lí thức uống</a>
+            </div>
+            <a href="" class="account__name">Xin chào, Nguyễn Hữu Khoa</a>
             </div>
 
             <div class="vertical-bar">
-                <img class="group" src="./assets/img/nav-bar/Group1.png" />
-                <div class="btn__holder">
-                    <button class="component __main--btn" id="add_prd">Thêm thức uống</button>
-                    <button class="component __main--btn" id="add_ctg">Thêm danh mục</button>
-                </div>
-                <div class="text-wrapper-6">Quản lí thức uống</div>
+            <img class="group" src="./assets/img/nav-bar/Group1.png" />
+            <div class="btn__holder">
+            <button class="component __main--btn" id="add_prd">Thêm thức uống</button>
+            <button class="component __main--btn" id="add_ctg">Thêm danh mục</button>
+            </div>
+            <div class="text-wrapper-6">Quản lí thức uống</div>
             </div> *@
             @await Html.PartialAsync("_ManageBars", TempData["Check"])
             <!--bar-->
@@ -53,41 +54,41 @@
                 <div class="Rectangle18">
                     <ul id="drinkList">
                         <li class="MenuHiNTI">Menu hiện tại</li>
-                        @foreach(var item in Model.addModel.categories)
+                        @foreach (var item in Model.addModel.categories)
                         {
                             <button class="DrinkName" id="drink3">@item.CgrName<div class="number">@Model.products.Count(p => p.CgrId == item.CgrId && p.PrdVisible == true)</div></button>
                         }
-                        
+
                     </ul>
                 </div>
                 <div class="drinkListHolder">
-                 <!-- 1 category -->
-                 @foreach(var item in Model.addModel.categories)
+                    <!-- 1 category -->
+                    @foreach (var item in Model.addModel.categories)
                     {
                         <div class="CategoryName">
                             <div>@item.CgrName</div>
                             <div class="holder__main">
-                        @foreach(var item2 in Model.products.Where(p => p.CgrId == item.CgrId && p.PrdVisible == true))
-                        {
-                                    if(item2 != null)
+                                @foreach (var item2 in Model.products.Where(p => p.CgrId == item.CgrId && p.PrdVisible == true))
+                                {
+                                    if (item2 != null)
                                     {
-                                    <div class="Drinkunit">
-                                            <button class="Drinkbox" id="drink_btn" onclick="Info(@item2.PrdId,'@item2.PrdName', @item2.PrdPrice, @item2.PrdStatus, '/@item2.PrdImage','@item2.PrdDesc')">
-                                            <img class="Imageholder" src="/@item2.PrdImage"/>
-                                            <div class="holder__1">
+                                        <div class="Drinkunit">
+                                            <button class="Drinkbox" id="drink_btn" onclick="Info(@item2.PrdId,'@item2.PrdName', @item2.PrdPrice, @item2.PrdStatus, '/assets/img/drinklist/@item2.PrdImage','@item2.PrdDesc')">
+                                                <img class="Imageholder" src="~/assets/img/drinklist/@item2.PrdImage" />
+                                                <div class="holder__1">
                                                     <div class="BoxTitle">@item2.PrdName</div>
-                                                <div class="price">@item2.PrdPrice</div>
-                                            </div>
-                                        </button>
+                                                    <div class="price">@item2.PrdPrice</div>
+                                                </div>
+                                            </button>
                                         </div>
                                     }
                                     else
                                     {
-                                    <br />
-                                    <div>Không có</div>
-                                        
+                                        <br />
+                                        <div>Không có</div>
+
                                     }
-                        }
+                                }
                             </div>
                         </div>
                     }
@@ -107,9 +108,9 @@
     @* add *@
 
     @* DrinkInfo *@
-    
-    @await Html.PartialAsync("_DrinkInfo", Model.addModel)
-    
+
+    @await Html.PartialAsync("DrinkInfo", Model.addModel)
+
     @* DrinkInfo *@
 
     @* Update *@

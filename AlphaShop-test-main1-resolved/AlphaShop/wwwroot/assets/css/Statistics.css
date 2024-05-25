@@ -154,6 +154,7 @@
     letter-spacing: 0;
     line-height: normal;
 }
+
 .account__name {
     text-decoration-line: none;
     /* font-weight: 100; */
@@ -221,7 +222,6 @@
 
     .overview__com h2 {
         margin-top: 20px;
-        
         /*font-size: 40px;*/ /* Adjust font size as needed */
     }
 

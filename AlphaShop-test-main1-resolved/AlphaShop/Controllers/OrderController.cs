@@ -25,12 +25,12 @@ namespace AlphaShop.Controllers
             int CtrId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
             foreach (CartDetail item in _context.CartDetails)
             {
-                if(item.CartId == CtrId)
+                if (item.CartId == CtrId)
                 {
                     total += item.Quantity * item.PrdPrice;
                 }
             }
-            Customer customer = _context.Customers.SingleOrDefault(p => p.CtrId ==  CtrId);
+            Customer customer = _context.Customers.SingleOrDefault(p => p.CtrId == CtrId);
             CartModel cartModel = new CartModel()
             {
                 cart = _context.Carts.SingleOrDefault(p => p.CartId == CtrId),
@@ -47,7 +47,7 @@ namespace AlphaShop.Controllers
             };
             return View(orderModel);
         }
-        
+
         [HttpPost]
 
         [HttpPost]
@@ -55,7 +55,7 @@ namespace AlphaShop.Controllers
         {
             int CtrId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
             var lmao = _context.Carts.SingleOrDefault(x => x.CartId == CtrId);
-            
+
             Ord ord = new Ord
             {
                 OrdId = _context.Ords.Count(),

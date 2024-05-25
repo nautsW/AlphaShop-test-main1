@@ -1,4 +1,4 @@
-*{
+﻿* {
     box-sizing: border-box;
     margin: 0;
     font-family: "JetBrains Mono";
@@ -10,50 +10,49 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-  }
-  
-  .qun-l .div {
-    background-color: #ffffff;
-    width: 1440px;
-    height: 1024px;
-    position: relative;
-  }
-  
-  .qun-l .text-wrapper {
-    position: absolute;
-    top: 99px;
-    left: 683px;
-    
-    font-weight: bold;
-    color: #000000;
-    font-size: 32px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .qun-l .search-bar {
-    position: absolute;
-    width: 815px;
-    height: 32px;
-    top: 182px;
-    left: 442px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid;
-    border-color: #000000;
-  }
-  
-  .qun-l .search-icon {
-    position: absolute;
-    width: 17px;
-    height: 15px;
-    top: 8px;
-    left: 9px;
-  }
-  
- 
-  
+}
+
+    .qun-l .div {
+        background-color: #ffffff;
+        width: 1440px;
+        height: 1024px;
+        position: relative;
+    }
+
+    .qun-l .text-wrapper {
+        position: absolute;
+        top: 99px;
+        left: 683px;
+        font-weight: bold;
+        color: #000000;
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    .qun-l .search-bar {
+        position: absolute;
+        width: 815px;
+        height: 32px;
+        top: 182px;
+        left: 442px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        border: 1px solid;
+        border-color: #000000;
+    }
+
+    .qun-l .search-icon {
+        position: absolute;
+        width: 17px;
+        height: 15px;
+        top: 8px;
+        left: 9px;
+    }
+
+
+
 .horizontal-bar {
     position: fixed;
     width: 100%;
@@ -66,11 +65,10 @@
     flex-direction: row;
     justify-content: space-between;
 }
-  
-  
-  
-  .qun-l .text-wrapper-2 {
-    
+
+
+
+.qun-l .text-wrapper-2 {
     width: 84px;
     margin-top: 15px;
     margin-left: 10px;
@@ -83,27 +81,26 @@
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
-  }
-  
-  .qun-l .text-wrapper-3 {
+}
+
+.qun-l .text-wrapper-3 {
     width: 84px;
     top: 13px;
     left: 134px;
     position: absolute;
-   
     font-weight: 500;
     color: #ffffff;
     font-size: 12px;
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
-  }
-  
-  
-  
-  
-  
-  .qun-l .vertical-bar {
+}
+
+
+
+
+
+.qun-l .vertical-bar {
     position: fixed;
     width: 272px;
     height: 100%;
@@ -111,17 +108,17 @@
     left: 0;
     background-color: #000000;
     z-index: 999;
-  }
-  
-  .qun-l .group {
+}
+
+.qun-l .group {
     position: absolute;
     width: 168px;
     height: 59px;
     top: 5px;
     left: 50px;
-  }
-  
-  .qun-l .component {
+}
+
+.qun-l .component {
     /* position: absolute; */
     width: 180px;
     height: 30px;
@@ -132,22 +129,21 @@
     border-color: #000000;
     font-weight: lighter;
     font-size: 15px;
-  }
-  
-  .qun-l .th-m-m-i {
+}
+
+.qun-l .th-m-m-i {
     position: absolute;
     top: 3px;
     left: 31px;
-    
     font-weight: 400;
     color: #000000;
     font-size: 15px;
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
-  }
-  
-  .qun-l .text-wrapper-6 {
+}
+
+.qun-l .text-wrapper-6 {
     top: 71px;
     left: 71px;
     position: absolute;
@@ -157,24 +153,22 @@
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
-  }
-  /* sửa */
-  .__main--btn
-{
+}
+/* sửa */
+.__main--btn {
     border-radius: 10px;
     font-size: 12px;
     width: 100px;
     height: 30px;
     background: transparent;
+}
 
-}
-.__main--btn:hover
-{
-    background-color: black;
-    color: white;
-}
-.search-bar--input
-{
+    .__main--btn:hover {
+        background-color: black;
+        color: white;
+    }
+
+.search-bar--input {
     background-image: url("../img/customerManage/SearchIcon.svg");
     background-repeat: no-repeat;
     background-position: 10px 7px;
@@ -186,13 +180,14 @@
     padding-left: 40px;
     padding-bottom: 1px;
 }
-.option__holder{
+
+.option__holder {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
-.account__name{
+
+.account__name {
     text-decoration-line: none;
     /* font-weight: 100; */
     color: #ffffff;
@@ -202,7 +197,8 @@
     margin-right: 350px;
     margin-top: 20px;
 }
-.btn__holder{
+
+.btn__holder {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -231,26 +227,26 @@
     list-style-type: none;
     margin: 0;
     position: relative;
-    
-}
-#drinkList button {
-    margin-bottom: 10px;
-    font-size: 16px;
-    position: relative;
-    display: flex; 
-    align-items: center; 
 }
 
-#drinkList li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    position: relative;
-    display: flex;
-    align-items: center; 
-}
+    #drinkList button {
+        margin-bottom: 10px;
+        font-size: 16px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    #drinkList li {
+        margin-bottom: 10px;
+        font-size: 16px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
 
 .MenuHiNTI {
-    top : -80px;
+    top: -80px;
     color: black;
     font-size: 25px;
     font-weight: 700;
@@ -267,6 +263,7 @@
     background-color: transparent;
     position: absolute;
 }
+
 .number {
     color: black;
     font-size: 15px;
@@ -291,18 +288,19 @@
     display: flex;
     flex-direction: column;
 }
-.CategoryName{
+
+.CategoryName {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+
 .holder__main {
     display: flex;
     flex-direction: row;
     margin-left: -30px;
-    width: 875px;
-    flex-wrap: wrap;
 }
+
 .Drinkunit {
     width: 185px;
     height: 250px;
@@ -323,9 +321,10 @@
     border-color: transparent;
     /* border: 1px solid #000000; */
 }
-.Drinkbox:hover{
-    border: 1px solid #000000;
-}
+
+    .Drinkbox:hover {
+        border: 1px solid #000000;
+    }
 
 .BoxTitle {
     /* left: 120px;
@@ -355,7 +354,6 @@
     font-weight: 400;
     word-wrap: break-word;
     text-align: left;
-
 }
 
 
@@ -364,11 +362,12 @@
     height: 155px;
     /* position: absolute; */
     border-radius: 10px;
-    
 }
-.holder__1{
-    flex:2
+
+.holder__1 {
+    flex: 2
 }
+
 .Plus {
     width: 30px;
     height: 30px;
@@ -382,39 +381,39 @@
     border: transparent;
     background-image: url("..\\img\\drinklist\\plus.png");
 }
-.modal
-{
-    
+
+.modal {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 10000;
-
 }
-.modal__overlay{
+
+.modal__overlay {
     overflow: auto;
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.4);
 }
-.modal__body{
-    
+
+.modal__body {
     width: 600px;
     height: 250px;
-    background-color:white;
-    margin:  auto;
+    background-color: white;
+    margin: auto;
     margin-top: 320px;
     position: relative;
     z-index: 1;
     border-radius: 15px;
 }
+
 .container {
     width: 600px;
     height: 250px;
-    margin:  auto;
+    margin: auto;
     padding: 40px;
     background-color: #fff;
     border-radius: 5px;
@@ -455,10 +454,10 @@ h2 {
     background: transparent;
 }
 
-.btn1:hover {
-    background-color: black;
-    color: white;
-}
+    .btn1:hover {
+        background-color: black;
+        color: white;
+    }
 
 /* .modal2
 {
@@ -499,24 +498,22 @@ h2 {
 } */
 
 /*form add*/
-.modal__body2{
-    
+.modal__body2 {
     width: 400px;
     height: 100px;
-    background-color:white;
-    margin:  auto;
+    background-color: white;
+    margin: auto;
     margin-top: 25px;
     position: relative;
     z-index: 1;
     border-radius: 15px;
 }
-.drink-add{
-    
+
+.drink-add {
     position: absolute;
     margin-top: 0%;
     border-radius: 3px;
     background-color: white;
-    
     justify-content: center;
     width: 600px;
     height: 700px;
@@ -524,67 +521,78 @@ h2 {
     box-shadow: 0 5px 3px #b2acac;
 }
 
-.drink-add .main-text{
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 10px;
-}
-.drink-add .input_area{
-    display: flex;
-    flex-direction: column;
-}
-.drink-add .input_area .input_area-1{
-    max-width: 500px;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 40px;
-    /* justify-content: center; */
-}
-.name-box{
+    .drink-add .main-text {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .drink-add .input_area {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .drink-add .input_area .input_area-1 {
+            max-width: 500px;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 40px;
+            /* justify-content: center; */
+        }
+
+.name-box {
     width: 280px;
     height: 30px;
     border-radius: 5px;
 }
-.price-box{
+
+.price-box {
     width: 280px;
     height: 30px;
     border-radius: 5px;
     /* margin-left: 55px; */
 }
-.label--1{
+
+.label--1 {
     width: 150px;
     margin-right: 30px;
     text-align: right;
 }
-.radio__btn{
+
+.radio__btn {
     display: none;
 }
-.label--2{
+
+.label--2 {
     border: 2px solid;
     padding: 2px 10px;
     border-radius: 10px;
 }
-.label--2:hover{
-    background-color: black;
-    color: white;
-}
-.radio__btn:checked + .label--2{
+
+    .label--2:hover {
+        background-color: black;
+        color: white;
+    }
+
+.radio__btn:checked + .label--2 {
     background-color: black;
     color: white;
 }
 
-.img-opt__holder{
+.img-opt__holder {
     display: inline;
     flex-direction: row;
 }
-.label--3{
+
+.label--3 {
     margin-left: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.img-opt__holder .image-holder{
+
+.img-opt__holder .image-holder {
     border: 2px solid;
     border-radius: 10px;
     margin-left: 20px;
@@ -593,7 +601,8 @@ h2 {
     max-height: 50px;
     max-width: 100px;
 }
-.desc-box{
+
+.desc-box {
     margin-left: 20px;
     resize: none;
     width: 550px;
@@ -603,61 +612,64 @@ h2 {
     padding: 10px;
 }
 
-#btn-OK{
+#btn-OK {
     position: absolute;
     top: 650px;
     left: 350px;
 }
-#btn-Cancel{
+
+#btn-Cancel {
     position: absolute;
     top: 650px;
     left: 470px;
 }
 /*drinkinfo*/
-.modal
-{
+.modal {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 10000;
-
 }
-.modal__overlay{
+
+.modal__overlay {
     overflow: auto;
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.4);
 }
-.modal__body3{
-    
+
+.modal__body3 {
     width: 600px;
     height: 250px;
-    background-color:white;
-    margin:  auto;
+    background-color: white;
+    margin: auto;
     margin-top: 150px;
     position: relative;
     z-index: 1;
     border-radius: 15px;
 }
-.staff_info{
-    width: 100%; 
-    height: 100%; 
+
+.staff_info {
+    width: 100%;
+    height: 100%;
     position: relative;
-    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
-.rectangle{
-    width: 900px; 
+
+.rectangle {
+    width: 900px;
     height: 500px;
     position: absolute;
-    background: white; 
-    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25); 
-    border-radius: 5px; 
+    background: white;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
     border: 3px black solid;
 }
+
 .btn2 {
     border: none;
     border-radius: 10px;
@@ -668,13 +680,13 @@ h2 {
     height: 30px;
     background: transparent;
     margin-right: 15px;
-    
 }
 
-.btn2:hover {
-    background-color: black;
-    color: white;
-}
+    .btn2:hover {
+        background-color: black;
+        color: white;
+    }
+
 .staff_info h2 {
     left: 330px;
     top: 20px;
@@ -686,116 +698,124 @@ h2 {
     word-wrap: break-word;
 }
 
-.staff_id{
-    left: 175px; 
-    top: 109px; 
-    position: absolute; 
-    text-align: center; 
-    color: black; 
-    font-size: 14px; 
-    font-weight: 400; 
+.staff_id {
+    left: 175px;
+    top: 109px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
     word-wrap: break-word;
 }
-.staff_addr{
-    left: 175px; 
-    top: 142px; 
-    position: absolute; 
-    text-align: center; 
-    color: black; 
-    font-size: 14px;  
-    font-weight: 400; 
+
+.staff_addr {
+    left: 175px;
+    top: 142px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
     word-wrap: break-word;
 }
-.staff_phonenumber{
-    left: 175px; 
-    top: 175px; 
-    position: absolute; 
-    text-align: center; 
-    color: black; 
-    font-size: 14px; 
-    font-weight: 400; 
+
+.staff_phonenumber {
+    left: 175px;
+    top: 175px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
     word-wrap: break-word;
 }
-.logo{
-    width: 200px; 
-    height: 200px; 
-    left: 15px; 
-    top: 84px; 
-    position: absolute; 
-    background: white; 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+
+.logo {
+    width: 200px;
+    height: 200px;
+    left: 15px;
+    top: 84px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 2px black solid;
     border-radius: 15px;
 }
-.comp
-{
-    width: 700px; 
-    height: 30px; 
-    left: 100px; 
-    top: 440px; 
+
+.comp {
+    width: 700px;
+    height: 30px;
+    left: 100px;
+    top: 440px;
     position: absolute;
 }
-.holder{
-    display: flex; 
+
+.holder {
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-.group__drink{
+.group__drink {
     display: flex;
     flex-direction: column;
-
     position: absolute;
     width: 500px;
     height: 100px;
     top: 65px;
     left: 250px;
 }
-.staff_group{
+
+.staff_group {
     display: flex;
     flex-direction: row;
+}
 
-}
-.staff_group .name{
-    text-align: left; 
-    color: black; 
-    font-size: 20px; 
-    font-weight: bold; 
-    word-wrap: break-word;
-    margin-top: 20px;
-    width: 150px;
-}
-.staff_group .sts{
-    text-align: left; 
-    color: black; 
-    font-size: 20px; 
-    font-weight: bold; 
-    word-wrap: break-word;
-    margin-top: 20px;
-    width: 150px;
-}
-.staff_group .pri{
-    text-align: left; 
-    color: black; 
-    font-size: 20px; 
-    font-weight: bold; 
-    word-wrap: break-word;
-    margin-top: 20px;
-    width: 150px;
-}
+    .staff_group .name {
+        text-align: left;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        word-wrap: break-word;
+        margin-top: 20px;
+        width: 150px;
+    }
+
+    .staff_group .sts {
+        text-align: left;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        word-wrap: break-word;
+        margin-top: 20px;
+        width: 150px;
+    }
+
+    .staff_group .pri {
+        text-align: left;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        word-wrap: break-word;
+        margin-top: 20px;
+        width: 150px;
+    }
+
 #st__value_1 {
     min-width: 200px;
     font-weight: lighter;
     margin-left: 50px;
     margin-top: 20px;
-
 }
+
 #st__value_2 {
     min-width: 200px;
     font-weight: lighter;
     margin-left: 50px;
     margin-top: 20px;
 }
+
 #st__value_3 {
     min-width: 200px;
     font-weight: lighter;

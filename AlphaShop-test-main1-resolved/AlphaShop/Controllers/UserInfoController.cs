@@ -66,13 +66,13 @@ namespace AlphaShop.Controllers
                 else
                 {
                     TempData["Alert"] = "<script>alert('Mật khẩu mới không khớp!')</script>";
-                    
+
                 }
             }
             else
             {
                 TempData["Alert"] = "<script>alert('Mật khẩu cũ không đúng!')</script>";
-                
+
             }
             return RedirectToAction("Index", "UserInfo");
         }
@@ -173,37 +173,37 @@ namespace AlphaShop.Controllers
             int CtrId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId")?.Value);
 
             // Kiểm tra nếu CtrId hợp lệ
-            
-                // Tìm khách hàng với CtrId tương ứng
-                var customer = _context.Customers.SingleOrDefault(x => x.CtrId == CtrId);
 
-                if (customer != null)
+            // Tìm khách hàng với CtrId tương ứng
+            var customer = _context.Customers.SingleOrDefault(x => x.CtrId == CtrId);
+
+            if (customer != null)
+            {
+                int index = _context.Addresses.Where(x => x.CtrId == CtrId).Last().AddId + 1;
+                // Tạo đối tượng Address mới
+                Address newadd = new Address
                 {
-                    int index = _context.Addresses.Where(x => x.CtrId == CtrId).Last().AddId + 1;
-                    // Tạo đối tượng Address mới
-                    Address newadd = new Address
-                    {
-                        CtrId = CtrId,
-                        AddId = index + 1,
-                        AddressName = new_address
-                    };
+                    CtrId = CtrId,
+                    AddId = index + 1,
+                    AddressName = new_address
+                };
 
-                    // Thêm địa chỉ mới vào danh sách Addresses
-                    customer.Addresses.Add(newadd);
+                // Thêm địa chỉ mới vào danh sách Addresses
+                customer.Addresses.Add(newadd);
 
-                    // Lưu thay đổi vào cơ sở dữ liệu
-                    _context.SaveChanges();
+                // Lưu thay đổi vào cơ sở dữ liệu
+                _context.SaveChanges();
 
-                    // Redirect đến trang Index của UserInfo sau khi thành công
-                    return RedirectToAction("Index", "UserInfo");
-                }
-                else
-                {
-                    // Xử lý khi không tìm thấy khách hàng
-                    ModelState.AddModelError(string.Empty, "Không tìm thấy khách hàng");
-                }
-            
-            
+                // Redirect đến trang Index của UserInfo sau khi thành công
+                return RedirectToAction("Index", "UserInfo");
+            }
+            else
+            {
+                // Xử lý khi không tìm thấy khách hàng
+                ModelState.AddModelError(string.Empty, "Không tìm thấy khách hàng");
+            }
+
+
 
             // Trả về view hiện tại với thông báo lỗi
             return RedirectToAction("Index", "UserInfo");
@@ -219,8 +219,8 @@ namespace AlphaShop.Controllers
 
             // Tìm khách hàng với CtrId tương ứng
             var customer = _context.Customers.SingleOrDefault(x => x.CtrId == CtrId);
-            
-            
+
+
 
             if (customer != null)
             {
@@ -288,7 +288,7 @@ namespace AlphaShop.Controllers
             // Kiểm tra nếu CtrId hợp lệ
 
             // Tìm khách hàng với CtrId tương ứng
-            var address = _context.Addresses.SingleOrDefault(x=>x.CtrId == CtrId && x.AddId == id);
+            var address = _context.Addresses.SingleOrDefault(x => x.CtrId == CtrId && x.AddId == id);
 
             if (address != null)
             {

@@ -1,0 +1,84 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model DrinkAddVM
+<div id="modal2" class="modal" style="display: none;">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body2">
+        <div class="modal__inner">
+            <form class="drink-add" method="post" asp-controller="Manage" asp-action="AddDrink" enctype="multipart/form-data">
+                <div class="main-text">Thêm thức uống</div>
+                <div class="input_area">
+                    <div class="input_area-1">
+                        <label for="name-box" class="label--1">Tên thức uống</label>
+                        <input asp-for="PrdName" type="text" class="name-box" placeholder="Nhập tên tại đây" required />
+                    </div>
+                    <div class="input_area-1">
+                        <label for="price-box" class="label--1">Giá tiền</label>
+                        <input asp-for="PrdPrice" type="text" class="price-box" placeholder="Nhập tiền tại đây" required />
+                    </div>
+                    <div class="input_area-1">
+                        <label for="price-box" class="label--1">Danh mục</label>
+                        <select asp-for="CategoryID" class="select-box" required>
+                            @foreach (var item in Model.categories)
+                            {
+                                <option value=@item.CgrId>@item.CgrName</option>
+
+                            }
+                        </select>
+
+                    </div>
+                    <div class="input_area-1">
+                        <label for="radio-box" class="label--1">Tình trạng</label>
+                        <div class="radio-box">
+                            <input asp-for="PrdStatus" type="radio" class="radio__btn" id="rd__1" value="1" required>
+                            <label for="rd__1" class="label--2">Còn hàng</label>
+
+                            <input asp-for="PrdStatus" type="radio" class="radio__btn" id="rd__2" value="0">
+                            <label for="rd__2" class="label--2">Hết hàng</label>
+                        </div>
+                    </div>
+                    <label for="img-opt__holder" class="label--3">Ảnh</label>
+                </div>
+                <div class="img-opt__holder">
+                    <div id="imagePreview">
+                        @* <img class="image-holder" src="~/assets/img/drinklist/image-holder.png" /> *@
+                    </div>
+                    <!-- <label class="label--2" for="file__btn">Chọn ảnh</label> -->
+                    <input type="file" class="file__btn" id="imageFile" accept="image/*" asp-for="PrdImage">
+                </div>
+                <div class="label--3">Mô tả</div>
+                <textarea asp-for="PrdDesc" class="desc-box" placeholder="Nhập mô tả"></textarea>
+                @* <input type="submit" class="__main--btn" value="OK" asp-route-check="Add"> *@
+                <button type="submit" class="__main--btn" id="btn-OK" @* style="margin-top: 130px; margin-left: 320px;" *@>OK</button>
+                <button type="button" class="__main--btn" id="btn-Cancel" @* style="margin-top: -2px;" *@>Hủy</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function handleImageUpload(event) {
+        const image = event.target.files[0];
+
+        if (image && image.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const preview = document.getElementById('imagePreview');
+                preview.innerHTML = `<img class="image-holder" src="${e.target.result}" alt="Uploaded Image" />`;
+            };
+            reader.readAsDataURL(image);
+        } else {
+            // Handle invalid image selection (optional)
+            alert("Please select a valid image file.");
+        }
+    }
+
+    document.getElementById('imageFile').addEventListener('change', handleImageUpload);
+
+</script>
+

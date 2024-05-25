@@ -2,9 +2,9 @@
 {
     public class StatisticColumnVM
     {
-       
-            public string Month { get; set; }
-            public decimal? total { get; set; }
-        
+
+        public string Month { get; set; }
+        public decimal? total { get; set; }
+
     }
 }

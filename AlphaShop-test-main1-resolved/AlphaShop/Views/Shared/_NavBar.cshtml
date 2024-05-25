@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="~/assets/css/guest_navbar.css" runat="server" asp-append-version="true">
     <link href="~/assets/css/dropdown.css" rel="stylesheet" runat="server" asp-append-version="true">
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Home</title>
 </head>
 
@@ -18,16 +17,14 @@
 
     <header class="nav">
         @* @{
-            var name = ViewData["Account"] as string;
+        var name = ViewData["Account"] as string;
         } *@
         @{
-            var ctrid = Context.User.Claims.SingleOrDefault(p => p.Type == "CtrId")?.Value;
             var name = Context.User.Identity.Name;
             var access = Context.User.IsInRole("1");
             var access2 = Context.User.IsInRole("2");
             var access3 = Context.User.IsInRole("3");
         }
-        <input type="hidden" value=@ctrid id="cartId" />
         @* <div class="nav__bar--1">
         <ul class="nav__flag--lang">
         <button class="nav__flag" id = "nav__flag1"></button>
@@ -59,42 +56,27 @@
             </form>
             <div class="nav__logo"></div>
 
-            <div>   
+            <div>
 
                 @if (Context.User.Identity.IsAuthenticated)
                 {
                     if (access)
                     {
                         @* <form class="nav__acc">
-                            <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
-                            <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Xin chào, @AccountService.Customer.CtrUsername</a>
-                            <button asp-action="Logout" asp-controller="Log" class="__main--btn" id="Logout">Đăng xuất</button>
-                        </form> *@
+                <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
+                <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Xin chào, @AccountService.Customer.CtrUsername</a>
+                <button asp-action="Logout" asp-controller="Log" class="__main--btn" id="Logout">Đăng xuất</button>
+                </form> *@
 
                         @* new *@
                         <form class="nav__acc">
-                            <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon">
-                                <div class="cartcount" id="quantity__jq" style="display: inline-block;
-    background-color: red;
-    color: white;
-    border-radius: 100%;
-    width: 16px;
-    height: 16px;
-    font-size: 12px;
-    text-align: center;
-    line-height: 20px; /* Đảm bảo số lượng ở giữa hình tròn */
-    margin-bottom: 50px; /* Điều chỉnh vị trí so với biểu tượng giỏ hàng */
-    margin-left: 0px; /* Điều chỉnh vị trí so với biểu tượng giỏ hàng */
-    border: 1px solid white; /* Border màu trắng xung quanh */">
-                                    
-                                </div>
-                            </button>
+                            <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
                             <div class="dropdown">
                                 <button class="dropbtn">Xin chào, @name</button>
                                 <div class="dropdown-content">
                                     <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Thông tin tài khoản</a>
                                     <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Đăng xuất</a>
-                                    
+
                                 </div>
                             </div>
                         </form>
@@ -110,28 +92,26 @@
                                     <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Thông tin tài khoản</a>
                                     <a class="accountlink" asp-area="" asp-controller="Staff" asp-action="Index">Quản lí nhận đơn</a>
                                     <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Đăng xuất</a>
-                                   
+
                                 </div>
                             </div>
-                            
+
                         </form>
                     }
                     else if (access3)
                     {
                         <form class="nav__acc">
-                            <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon">
-
-                            </button>
+                            <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
                             <div class="dropdown">
                                 <button class="dropbtn">Xin chào, @name</button>
                                 <div class="dropdown-content">
                                     <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Thông tin tài khoản</a>
                                     <a class="accountlink" asp-area="" asp-controller="Manage" asp-action="Index">Quản lí</a>
                                     <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Đăng xuất</a>
-                                    
+
                                 </div>
                             </div>
-                            
+
                         </form>
                     }
                 }
@@ -158,15 +138,3 @@
 </body>
 
 </html>
-<script>
-    $(document).ready(function () {
-        var id = $('#cartId').val();
-        if (id !== null) {
-            $.get('/Cart/GetQuantity?id=' + id, function (quantity) {
-                console.log(quantity);
-                $('#quantity__jq').text(quantity);
-            });
-        }
-    });
-
-</script>

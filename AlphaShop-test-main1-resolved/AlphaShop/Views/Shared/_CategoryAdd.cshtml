@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model CategoryAddVM
+<div id="modal1" class="modal" style="display: none;">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body">
+        <div class="modal__inner">
+            <div class="container">
+                <form class="login-box" method="post" asp-action="AddCategory" asp-controller="Manage">
+                    <h2>Thêm danh mục</h2>
+                    <div class="input-group">
+                        <input asp-for=CategoryName type="text" class="input" placeholder="Nhập tên danh mục mới tại đây..." required>
+                    </div>
+                    <button type="submit" class="btn1">Đồng ý</button>
+                    <button type="button" class="btn1" id="ev1">Hủy</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

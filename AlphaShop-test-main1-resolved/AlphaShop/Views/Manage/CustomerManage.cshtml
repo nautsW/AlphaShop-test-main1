@@ -21,7 +21,8 @@
 <body>
     @if (TempData["msg"] != null)
     {
-        @Html.Raw(TempData["msg"]);
+        @Html.Raw(TempData["msg"])
+        ;
     }
     <div class="qun-l">
         <div class="div">
@@ -157,7 +158,7 @@
     @await Html.PartialAsync("_AccountCE", Model.accountAddVM)
     @* Create *@
     @* Info *@
-    @await Html.PartialAsync("_AccountInfo_1", Model.accountAddVM)
+    @await Html.PartialAsync("AccountInfo_1", Model.accountAddVM)
     @* Info *@
 
 </body>

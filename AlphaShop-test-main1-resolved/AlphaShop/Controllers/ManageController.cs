@@ -14,7 +14,7 @@ namespace AlphaShop.Controllers
     {
         private readonly HahaContext _context;
         private readonly IWebHostEnvironment wwwroot;
-        public ManageController(IWebHostEnvironment webHostEnvironment) 
+        public ManageController(IWebHostEnvironment webHostEnvironment)
         {
             _context = new HahaContext();
             wwwroot = webHostEnvironment;
@@ -32,11 +32,11 @@ namespace AlphaShop.Controllers
                 categories = _context.Categories.ToList(),
             };
             DrinkManageMainVM drinkManageMainVM = new DrinkManageMainVM
-            { 
+            {
                 addModel = vm,
                 addCategory = new CategoryAddVM(),
                 products = _context.Products.ToList(),
-                
+
             };
             TempData["Check"] = "DrinkManage";
             return View(drinkManageMainVM);
@@ -44,7 +44,7 @@ namespace AlphaShop.Controllers
         [HttpPost]
         public IActionResult AddDrink(DrinkAddVM VM)
         {
-            
+
             DrinkAddVM vM = VM;
             var check = _context.Products.SingleOrDefault(p => p.PrdName == VM.PrdName);
             if (check == null)
@@ -58,7 +58,7 @@ namespace AlphaShop.Controllers
                     PrdPrice = vM.PrdPrice,
                     PrdDesc = vM.PrdDesc,
                     PrdStatus = vM.PrdStatus,
-                    PrdImage = (vM.PrdImage == null)? "assets/img/drinklist/png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png" : "assets/img/drinklist/" + "_" + filename,
+                    PrdImage = (vM.PrdImage == null) ? "assets/img/drinklist/png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png" : "assets/img/drinklist/" + "_" + filename,
                     PrdVisible = true
                 };
                 _context.Products.Add(product);
@@ -85,7 +85,7 @@ namespace AlphaShop.Controllers
             string filename = null;
             if (vM.PrdImage != null && vM.PrdImage.Length > 0)
             {
-                
+
                 string uploadDir = Path.Combine(wwwroot.WebRootPath, "assets", "img", "drinklist");
                 filename = Guid.NewGuid().ToString() + "-" + vM.PrdImage.FileName;
                 string filePath = Path.Combine(uploadDir, filename);
@@ -100,11 +100,11 @@ namespace AlphaShop.Controllers
         public IActionResult AddCategory(CategoryAddVM VM)
         {
             var check = _context.Categories.SingleOrDefault(p => p.CgrName == VM.CategoryName);
-            if(check == null)
+            if (check == null)
             {
                 Category category = new Category
                 {
-                    CgrId= _context.Categories.Count() + 1,
+                    CgrId = _context.Categories.Count() + 1,
                     CgrName = VM.CategoryName,
                 };
                 _context.Categories.Add(category);
@@ -116,12 +116,12 @@ namespace AlphaShop.Controllers
         }
 
 
-        
+
 
         [HttpPost]
         public IActionResult Update(DrinkAddVM vm)
         {
-            
+
             var check = _context.Products.FirstOrDefault(p => p.PrdId == vm.idForUpdate);
             if (check == null)
             {
@@ -134,7 +134,7 @@ namespace AlphaShop.Controllers
                 check.PrdPrice = vm.PrdPrice;
                 check.PrdStatus = vm.PrdStatus;
                 check.PrdDesc = vm.PrdDesc;
-                if(vm.PrdImage != null) check.PrdImage = "assets/img/drinklist/" + "_" + filename;
+                if (vm.PrdImage != null) check.PrdImage = "assets/img/drinklist/" + "_" + filename;
                 _context.Update(check);
                 _context.Entry(check).State = EntityState.Modified;
                 _context.SaveChanges();
@@ -144,7 +144,7 @@ namespace AlphaShop.Controllers
             return RedirectToAction("DrinkManage");
         }
         [HttpPost]
-        public IActionResult Delete(DrinkAddVM vm) 
+        public IActionResult Delete(DrinkAddVM vm)
         {
             var check = _context.Products.SingleOrDefault(p => p.PrdId == vm.idForUpdate);
             if (check == null)
@@ -230,13 +230,13 @@ namespace AlphaShop.Controllers
             }
             AccountAddVM accountAddVM = new AccountAddVM
             {
-                
+
             };
             StaffManageMainVM mainVM = new StaffManageMainVM
             {
                 customers = temp_list,
                 accountAddVM = accountAddVM,
-                
+
             };
             TempData["Check"] = "StaffManage";
             return View(mainVM);
@@ -295,7 +295,7 @@ namespace AlphaShop.Controllers
         public IActionResult EditAccount(AccountAddVM vM)
         {
             var check = _context.Customers.SingleOrDefault(p => p.CtrId == vM.idForUpdate);
-            if(check == null)
+            if (check == null)
             {
                 TempData["msg"] = "<script>alert('Error: user does not exist');</script>";
                 return RedirectToAction("Index");
@@ -357,7 +357,7 @@ namespace AlphaShop.Controllers
             }
             else
             {
-                check.CtrStatus = vM.ctrStatus; 
+                check.CtrStatus = vM.ctrStatus;
                 _context.Update(check);
                 _context.Entry(check).State = EntityState.Modified;
                 _context.SaveChanges();
@@ -462,8 +462,8 @@ namespace AlphaShop.Controllers
                     var cd = _context.OrdDetails.Where(p => p.PrdId == item.PrdId).ToList(); //list cd voi prdid
                     foreach (OrdDetail item2 in cd)
                     {
-                        if(_context.Ords.Any(p => p.OrdId == item2.OrdId && p.OrdDate.Value.Year == year))
-                        count += (int)item2.Quantity;
+                        if (_context.Ords.Any(p => p.OrdId == item2.OrdId && p.OrdDate.Value.Year == year))
+                            count += (int)item2.Quantity;
 
                     }
                     WebAccessListModel vM = new WebAccessListModel
