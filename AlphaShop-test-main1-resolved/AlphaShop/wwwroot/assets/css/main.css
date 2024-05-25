@@ -3,12 +3,26 @@
     margin: 0;
     font-family: "JetBrains Mono";
 }
-
 body {
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     background-color: white;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/*body {*/
     /* position: relative; */
     /* temp */
-}
+/*}*/
 /* navbar */
 .nav {
     position: fixed;
