@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ThYOIS8HqIA1aeNwagE0cs3u2j1HlxAED7bTXflqRfQ=",
+  "Hash": "t8OvsdB0LSxgOV/BR2Kec81MTx1QIqN33o2AwLL97KI=",
   "Source": "AlphaShop",
   "BasePath": "_content/AlphaShop",
   "Mode": "Default",
@@ -454,6 +454,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\background\\ArrowButton.png"
     },
     {
+      "Identity": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\Background_1.png",
+      "SourceId": "AlphaShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\",
+      "BasePath": "_content/AlphaShop",
+      "RelativePath": "assets/img/background/Background_1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\background\\Background_1.png"
+    },
+    {
       "Identity": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\Desktop.png",
       "SourceId": "AlphaShop",
       "SourceType": "Discovered",
@@ -471,6 +490,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\background\\Desktop.png"
+    },
+    {
+      "Identity": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\pngtree-summer-seaside-summer-drink-blue-cold-banner-picture-image_1112118.png",
+      "SourceId": "AlphaShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\",
+      "BasePath": "_content/AlphaShop",
+      "RelativePath": "assets/img/background/pngtree-summer-seaside-summer-drink-blue-cold-banner-picture-image_1112118.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\background\\pngtree-summer-seaside-summer-drink-blue-cold-banner-picture-image_1112118.png"
     },
     {
       "Identity": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\reversedArrowButton.png",

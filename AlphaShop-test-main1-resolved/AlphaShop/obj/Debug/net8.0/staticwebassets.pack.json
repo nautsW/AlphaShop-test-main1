@@ -89,8 +89,16 @@
       "PackagePath": "staticwebassets\\assets\\img\\background\\ArrowButton.png"
     },
     {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\Background_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\background\\Background_1.png"
+    },
+    {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\Desktop.png",
       "PackagePath": "staticwebassets\\assets\\img\\background\\Desktop.png"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\pngtree-summer-seaside-summer-drink-blue-cold-banner-picture-image_1112118.png",
+      "PackagePath": "staticwebassets\\assets\\img\\background\\pngtree-summer-seaside-summer-drink-blue-cold-banner-picture-image_1112118.png"
     },
     {
       "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\reversedArrowButton.png",

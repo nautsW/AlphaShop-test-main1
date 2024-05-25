@@ -24,7 +24,7 @@ namespace AlphaShop.Controllers
         }
         public IActionResult Index()
         {
-            int CtrId_global = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
+            int CtrId_global = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId")?.Value);
             Customer customer = _context.Customers.SingleOrDefault(p => p.CtrId == CtrId_global);
             customer.Addresses = _context.Addresses.Where(p => p.CtrId == CtrId_global).ToList();
             UserInfoVM userInfoVM = new UserInfoVM

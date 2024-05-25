@@ -369,7 +369,11 @@ body {
     align-items: center;
     padding: 30px;
 }
-
+.drink__holder{
+    position: absolute;
+    left: 7%;
+    top: 100px;
+}
 #drinkList {
     top: 20px;
     left: -5%;
@@ -538,12 +542,13 @@ body {
 /*text*/
 .text-wrapper {
     position: absolute;
-    top: 130px;
-    left: 550px;
+    top: 75px;
+    left: 700px;
+    width: 250px;
     font-weight: bolder;
     color: #000000;
-    font-size: 32px;
-    text-align: left;
+    font-size: 50px;
+    text-align: center;
     letter-spacing: 0;
     line-height: normal;
 }

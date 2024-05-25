@@ -142,6 +142,7 @@ body {
     .bg--1 img {
         /* background-size: 100%; */
         width: 100%;
+        margin-top: 20px;
     }
 
 .bg__move--btn {
@@ -195,7 +196,7 @@ body {
 .content__para {
     padding: 30px;
     background-color: #FEFFC8;
-    box-shadow: 15px 15px 15px #F5DF91;
+    box-shadow: 15px 15px 0px #F5DF91;
     width: 550px;
     height: 250px;
 }
@@ -215,7 +216,7 @@ body {
     height: 50px;
     background-color: #FEFFC8;
     background-blend-mode: color;
-    box-shadow: 15px 15px 15px #F5DF91;
+    box-shadow: 15px 15px 0px #F5DF91;
     border: none;
 }
 

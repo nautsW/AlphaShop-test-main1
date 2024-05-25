@@ -5,12 +5,16 @@ namespace AlphaShop.Models
     public class RegisterModel
     {
         [Required]
+        [StringLength(40)]
         public string? LogUsername { get; set; }
         [Required]
+        [StringLength(40)]
         public string? Username { get; set; }
         [Required]
+        [StringLength(20)]
         public string? Password { get; set; }
         [Required]
+        [StringLength(20)]
         public string? ConfirmPassword { get; set; }
         [Required]
         public string? Email { get; set; }
