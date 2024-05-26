@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 @using AlphaShop.Data
+@using AlphaShop.Models
 @using System.Security.Claims
-@inject AccountService AccountService
-@model Ord
+
+@model OrderInfoVM;
 
 @{
     var name = Context.User.Identity.Name;
@@ -49,7 +50,7 @@
                             <div class="icon" style="margin-right: 15px;">
                                 <i class="fa-solid fa-phone"></i>
                             </div>
-                            <div>Số điện thoại: @phoneNumberClaim</div>
+                            <div>Số điện thoại: @Model.customer.CtrPhonenumber</div>
 
                         </div>
                         <!-- <div class="Vector" style="width: 20px; height: 18.11px; left: 0px; top: 36.23px; position: absolute; background: black"></div> -->
@@ -58,7 +59,7 @@
                             <div class="icon" style="margin-right: 15px;">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
-                            <div>Địa chỉ: @ctrAddress</div>
+                            <div>Địa chỉ: @Model.customer.CtrAddress</div>
                         </div>
 
                         <!-- <div class="Vector" style="width: 20px; height: 22.64px; left: 0px; top: 67.93px; position: absolute; background: black"></div> -->
@@ -72,9 +73,9 @@
 
                         <div class="OrderRect"></div>
                         <ul class="OrderList" id="OrderList">
-                            @if (Model.OrdDetails != null)
+                            @if (Model.ord.OrdDetails != null)
                             {
-                                foreach (var item in Model.OrdDetails)
+                                foreach (var item in Model.ord.OrdDetails)
                                 {
                                     if (item != null)
                                     {
@@ -103,11 +104,11 @@
                         <li class="InfoText" id="TotalDrink">Tổng: </li>
                         <li class="InfoText" id="TransportCost">Phí vận chuyển:</li>
                         <li class="InfoText" id="Total">Tổng cộng:</li>
-                        <li class="xxxxx" id="TotalDrinkPrice">@Model.OrdPrice$</li>
+                        <li class="xxxxx" id="TotalDrinkPrice">@Model.ord.OrdPrice$</li>
                         <li class="xxxxx" id="TransportPrice">45.000$</li>
                         <li class="xxxxx" id="TotalPrice">
                             @{
-                                var totalPrice = Model.OrdPrice + 45;
+                                var totalPrice = Model.ord.OrdPrice + 45;
                             }@totalPrice$
                         </li>
                     </div>
@@ -115,7 +116,7 @@
                     <form method="post" asp-action="OrderList" asp-controller="UserInfo" class="P_btn">
                         <button class="btn1" id="close_btn">OK</button>
                     </form>
-                    
+
                     <script>
                         var drinkunits = document.querySelectorAll('#OrderList .OrderItem');
                         var unitsPerColumn = 100;
@@ -174,5 +175,5 @@
 
         </div>
     </div>
-    </body>
+</body>
 </html>

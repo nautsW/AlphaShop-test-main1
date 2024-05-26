@@ -14,7 +14,7 @@
                 <div class="input_area">
                     <div class="input_area-1">
                         <label for="name-box" class="label--1">Tên thức uống</label>
-                        <input asp-for="PrdName" type="text" class="name-box" placeholder="Nhập tên tại đây" required/>
+                        <input asp-for="PrdName" type="text" class="name-box" placeholder="Nhập tên tại đây" required />
                     </div>
                     <div class="input_area-1">
                         <label for="price-box" class="label--1">Giá tiền</label>
@@ -23,10 +23,10 @@
                     <div class="input_area-1">
                         <label for="price-box" class="label--1">Danh mục</label>
                         <select asp-for="CategoryID" class="select-box" required>
-                            @foreach(var item in Model.categories)
+                            @foreach (var item in Model.categories)
                             {
                                 <option value=@item.CgrId>@item.CgrName</option>
-                                
+
                             }
                         </select>
 
@@ -54,7 +54,7 @@
                 <textarea asp-for="PrdDesc" class="desc-box" placeholder="Nhập mô tả"></textarea>
                 @* <input type="submit" class="__main--btn" value="OK" asp-route-check="Add"> *@
                 <button type="submit" class="__main--btn" id="btn-OK" @* style="margin-top: 130px; margin-left: 320px;" *@>OK</button>
-                <button type="button" class="__main--btn" id="btn-Cancel"@* style="margin-top: -2px;" *@ >Hủy</button>
+                <button type="button" class="__main--btn" id="btn-Cancel" @* style="margin-top: -2px;" *@>Hủy</button>
             </form>
         </div>
 
@@ -62,23 +62,23 @@
 </div>
 
 <script>
-        function handleImageUpload(event) {
-            const image = event.target.files[0];
+    function handleImageUpload(event) {
+        const image = event.target.files[0];
 
-            if (image && image.type.startsWith('image/')) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    const preview = document.getElementById('imagePreview');
-                    preview.innerHTML = `<img class="image-holder" src="${e.target.result}" alt="Uploaded Image" />`;
-                };
-                reader.readAsDataURL(image);
-            } else {
-                // Handle invalid image selection (optional)
-                alert("Please select a valid image file.");
-            }
+        if (image && image.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const preview = document.getElementById('imagePreview');
+                preview.innerHTML = `<img class="image-holder" src="${e.target.result}" alt="Uploaded Image" />`;
+            };
+            reader.readAsDataURL(image);
+        } else {
+            // Handle invalid image selection (optional)
+            alert("Please select a valid image file.");
         }
+    }
 
-        document.getElementById('imageFile').addEventListener('change', handleImageUpload);
+    document.getElementById('imageFile').addEventListener('change', handleImageUpload);
 
 </script>
 

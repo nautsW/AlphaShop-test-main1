@@ -17,171 +17,171 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AlphaShop
 build_property.RootNamespace = AlphaShop
-build_property.ProjectDir = D:\BACH KHOA LAME\nam 2\PBL3\ManageAlphaShop\AlphaShop-test-main1-resolved\AlphaShop\
+build_property.ProjectDir = D:\Huukhoa\NAM 2\KI 2\PBL3\Alphashop-test-repo\AlphaShop-test-main1\AlphaShop-test-main1-resolved\AlphaShop\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\BACH KHOA LAME\nam 2\PBL3\ManageAlphaShop\AlphaShop-test-main1-resolved\AlphaShop
+build_property.MSBuildProjectDirectory = D:\Huukhoa\NAM 2\KI 2\PBL3\Alphashop-test-repo\AlphaShop-test-main1\AlphaShop-test-main1-resolved\AlphaShop
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Cart/Index.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Category/DrinkInfo.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Category/DrinkInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRHJpbmtJbmZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Category/Index.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Home/Index.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Home/Privacy.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Log/Login.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Log/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Log/Register.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Log/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Manage/CustomerManage.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Manage/CustomerManage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEN1c3RvbWVyTWFuYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Manage/DrinkManage.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Manage/DrinkManage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXERyaW5rTWFuYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Manage/Index.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Manage/StaffManage.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Manage/StaffManage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFN0YWZmTWFuYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Manage/Statistic.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Manage/Statistic.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFN0YXRpc3RpYy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Order/Cart.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Order/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Order/Index.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Order/Ordered.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Order/Ordered.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJlZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/Error.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/AccountInfo_1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFjY291bnRJbmZvXzEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/DrinkInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXERyaW5rSW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_AccountCE.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_AccountCE.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50Q0UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_AccountInfo.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_AccountInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50SW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_AccountInfo_1.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50SW5mb18xLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_AddDrink.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_AddDrink.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZGREcmluay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_CategoryAdd.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_CategoryAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXRlZ29yeUFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_changeImage.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_changeImage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9jaGFuZ2VJbWFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_changePassword.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_changePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9jaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_changePhoneNumber.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_changePhoneNumber.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9jaGFuZ2VQaG9uZU51bWJlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_DrinkInfo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ecmlua0luZm8uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_Footer.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_LayoutGuest.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_LayoutGuest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRHdWVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_LayoutLoggedin.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_LayoutLoggedin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dnZWRpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_LoggedinNavbar.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_LoggedinNavbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dnZWRpbk5hdmJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_ManageBars.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_ManageBars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYW5hZ2VCYXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_NavBar.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_NavBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Staff/Index.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Staff/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Staff/OrderDetailManage.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Staff/OrderDetailManage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcT3JkZXJEZXRhaWxNYW5hZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/UserInfo/Index.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/UserInfo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckluZm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/UserInfo/OrderDetail.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/UserInfo/OrderDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckluZm9cT3JkZXJEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/UserInfo/OrderList.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/UserInfo/OrderList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckluZm9cT3JkZXJMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/_ViewImports.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/_ViewStart.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACH KHOA LAME/nam 2/PBL3/ManageAlphaShop/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_Layout.cshtml]
+[D:/Huukhoa/NAM 2/KI 2/PBL3/Alphashop-test-repo/AlphaShop-test-main1/AlphaShop-test-main1-resolved/AlphaShop/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-k0coouhb5s

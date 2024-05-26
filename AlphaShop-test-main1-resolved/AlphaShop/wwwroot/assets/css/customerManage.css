@@ -742,42 +742,42 @@ h2 {
         box-shadow: 0 5px 3px #b2acac;
     }
 
-    .drink-add1 .main-text {
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 5px;
-    }
+.drink-add1 .main-text {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
 
-    .drink-add1 .text1 {
-        font-size: 18px;
-        text-align: center;
-        margin-top: 10px;
-    }
+.drink-add1 .text1 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
 
-    .drink-add1 .text2 {
-        font-size: 12px;
-        text-align: center;
-        margin-top: 15px;
-    }
+.drink-add1 .text2 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
 
-    .drink-add1 .input_area {
+.drink-add1 .input_area {
+    display: flex;
+    flex-direction: column;
+}
+
+    .drink-add1 .input_area .input_area-1 {
+        max-width: 1000px;
+        margin: 10px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        margin-left: 120px;
     }
 
-        .drink-add1 .input_area .input_area-1 {
-            max-width: 1000px;
-            margin: 10px;
-            display: flex;
-            flex-direction: row;
-            margin-left: 120px;
-        }
-
-    .drink-add1 .__main--btn {
-        margin-top: 8px;
-        margin-right: 20px;
-    }
+.drink-add1 .__main--btn {
+    margin-top: 8px;
+    margin-right: 20px;
+}
 
 #btn-OK1 {
     position: absolute;

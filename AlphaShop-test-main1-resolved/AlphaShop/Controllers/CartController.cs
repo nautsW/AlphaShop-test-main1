@@ -15,13 +15,14 @@ namespace AlphaShop.Controllers
     public class CartController : Controller
     {
         private readonly HahaContext db;
+
         private readonly AccountService _accountService;
-       
+
         public CartController(AccountService accountService)
         {
             db = new HahaContext();
             _accountService = accountService;
-            
+
         }
         public IActionResult Index()
         {
@@ -33,7 +34,7 @@ namespace AlphaShop.Controllers
             };
             return View(cartModel);
         }
-        
+
         public IActionResult AddToCart(int optsize, int opttype, int id)
         {
 
@@ -44,7 +45,7 @@ namespace AlphaShop.Controllers
                 OptionSize = optsize,
                 OptionType = opttype,
                 Quantity = 1,
-                PrdPrice = db.Products.SingleOrDefault(x=>x.PrdId == id).PrdPrice,
+                PrdPrice = db.Products.SingleOrDefault(x => x.PrdId == id).PrdPrice,
                 PrdName = db.Products.SingleOrDefault(x => x.PrdId == id).PrdName,
                 PrdImage = db.Products.SingleOrDefault(x => x.PrdId == id).PrdImage,
             };
@@ -78,17 +79,17 @@ namespace AlphaShop.Controllers
             //    Quantity = 1,
             //};
 
-            
+
             //var check = db.CartDetails.SingleOrDefault(x => x.PrdId == item.PrdId && x.OptionSize == item.OptionSize && x.OptionType == item.OptionType);
             //if (check == null)
             //{
-                
+
             //    _accountService.Customer.Cart.CartDetails.Add(item);
             //    db.CartDetails.Add(item);
             //}
             //else
             //{
-               
+
             //    item.Quantity++;
             //    db.CartDetails.Add(item);
             //}
@@ -112,8 +113,8 @@ namespace AlphaShop.Controllers
             db.Entry(cartDetail).State = EntityState.Modified;
             db.CartDetails.Remove(cartDetail);
             db.SaveChanges();
-            
-            
+
+
 
             Console.WriteLine("Cart detail deleted successfully!");
 
@@ -138,7 +139,7 @@ namespace AlphaShop.Controllers
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }*/
-      
+
         public IActionResult UpdateCart(int optsize, int opttype, int id)
         {
 

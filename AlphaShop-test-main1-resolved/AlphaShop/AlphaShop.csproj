@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\assets\img\NewFolder\" />
+    <Folder Include="wwwroot\assets\img\pfp\" />
   </ItemGroup>
 
 </Project>

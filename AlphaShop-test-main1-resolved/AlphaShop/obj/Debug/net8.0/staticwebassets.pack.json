@@ -1,639 +1,547 @@
 {
   "Files": [
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AlphaShop.bundle.scp.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AlphaShop.bundle.scp.css",
       "PackagePath": "staticwebassets\\AlphaShop.bundle.scp.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\adminhome.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\adminhome.html",
       "PackagePath": "staticwebassets\\adminhome.html"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\Dropdown.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\Dropdown.css",
       "PackagePath": "staticwebassets\\assets\\css\\Dropdown.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\adminhome.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\Statistics.css",
+      "PackagePath": "staticwebassets\\assets\\css\\Statistics.css"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\adminhome.css",
       "PackagePath": "staticwebassets\\assets\\css\\adminhome.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\cartinfo.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\cartinfo.css",
       "PackagePath": "staticwebassets\\assets\\css\\cartinfo.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\category.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\category.css",
       "PackagePath": "staticwebassets\\assets\\css\\category.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\creat.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\creat.css",
       "PackagePath": "staticwebassets\\assets\\css\\creat.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\customerManage.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\customerManage.css",
       "PackagePath": "staticwebassets\\assets\\css\\customerManage.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\drinkinfo.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\drinkinfo.css",
       "PackagePath": "staticwebassets\\assets\\css\\drinkinfo.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\drinkmanage.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\drinkmanage.css",
       "PackagePath": "staticwebassets\\assets\\css\\drinkmanage.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\guest_navbar.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\guest_navbar.css",
       "PackagePath": "staticwebassets\\assets\\css\\guest_navbar.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\loggin_navbar.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\loggin_navbar.css",
       "PackagePath": "staticwebassets\\assets\\css\\loggin_navbar.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\login.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\login.css",
       "PackagePath": "staticwebassets\\assets\\css\\login.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\main.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\main.css",
       "PackagePath": "staticwebassets\\assets\\css\\main.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\orderlist.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\orderlist.css",
       "PackagePath": "staticwebassets\\assets\\css\\orderlist.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\ordermanage.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\ordermanage.css",
       "PackagePath": "staticwebassets\\assets\\css\\ordermanage.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\orderpage.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\orderpage.css",
       "PackagePath": "staticwebassets\\assets\\css\\orderpage.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\ordersuccess.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\ordersuccess.css",
       "PackagePath": "staticwebassets\\assets\\css\\ordersuccess.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\staffmanage.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\staffmanage.css",
       "PackagePath": "staticwebassets\\assets\\css\\staffmanage.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\userpage.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\css\\userpage.css",
       "PackagePath": "staticwebassets\\assets\\css\\userpage.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\ArrowButton.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\ArrowButton.png",
       "PackagePath": "staticwebassets\\assets\\img\\background\\ArrowButton.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\Desktop.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\Background_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\background\\Background_1.png"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\Desktop.png",
       "PackagePath": "staticwebassets\\assets\\img\\background\\Desktop.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\reversedArrowButton.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\pngtree-summer-seaside-summer-drink-blue-cold-banner-picture-image_1112118.png",
+      "PackagePath": "staticwebassets\\assets\\img\\background\\pngtree-summer-seaside-summer-drink-blue-cold-banner-picture-image_1112118.png"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\background\\reversedArrowButton.png",
       "PackagePath": "staticwebassets\\assets\\img\\background\\reversedArrowButton.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\cart\\X.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\cart\\X.png",
       "PackagePath": "staticwebassets\\assets\\img\\cart\\X.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\cart\\cart.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\cart\\cart.png",
       "PackagePath": "staticwebassets\\assets\\img\\cart\\cart.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\cart\\idk",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\cart\\idk",
       "PackagePath": "staticwebassets\\assets\\img\\cart"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\content\\bg__2.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\content\\bg__2.png",
       "PackagePath": "staticwebassets\\assets\\img\\content\\bg__2.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\content\\content1__1.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\content\\content1__1.png",
       "PackagePath": "staticwebassets\\assets\\img\\content\\content1__1.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\content\\content2__1.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\content\\content2__1.png",
       "PackagePath": "staticwebassets\\assets\\img\\content\\content2__1.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\customerManage\\SearchIcon.svg",
-      "PackagePath": "staticwebassets\\assets\\img\\customerManage\\SearchIcon.svg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\13a7cb82-f999-4189-97aa-e58636d7f860-IMG_20231119_084106.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\13a7cb82-f999-4189-97aa-e58636d7f860-IMG_20231119_084106.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\14.-Ca-phe-nau.png",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\14.-Ca-phe-nau.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\21aaf652-7979-4350-956f-1cf1b992a4b4-IMG_20231119_084106.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\21aaf652-7979-4350-956f-1cf1b992a4b4-IMG_20231119_084106.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\2bb89f49-b748-4c41-bd7a-e6bf6bb0fd86-TRA-DAU-GHEP-ANH-scaled.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\2bb89f49-b748-4c41-bd7a-e6bf6bb0fd86-TRA-DAU-GHEP-ANH-scaled.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\2ea184e8-d79a-4669-917c-226ed6aad422-14.-Ca-phe-nau.png",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\2ea184e8-d79a-4669-917c-226ed6aad422-14.-Ca-phe-nau.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\566c9979-d7fd-46ef-bd15-15190e545e9d-14.-Ca-phe-nau.png",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\566c9979-d7fd-46ef-bd15-15190e545e9d-14.-Ca-phe-nau.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\5b1d0a5a-051c-4d2c-918b-589772ad609a-image-holder3.png",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\5b1d0a5a-051c-4d2c-918b-589772ad609a-image-holder3.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\6df3bed3-7539-4b66-a3d1-3f219cb5acbb-image.png",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\6df3bed3-7539-4b66-a3d1-3f219cb5acbb-image.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\7ce0cb19-83e8-4f65-8242-b89898677b76-366016412_1022426768779018_3688136470597404410_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\7ce0cb19-83e8-4f65-8242-b89898677b76-366016412_1022426768779018_3688136470597404410_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\c3c97c47-bf39-46de-84be-4efa01426c16-image-holder.png",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\c3c97c47-bf39-46de-84be-4efa01426c16-image-holder.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\ecec1ccf-23e3-4d89-8f8b-2a2d3f5626f0-14.-Ca-phe-nau.png",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\ecec1ccf-23e3-4d89-8f8b-2a2d3f5626f0-14.-Ca-phe-nau.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\f39a53bc-0519-437e-b17d-e6a3eab4ea72-366016412_1022426768779018_3688136470597404410_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\f39a53bc-0519-437e-b17d-e6a3eab4ea72-366016412_1022426768779018_3688136470597404410_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\image-holder.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\image-holder.png",
       "PackagePath": "staticwebassets\\assets\\img\\drinklist\\image-holder.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\image-holder2.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\image-holder2.png",
       "PackagePath": "staticwebassets\\assets\\img\\drinklist\\image-holder2.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\image-holder3.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\image-holder3.png",
       "PackagePath": "staticwebassets\\assets\\img\\drinklist\\image-holder3.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\plus.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\plus.png",
       "PackagePath": "staticwebassets\\assets\\img\\drinklist\\plus.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\drinklist\\png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png",
-      "PackagePath": "staticwebassets\\assets\\img\\drinklist\\png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\Group1.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\Group1.png",
       "PackagePath": "staticwebassets\\assets\\img\\nav-bar\\Group1.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\china.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\china.png",
       "PackagePath": "staticwebassets\\assets\\img\\nav-bar\\china.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\england.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\england.png",
       "PackagePath": "staticwebassets\\assets\\img\\nav-bar\\england.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\newlogo.jpg",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\newlogo.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\nav-bar\\newlogo.jpg"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\vietnam.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\nav-bar\\vietnam.png",
       "PackagePath": "staticwebassets\\assets\\img\\nav-bar\\vietnam.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\order\\cod.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\order\\cod.png",
       "PackagePath": "staticwebassets\\assets\\img\\order\\cod.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\order\\momo.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\order\\momo.png",
       "PackagePath": "staticwebassets\\assets\\img\\order\\momo.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\order\\phoneicon.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\order\\phoneicon.png",
       "PackagePath": "staticwebassets\\assets\\img\\order\\phoneicon.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\order\\positionicon.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\order\\positionicon.png",
       "PackagePath": "staticwebassets\\assets\\img\\order\\positionicon.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\order\\usericon.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\order\\usericon.png",
       "PackagePath": "staticwebassets\\assets\\img\\order\\usericon.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\366016412_1022426768779018_3688136470597404410_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\366016412_1022426768779018_3688136470597404410_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\367746031_262577929959161_8639283531881028750_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\367746031_262577929959161_8639283531881028750_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\375585075_1202634850668756_4595484096234248514_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\375585075_1202634850668756_4595484096234248514_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\377293739_254295497018066_6623516974077992523_n.png",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\377293739_254295497018066_6623516974077992523_n.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\377746609_970863090812493_1228628965172028110_n.png",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\377746609_970863090812493_1228628965172028110_n.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\400447154_122111109068094577_7834628910978201993_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\400447154_122111109068094577_7834628910978201993_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\406468597_666046458949146_1778562816782508641_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\406468597_666046458949146_1778562816782508641_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\407902949_321477414035430_3519260040187782604_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\407902949_321477414035430_3519260040187782604_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\408106703_741846807961364_7146286269929988060_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\408106703_741846807961364_7146286269929988060_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\410458536_3477826245860883_1077904512108268470_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\410458536_3477826245860883_1077904512108268470_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\419374291_24447487931562049_1154642393842976593_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\419374291_24447487931562049_1154642393842976593_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\423224311_392178716697675_300880848738751595_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\423224311_392178716697675_300880848738751595_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\425414640_122126788076122716_8025457533247283284_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\425414640_122126788076122716_8025457533247283284_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\432967121_122140130594092704_8626983994602865336_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\432967121_122140130594092704_8626983994602865336_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\434161138_441667771540199_8781139009256119930_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\434161138_441667771540199_8781139009256119930_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\436351838_399853976232335_3412873530645696783_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\436351838_399853976232335_3412873530645696783_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\438871707_423684010421002_9133769408395613058_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\438871707_423684010421002_9133769408395613058_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\46449484_106464573708580_7153179069830397952_n.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\46449484_106464573708580_7153179069830397952_n.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\IamaTOMIC.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\IamaTOMIC.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\latest.png",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\latest.png"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\pfp\\sakuramemoir.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\pfp\\sakuramemoir.jpg"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\review\\hanabi.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\review\\hanabi.png",
       "PackagePath": "staticwebassets\\assets\\img\\review\\hanabi.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\review\\star-1.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\review\\star-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\review\\star-1.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\user\\Lmao.png",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\img\\user\\Lmao.png",
       "PackagePath": "staticwebassets\\assets\\img\\user\\Lmao.png"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\DrinkInfo.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\DrinkInfo.js",
       "PackagePath": "staticwebassets\\assets\\js\\DrinkInfo.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\customerManage.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\Statistics.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Statistics.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\chart.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\chart.min.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\customerManage.js",
       "PackagePath": "staticwebassets\\assets\\js\\customerManage.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\drinkmanage.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\drinkmanage.js",
       "PackagePath": "staticwebassets\\assets\\js\\drinkmanage.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\ordermanage.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\ordermanage.js",
       "PackagePath": "staticwebassets\\assets\\js\\ordermanage.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\script.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\script.js",
       "PackagePath": "staticwebassets\\assets\\js\\script.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\staffmanage.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\site.js",
+      "PackagePath": "staticwebassets\\assets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\assets\\js\\staffmanage.js",
       "PackagePath": "staticwebassets\\assets\\js\\staffmanage.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\cartinfo.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\cartinfo.html",
       "PackagePath": "staticwebassets\\cartinfo.html"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\category.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\category.html",
       "PackagePath": "staticwebassets\\category.html"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\creat.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\creat.html",
       "PackagePath": "staticwebassets\\creat.html"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\css\\site.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\drinkInfo.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\drinkInfo.html",
       "PackagePath": "staticwebassets\\drinkInfo.html"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\drinkmanage.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\drinkmanage.html",
       "PackagePath": "staticwebassets\\drinkmanage.html"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\favicon.ico",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\index.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\js\\site.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\js\\DrinkInfo.js",
+      "PackagePath": "staticwebassets\\js\\DrinkInfo.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\js\\Statistics.js",
+      "PackagePath": "staticwebassets\\js\\Statistics.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\js\\chart.min.js",
+      "PackagePath": "staticwebassets\\js\\chart.min.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\js\\customerManage.js",
+      "PackagePath": "staticwebassets\\js\\customerManage.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\js\\drinkmanage.js",
+      "PackagePath": "staticwebassets\\js\\drinkmanage.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\js\\ordermanage.js",
+      "PackagePath": "staticwebassets\\js\\ordermanage.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\js\\staffmanage.js",
+      "PackagePath": "staticwebassets\\js\\staffmanage.js"
+    },
+    {
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lmao.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\lmao.html",
       "PackagePath": "staticwebassets\\lmao.html"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\login.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\login.html",
       "PackagePath": "staticwebassets\\login.html"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\ordermanage.html",
-      "PackagePath": "staticwebassets\\ordermanage.html"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\orderpage.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\orderpage.html",
       "PackagePath": "staticwebassets\\orderpage.html"
     },
     {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\staffmanage.html",
-      "PackagePath": "staticwebassets\\staffmanage.html"
-    },
-    {
-      "Id": "D:\\BACH KHOA LAME\\nam 2\\PBL3\\ManageAlphaShop\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\userpage.html",
+      "Id": "D:\\Huukhoa\\NAM 2\\KI 2\\PBL3\\Alphashop-test-repo\\AlphaShop-test-main1\\AlphaShop-test-main1-resolved\\AlphaShop\\wwwroot\\userpage.html",
       "PackagePath": "staticwebassets\\userpage.html"
     },
     {

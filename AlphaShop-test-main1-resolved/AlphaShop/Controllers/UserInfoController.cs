@@ -66,13 +66,79 @@ namespace AlphaShop.Controllers
                 else
                 {
                     TempData["Alert"] = "<script>alert('Mật khẩu mới không khớp!')</script>";
-                    
+
                 }
             }
             else
             {
                 TempData["Alert"] = "<script>alert('Mật khẩu cũ không đúng!')</script>";
-                
+
+            }
+            return RedirectToAction("Index", "UserInfo");
+        }
+
+        [HttpPost]
+        public IActionResult ReplaceEmail(ChangeEmailModel model)
+        {
+            int CartId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
+            var user = _context.Customers.SingleOrDefault(x => x.CtrEmail == model.OldEmail && x.CtrId == CartId);
+
+            if (user != null)
+            {
+                // Kiểm tra xác nhận mật khẩu mới
+                if (model.NewEmail == model.ConfirmNewEmail)
+                {
+                    // Cập nhật mật khẩu mới vào cơ sở dữ liệu
+                    user.CtrEmail = model.NewEmail;
+                    _context.SaveChanges();
+
+                    TempData["Alert"] = "<script>alert('Email đã được thay đổi thành công!')</script>";
+
+                    // Cập nhật lại claim "SerialNumber" (mật khẩu) trong mã điều khiển
+                }
+                else
+                {
+                    TempData["Alert"] = "<script>alert('Email mới không khớp!')</script>";
+
+                }
+            }
+            else
+            {
+                TempData["Alert"] = "<script>alert('Email cũ không đúng!')</script>";
+
+            }
+            return RedirectToAction("Index", "UserInfo");
+        }
+
+        [HttpPost]
+        public IActionResult ReplacePhoneNumber(ChangePhoneNumberModel model)
+        {
+            int CartId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
+            var user = _context.Customers.SingleOrDefault(x => x.CtrPhonenumber == model.OldPhoneNumber && x.CtrId == CartId);
+
+            if (user != null)
+            {
+                // Kiểm tra xác nhận mật khẩu mới
+                if (model.NewPhoneNumber == model.ConfirmNewPhoneNumber)
+                {
+                    // Cập nhật mật khẩu mới vào cơ sở dữ liệu
+                    user.CtrPhonenumber = model.NewPhoneNumber;
+                    _context.SaveChanges();
+
+                    TempData["Alert"] = "<script>alert('SDT đã được thay đổi thành công!')</script>";
+
+                    // Cập nhật lại claim "SerialNumber" (mật khẩu) trong mã điều khiển
+                }
+                else
+                {
+                    TempData["Alert"] = "<script>alert('SDT mới không khớp!')</script>";
+
+                }
+            }
+            else
+            {
+                TempData["Alert"] = "<script>alert('SDT cũ không đúng!')</script>";
+
             }
             return RedirectToAction("Index", "UserInfo");
         }
@@ -140,8 +206,8 @@ namespace AlphaShop.Controllers
         public IActionResult OrderDetail(int id)
         {
 
-            Ord ord = _context.Ords.SingleOrDefault(p => p.OrdId == id);
-            if (ord == null)
+            Ord order = _context.Ords.SingleOrDefault(p => p.OrdId == id);
+            if (order == null)
             {
                 return NotFound();
             }
@@ -153,10 +219,170 @@ namespace AlphaShop.Controllers
                     Product product = _context.Products.SingleOrDefault(p => p.PrdId == ordDetails.ElementAt(i).PrdId);
                     ordDetails.ElementAt(i).Prd = product;
                 }
-                ord.OrdDetails = ordDetails;
+                order.OrdDetails = ordDetails;
             }
-            return View(ord);
+            Customer cus = _context.Customers.SingleOrDefault(x => x.CtrId == order.CartId);
+            cus.CtrAddress = _context.Customers.SingleOrDefault(x => x.CtrId == order.CartId).CtrAddress;
+            cus.CtrPhonenumber = _context.Customers.SingleOrDefault(x => x.CtrId == order.CartId).CtrPhonenumber;
+            OrderInfoVM orderInfoVM = new OrderInfoVM
+            {
+                ord = order,
+                customer = cus,
+            };
+            return View(orderInfoVM);
         }
+
+        [HttpPost]
+        public IActionResult AddAddress(string new_address, Address lastitem)
+        {
+            // Lấy CtrId từ Claims của người dùng hiện tại
+            int CtrId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId")?.Value);
+
+            // Kiểm tra nếu CtrId hợp lệ
+
+            // Tìm khách hàng với CtrId tương ứng
+            var customer = _context.Customers.SingleOrDefault(x => x.CtrId == CtrId);
+
+            if (customer != null)
+            {
+                int index = _context.Addresses
+    .Where(x => x.CtrId == CtrId)
+    .OrderBy(x => x.AddId) // Replace SomeProperty with the property you want to order by
+    .Last()
+    .AddId + 1;
+
+                // Tạo đối tượng Address mới
+                Address newadd = new Address
+                {
+                    CtrId = CtrId,
+                    AddId = index + 1,
+                    AddressName = new_address
+                };
+
+                // Thêm địa chỉ mới vào danh sách Addresses
+                customer.Addresses.Add(newadd);
+
+                // Lưu thay đổi vào cơ sở dữ liệu
+                _context.SaveChanges();
+
+                // Redirect đến trang Index của UserInfo sau khi thành công
+                return RedirectToAction("Index", "UserInfo");
+            }
+            else
+            {
+                // Xử lý khi không tìm thấy khách hàng
+                ModelState.AddModelError(string.Empty, "Không tìm thấy khách hàng");
+            }
+
+
+
+            // Trả về view hiện tại với thông báo lỗi
+            return RedirectToAction("Index", "UserInfo");
+        }
+
+        [HttpPost]
+        public IActionResult SetAddress(string address)
+        {
+            // Lấy CtrId từ Claims của người dùng hiện tại
+            int CtrId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId")?.Value);
+
+            // Kiểm tra nếu CtrId hợp lệ
+
+            // Tìm khách hàng với CtrId tương ứng
+            var customer = _context.Customers.SingleOrDefault(x => x.CtrId == CtrId);
+
+
+
+            if (customer != null)
+            {
+                customer.CtrAddress = address;
+
+                // Lưu thay đổi vào cơ sở dữ liệu
+                _context.SaveChanges();
+
+                // Redirect đến trang Index của UserInfo sau khi thành công
+                return RedirectToAction("Index", "UserInfo");
+            }
+            else
+            {
+                // Xử lý khi không tìm thấy khách hàng
+                ModelState.AddModelError(string.Empty, "Không tìm thấy khách hàng");
+            }
+
+
+
+            // Trả về view hiện tại với thông báo lỗi
+            return RedirectToAction("Index", "UserInfo");
+        }
+
+        [HttpPost]
+        public IActionResult DeleteAddress(int id)
+        {
+            // Lấy CtrId từ Claims của người dùng hiện tại
+            int CtrId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId")?.Value);
+
+            // Kiểm tra nếu CtrId hợp lệ
+            var customer = _context.Customers.SingleOrDefault(x => x.CtrId == CtrId);
+            // Tìm khách hàng với CtrId tương ứng
+            var address = _context.Addresses.SingleOrDefault(x => x.CtrId == CtrId && x.AddId == id);
+            var address_list = _context.Addresses;
+
+            if (address != null && customer != null)
+            {
+                _context.Entry(address).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                //customer.Addresses.Remove(address);
+                //address_list.Remove(address);
+                _context.Remove(address);
+                // Lưu thay đổi vào cơ sở dữ liệu
+                _context.SaveChanges();
+                // Redirect đến trang Index của UserInfo sau khi thành công
+                return RedirectToAction("Index", "UserInfo");
+            }
+            else
+            {
+                // Xử lý khi không tìm thấy khách hàng
+                TempData["Alert"] = $"<script>alert('fail: {address} {customer.ToString()}');</script>";
+            }
+
+
+
+            // Trả về view hiện tại với thông báo lỗi
+            return RedirectToAction("Index", "UserInfo");
+        }
+
+        [HttpPost]
+        public IActionResult UpdateAddress(int id, string new_address)
+        {
+            // Lấy CtrId từ Claims của người dùng hiện tại
+            int CtrId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId")?.Value);
+
+            // Kiểm tra nếu CtrId hợp lệ
+
+            // Tìm khách hàng với CtrId tương ứng
+            var address = _context.Addresses.SingleOrDefault(x => x.CtrId == CtrId && x.AddId == id);
+
+            if (address != null)
+            {
+
+                address.AddressName = new_address;
+                _context.Entry(address).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                // Lưu thay đổi vào cơ sở dữ liệu
+                _context.SaveChanges();
+                // Redirect đến trang Index của UserInfo sau khi thành công
+                return RedirectToAction("Index", "UserInfo");
+            }
+            else
+            {
+                // Xử lý khi không tìm thấy khách hàng
+                ModelState.AddModelError(string.Empty, "Không tìm thấy khách hàng");
+            }
+
+
+
+            // Trả về view hiện tại với thông báo lỗi
+            return RedirectToAction("Index", "UserInfo");
+        }
+
 
 
 

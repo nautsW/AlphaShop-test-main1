@@ -1,17 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     font-family: "JetBrains Mono";
 }
 
-body{
-    
+body {
     background-color: white;
     /* position: relative; */
     /* temp */
 }
 /* navbar */
-.nav{
+.nav {
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -20,54 +19,55 @@ body{
     box-shadow: 1px 2px 3px #000000;
     z-index: 999;
 }
-.nav__bar--1{
+
+.nav__bar--1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     height: 70px;
 }
-.nav__flag--lang
-{
+
+.nav__flag--lang {
     display: flex;
     justify-content: space-evenly;
 }
-.nav__flag{
+
+.nav__flag {
     margin-top: 20px;
     margin-left: 10px;
     width: 30px;
     height: 25px;
 }
-.nav__flag:hover{
-    opacity: 0.5;
-}
-#nav__flag1
-{
 
+    .nav__flag:hover {
+        opacity: 0.5;
+    }
+
+#nav__flag1 {
     background-image: url("..\\img\\nav-bar\\vietnam.png");
     background-size: 105%;
     background-position: -1px;
     /* background: transparent; */
     border: none;
 }
-#nav__flag2
-{
 
+#nav__flag2 {
     background-image: url("..\\img\\nav-bar\\england.png");
     background-size: 105%;
     background-position: -1px;
     /* background: transparent; */
     border: none;
 }
-#nav__flag3
-{
 
+#nav__flag3 {
     background-image: url("..\\img\\nav-bar\\china.png");
     background-size: 105%;
     background-position: -1px;
     /* background: transparent; */
     border: none;
 }
-.nav__logo{
+
+.nav__logo {
     background-image: url("..\\img\\nav-bar\\Group1.png");
     background-size: 100%;
     margin-top: 5px;
@@ -75,116 +75,101 @@ body{
     height: 69px;
 }
 
-.accountlink
-{
+.accountlink {
     color: black;
     margin-top: 20px;
-    font-size : 14px;
-
+    font-size: 14px;
 }
 
 /* navbar */
 
 /* CustomerInfo */
-.CustomerInfoBox
-{
-    width: 630px; 
-    height: 500px; 
-    left: 80px; 
-    top: 151px; 
+.CustomerInfoBox {
+    width: 630px;
+    height: 500px;
+    left: 80px;
+    top: 151px;
     position: absolute;
 }
 
-.CustomerRect
-{
-    width: 630px; 
-    height: 500px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
-    background: white; 
-    box-shadow: 5px 5px 4px 3px rgba(0, 0, 0, 0.25); 
-    border-radius: 5px; 
+.CustomerRect {
+    width: 630px;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+    box-shadow: 5px 5px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
     border: 1px black solid;
 }
 
-.InfoText
-{
-    position: absolute; 
-    text-align: center; 
-    color: black; 
+.InfoText {
+    position: absolute;
+    text-align: center;
+    color: black;
     word-wrap: break-word;
 }
 
-#CustomerInfo
-{
-    left: 25px; 
-    top: 10px; 
-    font-style: italic; 
-    font-weight: 700; 
-    font-size: 14px; 
+#CustomerInfo {
+    left: 25px;
+    top: 10px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
 }
 
-#Name
-{
-    left: 54px; 
-    top: 57px; 
+#Name {
+    left: 54px;
+    top: 57px;
     font-size: 12px;
 }
 
-#Phone
-{
-    left: 54px; 
+#Phone {
+    left: 54px;
     top: 100px;
     font-size: 12px;
 }
 
-#Address
-{
-    left: 54px; 
-    top: 146px; 
+#Address {
+    left: 54px;
+    top: 146px;
     font-size: 12px;
 }
 
-#GhiChu
-{
-    left: 25px; 
+#GhiChu {
+    left: 25px;
     top: 209px;
     font-size: 12px;
 }
 
-.Line
-{   
-    width: 580px; 
-    height: 0px; 
-    left: 25px; 
-    position: absolute; 
+.Line {
+    width: 580px;
+    height: 0px;
+    left: 25px;
+    position: absolute;
     border: 1px rgba(0, 0, 0, 0.25) solid;
 }
 
-#Line1
-{
-    top : 32px;
+#Line1 {
+    top: 32px;
 }
 
-#Line2
-{
-    top: 86px; 
+#Line2 {
+    top: 86px;
 }
 
-#Line3
-{
-    top: 132px; 
+#Line3 {
+    top: 132px;
 }
 
-.GhiChuBox
-{
-    width: 580px; 
-    height: 200px; 
-    left: 25px; 
-    top: 239px; 
-    position: absolute; 
-    background: white; 
+.GhiChuBox {
+    width: 580px;
+    height: 200px;
+    left: 25px;
+    top: 239px;
+    position: absolute;
+    background: white;
     border: 1px black solid;
 }
 
@@ -200,44 +185,40 @@ body{
     font-size: 15px;
     color: #685E5E;
     padding: 10px;
-    box-sizing: border-box; 
-    background: transparent; 
-}
-
-.icon
-{
-    width: 20px; 
-    height: 25px; 
-    left: 25px; top: 98px; 
-    position: absolute; 
+    box-sizing: border-box;
     background: transparent;
-    
 }
 
-#icon1
-{   
+.icon {
+    width: 20px;
+    height: 25px;
+    left: 25px;
+    top: 98px;
+    position: absolute;
+    background: transparent;
+}
+
+#icon1 {
     background-image: url("..\\img\\order\\phoneicon.png");
     background-size: 105%;
     background-position: 0px;
-    left: 25px; 
+    left: 25px;
     top: 98px;
 }
 
-#icon2
-{
+#icon2 {
     background-image: url("..\\img\\order\\usericon.png");
     background-size: 100%;
     background-position: 0px;
-    left: 25px; 
+    left: 25px;
     top: 52px;
 }
 
-#icon3
-{
+#icon3 {
     background-image: url("..\\img\\order\\positionicon.png");
     background-size: 100%;
     background-position: 0px;
-    left: 25px; 
+    left: 25px;
     top: 141px;
 }
 
@@ -245,311 +226,275 @@ body{
 
 /* OrderInfo*/
 
-.OrderInfoBox
-{
-    width: 630px; 
-    height: 700px; 
-    left: 730px; 
-    top: 151px; 
+.OrderInfoBox {
+    width: 630px;
+    height: 700px;
+    left: 730px;
+    top: 151px;
     position: absolute;
 }
 
-.OrderRect
-{
-    width: 630px;  
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
-    background: white; 
-    box-shadow: 5px 5px 4px 3px rgba(0, 0, 0, 0.25); 
-    border-radius: 5px; 
+.OrderRect {
+    width: 630px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+    box-shadow: 5px 5px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
     border: 1px black solid;
 }
 
-#OrderInfo
-{
-    left: 22px; 
+#OrderInfo {
+    left: 22px;
     top: 10px;
-    font-style: italic; 
-    font-weight: 700; 
-    font-size: 14px; 
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
 }
 
-#Line4
-{
-    left: 22px; 
+#Line4 {
+    left: 22px;
     top: 42px;
 }
 
-.OrderList
-{
+.OrderList {
     width: 100%;
-    top: 60px; 
+    top: 60px;
     position: relative;
 }
 
-.OrderItem
-{
-    width: 100%; 
-    height: 100px; 
-    right : -30px;
-    position: relative;
-}
-
-.Itembox
-{
-    width: 500px; 
+.OrderItem {
+    width: 100%;
     height: 100px;
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
-    background: white; 
+    right: -30px;
+    position: relative;
+}
+
+.Itembox {
+    width: 500px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
     border: 1px #D9D9D9 solid;
 }
 
-.DrinkImg
-{   
-    width: 90px; 
-    height: 90px; 
-    left: 5px; 
-    top: 5px; 
-    position: absolute; 
+.DrinkImg {
+    width: 90px;
+    height: 90px;
+    left: 5px;
+    top: 5px;
+    position: absolute;
     background: transparent;
 }
-#DrinkImg
-{
+
+#DrinkImg {
     background-image: url("..\\img\\drinklist\\image-holder.png");
     background-size: 100%;
     background-position: 0px;
 }
 
-#OrderList li
-{
+#OrderList li {
     list-style-type: none;
     margin-bottom: 10px;
 }
 
-#DrinkName
-{
-    left: 108px; 
+#DrinkName {
+    left: 108px;
     top: 12px;
     font-size: 12px;
 }
 
-.Size
-{
-    left: 108px; 
-    top: 42px; 
-    position: absolute; 
-    text-align: center; 
-    color: #999999; 
-    font-size: 12px; 
-    font-family: JetBrains Mono; 
-    font-weight: 400; 
-    word-wrap: break-word;
-}
-
-.Price
-{
-    left: 108px; 
-    top: 72px; 
-    position: absolute; 
-    text-align: center; 
-    color: #D4B959; 
-    font-size: 12px; 
-    font-family: JetBrains Mono; 
+.Size {
+    left: 108px;
+    top: 42px;
+    position: absolute;
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+    font-family: JetBrains Mono;
     font-weight: 400;
     word-wrap: break-word;
 }
 
-#Soluong
-{
+.Price {
+    left: 108px;
+    top: 72px;
+    position: absolute;
+    text-align: center;
+    color: #D4B959;
+    font-size: 12px;
+    font-family: JetBrains Mono;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+#Soluong {
     margin-top: 20px;
     font-size: 12px;
 }
 
-#TotalDrink
-{
+#TotalDrink {
     margin-top: 20px;
     font-size: 12px;
     margin-left: 350px;
 }
 
-#TransportCost
-{   
+#TransportCost {
     margin-top: 40px;
     font-size: 12px;
     margin-left: 350px;
 }
 
-#Total
-{
+#Total {
     margin-top: 60px;
     font-size: 12px;
     margin-left: 350px;
 }
 
-#Line6
-{
+#Line6 {
     margin-top: 100px;
 }
 
-.xxxxx
-{
-    position: relative; 
-    text-align: center; 
-    color: #D4B959; 
-    font-size: 12px;  
-    font-weight: 400; 
+.xxxxx {
+    position: relative;
+    text-align: center;
+    color: #D4B959;
+    font-size: 12px;
+    font-weight: 400;
     word-wrap: break-word;
 }
 
-#TotalDrinkPrice
-{   
+#TotalDrinkPrice {
     font-size: 12px;
     margin-left: 450px;
     margin-top: 28px;
 }
 
-#TransportPrice
-{   
+#TransportPrice {
     font-size: 12px;
     margin-left: 450px;
     margin-top: -5px;
 }
 
-#TotalPrice
-{   
+#TotalPrice {
     font-size: 12px;
     margin-left: 450px;
     margin-top: -5px;
 }
 
-.OrderBox
-{
-    width: 150px; 
-    height: 57px; 
-    left: 400px; 
+.OrderBox {
+    width: 150px;
+    height: 57px;
+    left: 400px;
     margin-top: 50px;
     position: relative;
 }
 
-.Rectbackground
-{
+.Rectbackground {
     width: 150px;
-    height: 50px; 
-    left: 18.29px; 
-    top: 12px; 
-    position: absolute; 
+    height: 50px;
+    left: 18.29px;
+    top: 12px;
+    position: absolute;
     background: #F5DF91;
 }
 
-.Btn
-{
-    width: 100%; 
-    height:  50px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
+.Btn {
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
     background: #FEFFC8;
     border: transparent;
-    color: black; 
+    color: black;
     font-size: 20px;
-    font-weight: 700; 
+    font-weight: 700;
     word-wrap: break-word;
 }
 
-.OrderBox:hover .Btn
-{
+.OrderBox:hover .Btn {
     background-color: green;
     color: white
 }
 
-.OrderBox:hover .Rectbackground
-{
+.OrderBox:hover .Rectbackground {
     background-color: aquamarine;
 }
 
 /* OrderInfo End*/
 /* PaymentInfo*/
-.PaymentBox
-{
-    width: 630px; 
+.PaymentBox {
+    width: 630px;
     height: 154px;
-    left: 80px; 
-    top: 697px; 
+    left: 80px;
+    top: 697px;
     position: absolute;
 }
 
-.PaymentRect
-{
-    width: 630px; 
-    height: 109px; 
-    left: 0px; 
-    top: 1px; 
+.PaymentRect {
+    width: 630px;
+    height: 109px;
+    left: 0px;
+    top: 1px;
     position: absolute;
-    background: white; 
-    box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.25); 
-    border-radius: 5px; 
+    background: white;
+    box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
     border: 1px black solid;
-
 }
 
-#PaymentInfo
-{
-    left: 25px; 
+#PaymentInfo {
+    left: 25px;
     top: 14px;
-    font-style: italic; 
-    font-weight: 700; 
-    font-size: 14px; 
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
 }
 
-.momoImg
-{
-    width: 20px; 
-    height: 22.39px; 
-    left: 28px; 
-    top: 39.85px; 
+.momoImg {
+    width: 20px;
+    height: 22.39px;
+    left: 28px;
+    top: 39.85px;
     position: absolute;
     border: transparent;
     background-color: transparent;
 }
 
-#momoImg
-{
+#momoImg {
     background-image: url("..\\img\\order\\momo.png");
     background-size: 100%;
     background-position: 0px;
 }
 
-.codImg
-{
-    width: 20px; 
-    height: 21.54px; 
-    left: 28px; 
-    top: 77px; 
+.codImg {
+    width: 20px;
+    height: 21.54px;
+    left: 28px;
+    top: 77px;
     position: absolute;
     border: transparent;
     background-color: transparent;
 }
 
-#codImg
-{
+#codImg {
     background-image: url("..\\img\\order\\cod.png");
     background-size: 100%;
     background-position: 0px;
 }
 
-#MomoText
-{
-    left: 68px; 
+#MomoText {
+    left: 68px;
     top: 42px;
     font-size: 12px;
 }
 
-#CodText
-{
-    left: 68px; 
+#CodText {
+    left: 68px;
     top: 79px;
     font-size: 12px;
 }

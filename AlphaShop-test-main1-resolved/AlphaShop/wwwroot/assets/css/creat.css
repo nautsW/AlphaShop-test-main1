@@ -1,8 +1,9 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     font-family: "JetBrains Mono";
 }
+
 body {
     background-color: #F5DF91;
 }
@@ -20,7 +21,7 @@ body {
     text-align: center;
 }
 
-.logo{
+.logo {
     background-image: url("..\\img\\nav-bar\\Group1.png");
     background-size: 100%;
     width: 200px;
@@ -36,6 +37,7 @@ h2 {
 
 .input-group {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -63,39 +65,82 @@ h2 {
     background: transparent;
 }
 
-.btn:hover {
-    background-color: black;
-    color: white;
-}
-.list{
+    .btn:hover {
+        background-color: black;
+        color: white;
+    }
+
+.list {
     list-style: none;
     padding-left: 0;
 }
+
 .list__item-link {
     font-size: 12px;
     line-height: 1.5;
     color: #007bff;
-  }
-.radio__input-group
-{
-    display : flex;
+}
+
+.radio__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
-.gender__container-main
-{
-    display : flex;
-    margin-left: 50px;
+
+.gender__container-main {
+    display: flex;
+    /*margin-left: -30px;*/
+    margin-top: 7px;
+    width: 75%;
 }
-.gender__container
-{
+
+.gender__container {
     margin-left: 30px;
 }
-.date__input-group
-{
-    display : flex;
+
+.date__input-group {
+    display: flex;
     margin-bottom: 20px;
+    flex-direction: column;
 }
-.date__input
-{
-    margin-left: 85px;
+
+.date__input {
+    width: 75%;
+
 }
+.container span {
+    
+}
+.input_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.input_content label{
+    width: 200px;
+    text-align: left;
+    margin-top: 9px;
+}
+.input-group span {
+    font-size: 12px;
+    color: red;
+    text-align: left;
+    /*margin-left: 100px;*/
+    margin-left: 97px;
+}
+.radio__input-group span {
+    font-size: 12px;
+    color: red;
+    text-align: left;
+    /*margin-left: 100px;*/
+    margin-left: 100px;
+}
+.date__input-group span {
+    font-size: 12px;
+    color: red;
+    text-align: left;
+    /*margin-left: 100px;*/
+    margin-left: 100px;
+}
+
+    

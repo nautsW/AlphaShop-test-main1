@@ -7,30 +7,31 @@ namespace AlphaShop.Controllers
     public class StaffController : Controller
     {
         private readonly HahaContext _context;
-        
+
         public StaffController(HahaContext context)
         {
             _context = context;
         }
         public IActionResult Index()
-        {   
-            
+        {
+
             StaffIOrderManageVM vm = new StaffIOrderManageVM
             {
                 orderlist = _context.Ords.Where(x => x.OrdStatus.HasValue && x.OrdStatus == 0).ToList(),
                 NameList = new List<string>(),
 
             };
-            foreach(var item in vm.orderlist)
+            foreach (var item in vm.orderlist)
             {
                 vm.NameList.Add(_context.Customers.SingleOrDefault(x => x.CtrId == item.CartId).CtrUsername);
             }
-           
+
             return View(vm);
         }
-        
+
         public IActionResult OrderDetailManage(int id)
-        {   OrderManage ordermanage = new OrderManage();
+        {
+            OrderManage ordermanage = new OrderManage();
             Ord ord = _context.Ords.SingleOrDefault(p => p.OrdId == id);
             if (ord == null)
             {
@@ -48,8 +49,8 @@ namespace AlphaShop.Controllers
             }
             ordermanage.order = ord;
             ordermanage.customer = _context.Customers.SingleOrDefault(x => x.CtrId == ord.CartId);
-            
-            
+
+
             return View(ordermanage);
         }
 

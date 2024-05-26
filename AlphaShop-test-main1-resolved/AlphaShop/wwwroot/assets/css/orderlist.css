@@ -293,6 +293,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    position: absolute;
+    left: -3%;
 }
 
 .modal {
@@ -535,6 +537,7 @@ h2 {
     margin-left: 355px;
     width: 550px;
 }
+
 .P_btn2 {
     margin-top: -25px;
     margin-left: 495px;

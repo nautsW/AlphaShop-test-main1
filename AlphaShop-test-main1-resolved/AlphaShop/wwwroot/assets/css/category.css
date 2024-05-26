@@ -1,17 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     font-family: "JetBrains Mono";
 }
 
-body{
-    
+body {
     background-color: white;
     /* position: relative; */
     /* temp */
 }
 /* navbar */
-.nav{
+.nav {
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -20,103 +19,102 @@ body{
     box-shadow: 1px 2px 3px #000000;
     z-index: 999;
 }
-.nav__bar--1{
+
+.nav__bar--1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     height: 70px;
 }
-.nav__flag--lang
-{
+
+.nav__flag--lang {
     display: flex;
     justify-content: space-evenly;
 }
-.nav__flag{
+
+.nav__flag {
     margin-top: 20px;
     margin-left: 10px;
     width: 30px;
     height: 25px;
 }
-.nav__flag:hover{
-    opacity: 0.5;
-}
-#nav__flag1
-{
 
+    .nav__flag:hover {
+        opacity: 0.5;
+    }
+
+#nav__flag1 {
     background-image: url("..\\img\\nav-bar\\vietnam.png");
     background-size: 105%;
     background-position: -1px;
     /* background: transparent; */
     border: none;
 }
-#nav__flag2
-{
 
+#nav__flag2 {
     background-image: url("..\\img\\nav-bar\\england.png");
     background-size: 105%;
     background-position: -1px;
     /* background: transparent; */
     border: none;
 }
-#nav__flag3
-{
 
+#nav__flag3 {
     background-image: url("..\\img\\nav-bar\\china.png");
     background-size: 105%;
     background-position: -1px;
     /* background: transparent; */
     border: none;
 }
-.nav__logo{
+
+.nav__logo {
     background-image: url("..\\img\\nav-bar\\Group1.png");
     background-size: 100%;
     margin-top: 5px;
     width: 200px;
     height: 69px;
 }
-.nav__acc
-{
+
+.nav__acc {
     margin-top: 20px;
 }
-.__main--btn
-{
+
+.__main--btn {
     border-radius: 10px;
     font-size: 12px;
     width: 100px;
     height: 30px;
     background: transparent;
+}
 
-}
-.__main--btn:hover
-{
-    background-color: black;
-    color: white;
-}
-.nav__bar--2
-{
+    .__main--btn:hover {
+        background-color: black;
+        color: white;
+    }
+
+.nav__bar--2 {
     background-color: black;
     color: white;
     height: 50px;
 }
-.nav__list
-{
+
+.nav__list {
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-evenly;
 }
-.nav__item
-{
+
+.nav__item {
     margin-top: 10px;
     padding: 5px;
     border-radius: 5px;
 }
-.nav__item:hover
-{
-    color: black;
-    background-color: white;
 
-}
+    .nav__item:hover {
+        color: black;
+        background-color: white;
+    }
 /* navbar */
 
 .DanhMC {
@@ -241,7 +239,7 @@ body{
     width: 16px;
     height: 15px;
     margin-left: 10px;*/ /* Đặt khoảng cách từ biểu tượng tìm kiếm đến biên trái của hộp chứa */
-    /*position: relative;*/ /* Đặt position thành relative */
+/*position: relative;*/ /* Đặt position thành relative */
 /*}
 
 .Searchicon .Line3 {
@@ -268,8 +266,8 @@ body{
 
 .inputSearch {
     position: relative;*/ /* Đặt position thành relative */
-    /*flex: 1;*/ /* Sử dụng flex để chiếm phần còn lại của .Rectangle19 */
-    /*height: 100%;
+/*flex: 1;*/ /* Sử dụng flex để chiếm phần còn lại của .Rectangle19 */
+/*height: 100%;
     border: none;
     outline: none;
     resize: none;
@@ -371,7 +369,11 @@ body{
     align-items: center;
     padding: 30px;
 }
-
+.drink__holder{
+    position: absolute;
+    left: 7%;
+    top: 100px;
+}
 #drinkList {
     top: 20px;
     left: -5%;
@@ -445,7 +447,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    max-width:200px;
+    max-width: 200px;
 }
 
 .holder__main {
@@ -540,12 +542,13 @@ body{
 /*text*/
 .text-wrapper {
     position: absolute;
-    top: 130px;
-    left: 550px;
+    top: 75px;
+    left: 700px;
+    width: 250px;
     font-weight: bolder;
     color: #000000;
-    font-size: 32px;
-    text-align: left;
+    font-size: 50px;
+    text-align: center;
     letter-spacing: 0;
     line-height: normal;
 }
