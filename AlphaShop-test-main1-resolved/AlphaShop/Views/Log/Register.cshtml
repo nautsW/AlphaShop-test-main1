@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng ký tài khoản</title>
-    <link rel="stylesheet" href="~/assets/css/creat.css">
+    <link rel="stylesheet" href="~/assets/css/creat.css" runat="server" asp-append-version="true">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.js"></script>
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
 </head>
 <body>
@@ -19,53 +22,80 @@
             <input asp-for=Id type="number" class="input" required>
             </div> *@
             <div class="input-group">
-                <label asp-for=LogUsername>Tên đăng nhập </label>
-                <input asp-for=LogUsername type="text" class="input" required>
+                <div class="input_content">
+                    <label asp-for=LogUsername>Tên đăng nhập </label>
+                    <input asp-for=LogUsername type="text" class="input" required>
+                </div>
+                <span asp-validation-for="LogUsername" class="text-danger"></span>
             </div>
             <div class="input-group">
-                <label asp-for=Username>Tên thật</label>
-                <input asp-for=Username type="text" class="input" required>
+                <div class="input_content"> 
+                    <label asp-for=Username>Tên thật</label>
+                    <input asp-for=Username type="text" class="input" required>
+                </div>
+                <span asp-validation-for="Username" class="text-danger"></span>
             </div>
             <div class="input-group">
-                <label asp-for=Email>Email </label>
-                <input type="email" class="input" asp-for=Email required>
+                <div class="input_content">
+                    <label asp-for=Email>Email </label>
+                    <input type="email" class="input" asp-for=Email required>
+                </div>
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="input-group">
-                <label asp-for=PhoneNumber>Số điện thoại </label>
-                <input asp-for=PhoneNumber type="text" class="input" required>
+                <div class="input_content">
+                    <label asp-for=PhoneNumber>Số điện thoại </label>
+                    <input asp-for=PhoneNumber type="text" class="input" required>
+                </div>
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
             </div>
             <div class="input-group">
-                <label asp-for=Address>Địa chỉ </label>
-                <input asp-for=Address type="text" class="input" required>
+                <div class="input_content">
+                    <label asp-for=Address>Địa chỉ </label>
+                    <input asp-for=Address type="text" class="input" required />
+                </div>
+                <span asp-validation-for="Address" class="text-danger"></span>
             </div>
             <div class="radio__input-group">
-                <label>Giới tính</label>
-                <div class="gender__container-main" required>
-                    <div class="gender__container">
-                        <input asp-for="Gender" type="radio" class="gender__input-1" value="true">
-                        <label for="gender__input-1">Nam</label>
-                    </div>
-                    <div class="gender__container">
-                        <input asp-for="Gender" type="radio" class="gender__input-2" value="false">
-                        <label for="gender__input-2">Nữ</label>
+                <div class="input_content">
+                    <label>Giới tính</label>
+                    <div class="gender__container-main" required>
+                        <div class="gender__container">
+                            <input asp-for="Gender" type="radio" class="gender__input-1" value="true">
+                            <label for="gender__input-1">Nam</label>
+                        </div>
+                        <div class="gender__container">
+                            <input asp-for="Gender" type="radio" class="gender__input-2" value="false">
+                            <label for="gender__input-2">Nữ</label>
+                        </div>
                     </div>
                 </div>
+                <span asp-validation-for="Gender" class="text-danger"></span>
             </div>
             <div class="date__input-group">
-                <label asp-for=Birthday>Ngày sinh</label>
-                <input asp-for=Birthday type="date" class="date__input" required>
+                <div class="input_content">
+                    <label asp-for=Birthday>Ngày sinh</label>
+                    <input asp-for=Birthday type="date" class="date__input" required>
+                </div>
+                <span asp-validation-for="Birthday" class="text-danger"></span>
             </div>
             <div class="input-group">
-                <label asp-for=Password>Mật khẩu </label>
-                <input asp-for=Password type="password" class="input" name="Password" required>
+                <div class="input_content">
+                    <label asp-for=Password>Mật khẩu </label>
+                    <input asp-for=Password type="password" class="input" name="Password" required>
+                </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
             <div class="input-group">
-                <label asp-for=ConfirmPassword style="text-align: left;">Xác nhận mật khẩu </label>
-                <input asp-for=ConfirmPassword type="password" class="input" name="ConfirmPassword" required>
+                <div class="input_content">
+                    <label asp-for=ConfirmPassword style="text-align: left;">Xác nhận mật khẩu </label>
+                    <input asp-for=ConfirmPassword type="password" class="input" name="ConfirmPassword" required />
+                </div>
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
             <input type="submit" class="btn" value="Đăng ký">
-            <h3>@ViewBag.RegisterFailed</h3>
+            <h3 class="text-danger">@ViewBag.RegisterFailed</h3>
         </div>
         <ul class="list">
             <li class="list__item">

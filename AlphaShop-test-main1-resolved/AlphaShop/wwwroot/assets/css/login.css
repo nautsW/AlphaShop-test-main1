@@ -124,7 +124,7 @@ body {
 
 .container {
     width: 600px;
-    height: 400px;
+    height: auto;
     margin: 150px auto;
     padding: 40px;
     background-color: #fff;
@@ -152,10 +152,26 @@ h2 {
 
 .input-group {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 15px;
 }
-
+.input_content {
+    display: flex;
+    flex-direction: row;
+}
+.input_content label{
+    width: 200px;
+    text-align: left;
+}
+.input-group span {
+    font-size: 12px;
+    color: red;
+    text-align: left;
+    /*margin-left: 100px;*/
+    margin-left: 87px;
+    margin-top: 5px;
+}
 /* label {
     display: block;
     margin-bottom: 5px;
