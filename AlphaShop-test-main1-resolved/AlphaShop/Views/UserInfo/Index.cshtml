@@ -11,8 +11,8 @@
     <title>Document</title>
 </head>
 
-@{  
-    // var name = Context.User.Identity.Name;
+@{
+    var name = Context.User.Identity.Name;
     // var ctrImageClaim = Context.User.FindFirst("CtrImage")?.Value; // Lấy giá trị của Claim "CtrImage"
 
     // var emailClaim = Context.User.FindFirst(ClaimTypes.Email)?.Value; // Lấy giá trị của Claim "Email"
@@ -27,8 +27,6 @@
 }
 <script>
 
-    
-
     function countAndReplace() {
         // Lấy giá trị của mật khẩu từ Razor View và chuyển thành một chuỗi JavaScript
         var pass = "@Model.customer.CtrPassword"; // Sử dụng ký tự ' để đảm bảo chuỗi được đọc đúng cách
@@ -41,7 +39,7 @@
 
         // Hiển thị mật khẩu mới
         document.getElementById("password").innerText = newPassword;
-         
+
     }
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -78,7 +76,7 @@
 @if (TempData["Alert"] != null)
 {
     @Html.Raw(TempData["Alert"])
- 
+
 }
 <div class="Userpage">
     <div class="Uinfor">Thông tin người dùng</div>
@@ -159,7 +157,7 @@
             </div>
         </a>
     </form>
-    
+
 </div>
 
 @*partial view change pass*@
@@ -167,7 +165,7 @@
 @*partial view change pass*@
 
 @*PartialView Change PhoneNumb*@
-@await Html.PartialAsync("_changePhoneNumber")
+@await Html.PartialAsync("_changePhoneNumber", Model.ChangePassword)
 @*PartialView Change PhoneNumb*@
 
 @*PartialView Change email*@
@@ -199,63 +197,72 @@
 
 @*PartialView Change email*@
 
-<div id="modal4" class="modal">
+<div id="modal4" class="modal" style="align-items: center;">
     <div class="modal__overlay">
     </div>
-    <div class="modal__body4">
-        <div class="modal__inner">
-            <div class="addr_page">
-                <div class="list">Danh sách địa chỉ</div>
-                <div class="using">Đang sử dụng</div>
-                <div class="Addr_use">
-                    <div class="Rec1">
-                        <div class="icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="userinfor">CrtAddress - 1</div>
-                        <div class="button-container">
-                            <button class="btnch" id="btnn">Chỉnh sửa</button>
-                        </div>
-                    </div>
+    <div class="addr_page">
+        <div class="list">Danh sách địa chỉ</div>
+        <div class="using">Đang sử dụng</div>
+        <div class="Addr_use">
+            <div class="Rec1">
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
                 </div>
-
-                <div class="all">Tất cả địa chỉ</div>
-                <div class="All_addr1">
-                    <div class="Rec1">
-                        <div class="icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="userinfor">Address.CtrAddressname - 1</div>
-                        <div class="button-container">
-                            <button class="btnch" id="btnn">Chỉnh sửa</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="All_addr2">
-                    <div class="Rec1">
-                        <div class="icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="userinfor">Address.CtrAddressname - 2</div>
-                        <div class="button-container">
-                            <button class="btnch" id="btnn">Chỉnh sửa</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="add_addr" id="btnadd">
-                    <div class="Rec1">
-                        <div class="icon">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                        <div class="userinfor">Thêm địa chỉ</div>
-                    </div>
-                </div>
-                <div class="btn_group">
-                    <button class="btn2">Đồng ý</button>
-                    <button class="btn2" id="ev3">Thoát</button>
+                <div class="userinfor">@Model.customer.CtrAddress</div>
+                <div class="button-container">
+                    <button class="btnch" id="btnn" name="updbtn">Chỉnh sửa</button>
                 </div>
             </div>
+        </div>
+
+        <div class="all">Tất cả địa chỉ</div>
+        <div class="all-addresses">
+            @{
+                var count = 1;
+            }
+            @foreach (var item in Model.customer.Addresses)
+            {
+                <div class="address-item">
+                    <div class="Rec1">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="userinfor">@item.AddressName - @count</div>
+                        <div class="button-container">
+                            <form method="post" asp-action="SetAddress" asp-controller="UserInfo">
+                                <input type="hidden" name="address" value="@item.AddressName">
+                                <button type="submit" class="btnch" id="btnn1">Dùng</button>
+                            </form>
+                            <button class="btnch" id="btnn" name="updbtn" onclick="Pass('@item.AddId')">Chỉnh sửa</button>
+                        </div>
+                    </div>
+                </div>
+                count += 1;
+            }
+
+
+
+            <div class="address-item" id="btnadd">
+                <div class="Rec1">
+                    <div class="icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="userinfor">Thêm địa chỉ</div>
+                </div>
+            </div>
+
+            @* <div class="add_addr" id="btnadd">
+            <div class="Rec1">
+            <div class="icon">
+            <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="userinfor">Thêm địa chỉ</div>
+            </div>
+            </div> *@
+        </div>
+
+        <div class="btn_group">
+            <button class="btn2" id="ev3">Thoát</button>
         </div>
     </div>
 </div>
@@ -268,11 +275,47 @@
             <div class="container_add">
                 <div class="login-box">
                     <h2>Thêm địa chỉ</h2>
-                    <div class="input-group1">
-                        <input type="text" class="input" name="new_password" placeholder="Nhập tên địa chỉ mới tại đây..." required>
+                    <form asp-action="AddAddress" asp-controller="UserInfo" method="post">
+                        <div class="input-group1">
+                            <input type="text" class="input" name="new_address" placeholder="Nhập tên địa chỉ mới tại đây..." required>
+                        </div>
+                        <div class="acpt">
+                            <button type="submit" class="btn1">Đồng ý</button>
+                        </div>
+                    </form>
+                    <div class="cancle">
+                        <button class="btn1" id="ev4">Hủy</button>
                     </div>
-                    <button class="btn1">Đồng ý</button>
-                    <button class="btn1" id="ev4">Hủy</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal6" class="modal">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body6">
+        <div class="modal__inner">
+            <div class="container_add">
+                <div class="login-box">
+                    <h2>Thêm địa chỉ</h2>
+                    <div style="display:flex; flex-direction: column;">
+                        <form method="post" asp-action="UpdateAddress" asp-controller="UserInfo" enctype="multipart/form-data">
+                            <div class="input-group1">
+                                <input type="hidden" name="id" id="id__js" />
+                                <input type="text" class="input" name="new_address" placeholder="Nhập tên địa chỉ mới tại đây..." required>
+                                <button type="submit" class="btn1">Cập nhật</button>
+                            </div>
+                        </form>
+
+                        <form method="post" asp-action="DeleteAddress" asp-controller="UserInfo" enctype="multipart/form-data" style="position: absolute; left: 140px; width: 500px; top: 176px; ; flex-direction: row;">
+                            <input type="hidden" name="id" id="id__js-1" />
+                            <button type="submit" class="btn1">Xóa</button>
+                            <button type="button" class="btn1" id="ev5">Hủy</button>
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </div>

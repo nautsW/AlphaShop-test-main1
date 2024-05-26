@@ -12,18 +12,19 @@
 
 
 <div class="horizontal-bar">
-                <div class="option__holder">
-                    <a asp-action="Index" asp-controller="Manage" class="text-wrapper-2">Trang chủ</a>
-                    <a asp-action="CustomerManage" asp-controller="Manage" class="text-wrapper-2">Quản lí khách hàng</a>
-                    <a asp-action="StaffManage" asp-controller="Manage" class="text-wrapper-2">Quản lí nhân viên</a>
-                    <a asp-action="DrinkManage" asp-controller="Manage" class="text-wrapper-2">Quản lí thức uống</a>
-                    <a asp-action="Statistic" asp-controller="Manage" class="text-wrapper-2">Thống kê</a>
-                </div>
-                @if(Context.User.Identity.IsAuthenticated)
-                @if(access3){
-                    <div class="account__name">Xin chào, @name</div>
+    <div class="option__holder">
+        <a asp-action="Index" asp-controller="Manage" class="text-wrapper-2">Trang chủ</a>
+        <a asp-action="CustomerManage" asp-controller="Manage" class="text-wrapper-2">Quản lí khách hàng</a>
+        <a asp-action="StaffManage" asp-controller="Manage" class="text-wrapper-2">Quản lí nhân viên</a>
+        <a asp-action="DrinkManage" asp-controller="Manage" class="text-wrapper-2">Quản lí thức uống</a>
+        <a asp-action="Statistic" asp-controller="Manage" class="text-wrapper-2">Thống kê</a>
+    </div>
+    @if (Context.User.Identity.IsAuthenticated)
+        @if (access3)
+        {
+            <div class="account__name">Xin chào, @name</div>
 
-                }
+        }
 </div>
 
 <div class="vertical-bar">
@@ -34,9 +35,9 @@
         <h2 class="title2">Lựa chọn công cụ quản lý ở thanh công cụ</h2>
         <div class="text-wrapper-6" style="padding-left: 25px;">Trang chủ</div>
     }
-    @if((string)TempData["Check"] == "DrinkManage")
+    @if ((string)TempData["Check"] == "DrinkManage")
     {
-        
+
         <div class="btn__holder">
             <button class="component __main--btn" id="add_prd">Thêm thức uống</button>
             <button class="component __main--btn" id="add_ctg">Thêm danh mục</button>

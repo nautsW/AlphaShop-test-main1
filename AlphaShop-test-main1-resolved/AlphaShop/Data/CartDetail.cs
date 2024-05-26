@@ -9,19 +9,19 @@ public partial class CartDetail
 
     public int PrdId { get; set; }
 
-    public string? PrdName { get; set; }
-
     public int? Quantity { get; set; }
 
     public int OptionSize { get; set; }
 
     public int OptionType { get; set; }
 
-    public string? PrdImage { get; set; }
+    public string? Note { get; set; }
 
     public decimal? PrdPrice { get; set; }
 
-    public string? Note { get; set; }
+    public string? PrdName { get; set; }
+
+    public string? PrdImage { get; set; }
 
     public virtual Cart Cart { get; set; } = null!;
 

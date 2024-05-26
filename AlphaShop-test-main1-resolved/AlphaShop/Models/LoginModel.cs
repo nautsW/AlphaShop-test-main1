@@ -4,9 +4,9 @@ namespace AlphaShop.Models
 {
     public class LoginModel
     {
-        [Required]
+        [Required(ErrorMessage = "This field is required!")]
         public string? Name { get; set; }
-        [Required]
+        [Required(ErrorMessage = "This field is required!")]
         public string? Password { get; set; }
     }
 }

@@ -17,7 +17,7 @@
 
     <header class="nav">
         @* @{
-            var name = ViewData["Account"] as string;
+        var name = ViewData["Account"] as string;
         } *@
         @{
             var name = Context.User.Identity.Name;
@@ -56,17 +56,17 @@
             </form>
             <div class="nav__logo"></div>
 
-            <div>   
+            <div>
 
                 @if (Context.User.Identity.IsAuthenticated)
                 {
                     if (access)
                     {
                         @* <form class="nav__acc">
-                            <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
-                            <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Xin chào, @AccountService.Customer.CtrUsername</a>
-                            <button asp-action="Logout" asp-controller="Log" class="__main--btn" id="Logout">Đăng xuất</button>
-                        </form> *@
+                <button asp-area="" asp-controller="Cart" asp-action="Index" class="cart_icon" id="cart_icon"></button>
+                <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Xin chào, @AccountService.Customer.CtrUsername</a>
+                <button asp-action="Logout" asp-controller="Log" class="__main--btn" id="Logout">Đăng xuất</button>
+                </form> *@
 
                         @* new *@
                         <form class="nav__acc">
@@ -76,7 +76,7 @@
                                 <div class="dropdown-content">
                                     <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Thông tin tài khoản</a>
                                     <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Đăng xuất</a>
-                                    
+
                                 </div>
                             </div>
                         </form>
@@ -92,10 +92,10 @@
                                     <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Thông tin tài khoản</a>
                                     <a class="accountlink" asp-area="" asp-controller="Staff" asp-action="Index">Quản lí nhận đơn</a>
                                     <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Đăng xuất</a>
-                                   
+
                                 </div>
                             </div>
-                            
+
                         </form>
                     }
                     else if (access3)
@@ -108,10 +108,10 @@
                                     <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Thông tin tài khoản</a>
                                     <a class="accountlink" asp-area="" asp-controller="Manage" asp-action="Index">Quản lí</a>
                                     <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Đăng xuất</a>
-                                    
+
                                 </div>
                             </div>
-                            
+
                         </form>
                     }
                 }

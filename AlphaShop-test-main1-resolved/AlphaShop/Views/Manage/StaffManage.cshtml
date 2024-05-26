@@ -4,7 +4,7 @@
 *@
 @{
     Layout = null;
-    
+
 }
 @model StaffManageMainVM
 <!DOCTYPE html>
@@ -15,12 +15,14 @@
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <link rel="stylesheet" href="~/assets/css/staffmanage.css" runat="server" asp-append-version="true">
     <script src="~/assets/js/staffmanage.js" runat="server" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Staff Management</title>
 </head>
 <body>
     @if (TempData["msg"] != null)
     {
-        @Html.Raw(TempData["msg"]);
+        @Html.Raw(TempData["msg"])
+        ;
     }
     <div class="qun-l">
         <div class="div">
@@ -33,7 +35,7 @@
               <img class="search-icon" src="./assets/img/customerManage/SearchIcon.svg" />
               <input type="text" class="search-bar--input" placeholder="Tìm kiếm người dùng">
             </div> -->
-            <input type="text" class="search-bar search-bar--input" placeholder="Tìm kiếm người dùng">
+            <input type="text" class="search-bar search-bar--input" id="search_js" placeholder="Tìm kiếm người dùng">
             <div class="customer__table">
                 <!-- tên cột -->
                 <div class="customer__tuple">
@@ -50,12 +52,12 @@
                     <div class="ctr_text _ct6" id="ctr_access">Thao tác</div>
                 </div>
                 <!-- tên cột -->
-                @foreach(Customer item in Model.customers.Where(p => p.CtrVisible == true))
+                @foreach (Customer item in Model.customers.Where(p => p.CtrVisible == true))
                 {
                     if (item == Model.customers.Last())
                     {
-                    <!-- khách hàng đầu list-->
-                    
+                        <!-- khách hàng đầu list-->
+
                         <div class="customer__tuple-2">
                             <div class="ctr_text" id="ctr_id-1">@item.CtrId</div>
                             <div class="ctr_vector _1"></div>
@@ -67,7 +69,7 @@
                             <div class="ctr_vector _4"></div>
                             <div class="ctr_text" id="ctr_status-1">@(item.CtrStatus == 1 ? "Bình thường" : (item.CtrStatus == 2) ? "Hạn chế đặt hàng" : "Vô hiệu")</div>
                             <div class="ctr_vector _5"></div>
-                            <button class="__main--btn" id="ctr_btn" onclick="Info(@item.CtrId, '@item.CtrUsername', '@item.CtrPhonenumber', @item.CtrStatus, '@item.CtrEmail', '@item.CtrGender', @item.CtrAccess, '@item.CtrAddress', '@item.CtrPassword')">Chi tiết</button>
+                            <button class="__main--btn" id="ctr_btn" onclick="Info(@item.CtrId, '@item.CtrUsername', '@item.CtrPhonenumber', @item.CtrStatus, '@item.CtrEmail', '@item.CtrGender', @item.CtrAccess, '@item.CtrAddress', '@item.CtrPassword', '@item.CtrImage')">Chi tiết</button>
                         </div>
                         <!-- khách hàng đầu list-->
                     }
@@ -85,55 +87,55 @@
                             <div class="ctr_vector _4"></div>
                             <div class="ctr_text" id="ctr_status-1">@(item.CtrStatus == 1 ? "Bình thường" : (item.CtrStatus == 2) ? "Hạn chế đặt hàng" : "Vô hiệu")</div>
                             <div class="ctr_vector _5"></div>
-                            <button class="__main--btn" id="ctr_btn" onclick="Info(@item.CtrId, '@item.CtrUsername', '@item.CtrPhonenumber', @item.CtrStatus, '@item.CtrEmail', '@item.CtrGender', @item.CtrAccess, '@item.CtrAddress', '@item.CtrPassword')">Chi tiết</button>
+                            <button class="__main--btn" id="ctr_btn" onclick="Info(@item.CtrId, '@item.CtrUsername', '@item.CtrPhonenumber', @item.CtrStatus, '@item.CtrEmail', '@item.CtrGender', @item.CtrAccess, '@item.CtrAddress', '@item.CtrPassword', '@item.CtrImage')">Chi tiết</button>
                         </div>
                         <!-- khách hàng đuôi list-->
                     }
-                    
+
                 }
                 @* <!-- khách hàng đầu list-->
                 <div class="customer__tuple-1">
-                    <div class="ctr_text" id="ctr_id-1">ctr_id</div>
-                    <div class="ctr_vector _1"></div>
-                    <div class="ctr_text" id="ctr_username-1">ctr_username</div>
-                    <div class="ctr_vector _2"></div>
-                    <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
-                    <div class="ctr_vector _3"></div>
-                    <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
-                    <div class="ctr_vector _4"></div>
-                    <div class="ctr_text" id="ctr_status-1">ctr_status</div>
-                    <div class="ctr_vector _5"></div>
-                    <button class="__main--btn" id="ctr_btn">Chi tiết</button>
+                <div class="ctr_text" id="ctr_id-1">ctr_id</div>
+                <div class="ctr_vector _1"></div>
+                <div class="ctr_text" id="ctr_username-1">ctr_username</div>
+                <div class="ctr_vector _2"></div>
+                <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
+                <div class="ctr_vector _3"></div>
+                <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
+                <div class="ctr_vector _4"></div>
+                <div class="ctr_text" id="ctr_status-1">ctr_status</div>
+                <div class="ctr_vector _5"></div>
+                <button class="__main--btn" id="ctr_btn">Chi tiết</button>
                 </div>
                 <!-- khách hàng đầu list-->
                 <!-- khách hàng -->
                 <div class="customer__tuple-1">
-                    <div class="ctr_text" id="ctr_id-1">ctr_id</div>
-                    <div class="ctr_vector _1"></div>
-                    <div class="ctr_text" id="ctr_username-1">ctr_username</div>
-                    <div class="ctr_vector _2"></div>
-                    <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
-                    <div class="ctr_vector _3"></div>
-                    <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
-                    <div class="ctr_vector _4"></div>
-                    <div class="ctr_text" id="ctr_status-1">ctr_status</div>
-                    <div class="ctr_vector _5"></div>
-                    <button class="__main--btn" id="ctr_btn">Chi tiết</button>
+                <div class="ctr_text" id="ctr_id-1">ctr_id</div>
+                <div class="ctr_vector _1"></div>
+                <div class="ctr_text" id="ctr_username-1">ctr_username</div>
+                <div class="ctr_vector _2"></div>
+                <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
+                <div class="ctr_vector _3"></div>
+                <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
+                <div class="ctr_vector _4"></div>
+                <div class="ctr_text" id="ctr_status-1">ctr_status</div>
+                <div class="ctr_vector _5"></div>
+                <button class="__main--btn" id="ctr_btn">Chi tiết</button>
                 </div>
                 <!-- khách hàng -->
                 <!-- khách hàng đuôi list-->
                 <div class="customer__tuple-2">
-                    <div class="ctr_text" id="ctr_id-1">ctr_id</div>
-                    <div class="ctr_vector _1"></div>
-                    <div class="ctr_text" id="ctr_username-1">ctr_username</div>
-                    <div class="ctr_vector _2"></div>
-                    <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
-                    <div class="ctr_vector _3"></div>
-                    <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
-                    <div class="ctr_vector _4"></div>
-                    <div class="ctr_text" id="ctr_status-1">ctr_status</div>
-                    <div class="ctr_vector _5"></div>
-                    <button class="__main--btn" id="ctr_btn">Chi tiết</button>
+                <div class="ctr_text" id="ctr_id-1">ctr_id</div>
+                <div class="ctr_vector _1"></div>
+                <div class="ctr_text" id="ctr_username-1">ctr_username</div>
+                <div class="ctr_vector _2"></div>
+                <div class="ctr_text" id="ctr_phone-1">ctr_phone</div>
+                <div class="ctr_vector _3"></div>
+                <div class="ctr_text" id="ctr_address-1">ctr_logusername</div>
+                <div class="ctr_vector _4"></div>
+                <div class="ctr_text" id="ctr_status-1">ctr_status</div>
+                <div class="ctr_vector _5"></div>
+                <button class="__main--btn" id="ctr_btn">Chi tiết</button>
                 </div>
                 <!-- khách hàng đuôi list --> *@
 
@@ -149,9 +151,9 @@
         </div>
     </div>
 
-        @* Detail *@
+    @* Detail *@
 
-        @* Detail *@
+    @* Detail *@
     @* Create *@
     @await Html.PartialAsync("_AccountCE", Model.accountAddVM)
     @* Create *@
@@ -161,3 +163,34 @@
 
 </body>
 </html>
+<script>
+    $(document).ready(function () {
+        function Contains(text_one, text_two) {
+            if (text_one.indexOf(text_two) != -1)
+                return true;
+        }
+        $("#search_js").keyup(function () {
+            var searchText = $("#search_js").val().toLowerCase();
+
+            $(".customer__table").children(".customer__tuple-1").each(function () {
+                if (!Contains($(this).text().toLowerCase(), searchText)) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+            });
+            $(".customer__table").children(".customer__tuple-2").each(function () {
+                if (!Contains($(this).text().toLowerCase(), searchText)) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+            });
+
+
+
+        });
+    });
+</script>

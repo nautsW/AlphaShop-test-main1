@@ -11,8 +11,8 @@ namespace AlphaShop.Controllers
 
         public IActionResult Index()
         {
-            var lstCategory =objModel.Categories.ToList();
-            var lstProduct =objModel.Products.ToList();
+            var lstCategory = objModel.Categories.ToList();
+            var lstProduct = objModel.Products.ToList();
 
             Product_Category objProduct_Category = new Product_Category();
             objProduct_Category.categories = lstCategory;
@@ -29,10 +29,10 @@ namespace AlphaShop.Controllers
         //    objproductModel.PrdDaubuoi = 1;
         //    return RedirectToAction("DrinkInfo");
         //}
-        
+
         public IActionResult DrinkInfo(int? id)
         {
-           var product = objModel.Products.FirstOrDefault(x => x.PrdId == id);
+            var product = objModel.Products.FirstOrDefault(x => x.PrdId == id);
             ProductModel objProduct = new ProductModel
             {
                 product = product,
@@ -40,7 +40,7 @@ namespace AlphaShop.Controllers
                 option_type = 0,
             };
 
-           return View(objProduct);
+            return View(objProduct);
         }
     }
 }

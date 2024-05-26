@@ -76,18 +76,18 @@ namespace AlphaShop.Controllers
                     new Claim(ClaimTypes.Name, usercheck.CtrUsername.ToString()),
                     new Claim(ClaimTypes.Role, usercheck.CtrAccess.ToString()),
                     new Claim("CtrId", usercheck.CtrId.ToString()),
-                    
-                    
+
+
                 };
                 ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                
+
                 AuthenticationProperties properties = new AuthenticationProperties()
                 {
                     AllowRefresh = true,
                     IsPersistent = false,
                 };
                 //singleton cũ
-                
+
                 //singleton cũ
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), properties);
                 return RedirectToAction("Index", "Home");
@@ -162,7 +162,7 @@ namespace AlphaShop.Controllers
 
         public async Task<IActionResult> Logout()
         {
-            
+
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Login", "Log");
         }

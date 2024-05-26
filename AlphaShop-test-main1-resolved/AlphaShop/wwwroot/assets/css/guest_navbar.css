@@ -94,9 +94,11 @@ body {
         background-color: black;
         color: white;
     }
-    #nav__login{
-        margin-right: 10px;
-    }
+
+#nav__login {
+    margin-right: 10px;
+}
+
 .nav__bar--2 {
     background-color: black;
     color: white;

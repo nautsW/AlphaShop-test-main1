@@ -4,4 +4,127 @@
 @{
     Layout = null;
 }
-<h1>@TempData["Check"]</h1>
+@model StatisticsVM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="~/assets/css/Statistics.css" runat="server" asp-append-version="true">
+    @* <script src="~/assets/js/staffmanage.js" runat="server" asp-append-version="true"></script> *@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    @* <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.0-release/chart.min.js" integrity="sha512-weMHTW0LDSh4AbX2KlEf6GiVHrNgcsQa5bfJiZG3t30JM6jb/xB0goXN/n55JNsc8rHdfdOUQ1zj065cLohrUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> *@
+    @* <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> *@
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="~/assets/js/Statistics.js" runat="server" asp-append-version="true"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Staff Management</title>
+</head>
+<body>
+    @Html.Raw(TempData["msg"])
+    <div class="qun-l">
+        <div class="div">
+            <!--bar-->
+            @await Html.PartialAsync("_ManageBars", TempData["Check"]);
+            <!--bar-->
+            <div class="text-wrapper">
+                <i class="fa-solid fa-chart-simple"></i>
+                Thống kê
+            </div>
+            <div class="overview__position">
+                <div class="overview__holder">
+                    <div class="overview__com" id="ov__1">
+                        <h2>@Model.TotalWA</h2>
+                        <p>Tổng lượng truy cập</p>
+                    </div>
+                    <div class="overview__com">
+                        <h2>@Model.RegisteredAcc</h2>
+                        <p>Tài khoản đã đăng kí</p>
+                    </div>
+                    <div class="overview__com">
+                        <h2>@Model.TotalPrd</h2>
+                        <p>Tổng doanh thu</p>
+                    </div>
+                    <div class="overview__com">
+                        <h2>@Model.TotalAcptOrder</h2>
+                        <p>Đơn hàng đã đặt</p>
+                    </div>
+                    <div class="overview__com">
+                        <h2>@Model.TotalPrd</h2>
+                        <p>Thức uống</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <input type="hidden" id="year_vl" value="2024" />
+    <div class="Chart__position">
+        <h3>Doanh thu theo năm</h3>
+        <select id="year_Choice" style="width: 200px;">
+            <option value="2024">Select Year</option>
+            <option value="2024">2024</option>
+        </select>
+        @* bar chart *@
+        <div class="Chart__holder" id="chart__holder-rv">
+            <canvas class="Chart" id="revenueBarChart"></canvas>
+        </div>
+        @* bar chart *@
+
+        @* bar chart *@
+        <h3>Doanh số mặt hàng theo năm</h3>
+        <div class="Chart__holder" id="chart__holder-pot">
+            <canvas class="Chart" id="PrdOrderedTimeChart"></canvas>
+        </div>
+        @* bar chart *@
+
+        @* Line chart *@
+        <h3>Lượng truy cập</h3>
+        <div class="Chart__holder" id="chart__holder-wa">
+            <canvas class="Chart" id="WebAccessChart"></canvas>
+        </div>
+        @* Line chart *@
+        <h3>Lượng đơn hàng theo tháng</h3>
+        <div class="Chart__holder" id="chart__holder-oc">
+            <canvas class="Chart" id="OrderCountChart"></canvas>
+        </div>
+        @* Line chart *@
+
+    </div>
+</body>
+</html>
+@* Thống kê theo thời gian:
+        - Thống kê theo doanh thu (done)
+            + đưa list các ord ra
+            + lấy theo tháng -> xét ordDate.Month()
+            b1: chọn năm, get dữ liệu năm đó (tháng, doanh thu tương ứng các tháng)
+            -> list các đối tượng gồm tháng và doanh thu
+            b2. truyền dữ liệu cho list các đối tượng gồm tháng(month) và doanh thu(revenue):
+            - vd tháng 1: january/ 1
+            - xét các ord (với ordstatus == 1 vả DateTime.Month == 1 )
+            - Cộng tất cả ord_price và cho vào revenue (revenue = total;)
+
+        - Thống kê theo doanh số mặt hàng
+            + VM{
+                - Tên product
+                - Số lượng đã đặt (Tính theo PrdId)
+            }
+            orddetail --> Prd++
+            Top 10 sản phẩm được đặt nhiều nhất -> linq/LE
+            + Bar chart
+
+        - Thống kê theo lượng truy cập
+            + 1 Bảng WebAccess{
+                WA_DATE DateTime not null,
+                WA_COUNT int
+            }
+            line chart
+        - Thống kê số lượng đơn hàng (tương tự thống kê doanh thu)
+            + Thống kê theo tháng
+            + số đơn hàng được đặt trong tháng
+
+        *@
+

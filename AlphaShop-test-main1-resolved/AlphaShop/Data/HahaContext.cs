@@ -35,9 +35,11 @@ public partial class HahaContext : DbContext
 
     public virtual DbSet<Product> Products { get; set; }
 
+    public virtual DbSet<WebAccess> WebAccesses { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-4TH1B9N;Initial Catalog=haha;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
+        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-V3LDFHK\\RESOLVED;Initial Catalog=haha;User ID=khoa;Password=huukhoa1+2;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -58,12 +60,12 @@ public partial class HahaContext : DbContext
 
         modelBuilder.Entity<Address>(entity =>
         {
-            entity.HasKey(e => new { e.CtrId, e.AddId });
+            entity.HasKey(e => new { e.AddId, e.CtrId });
 
             entity.ToTable("ADDRESS");
 
-            entity.Property(e => e.CtrId).HasColumnName("CTR_ID");
             entity.Property(e => e.AddId).HasColumnName("ADD_ID");
+            entity.Property(e => e.CtrId).HasColumnName("CTR_ID");
             entity.Property(e => e.AddressName).HasColumnName("ADDRESS_NAME");
 
             entity.HasOne(d => d.Ctr).WithMany(p => p.Addresses)
@@ -221,9 +223,7 @@ public partial class HahaContext : DbContext
             entity.Property(e => e.OrdDate)
                 .HasColumnType("datetime")
                 .HasColumnName("ORD_DATE");
-            entity.Property(e => e.OrdDest)
-                .HasColumnType("text")
-                .HasColumnName("ORD_DEST");
+            entity.Property(e => e.OrdDest).HasColumnName("ORD_DEST");
             entity.Property(e => e.OrdNote)
                 .HasColumnType("text")
                 .HasColumnName("ORD_NOTE");
@@ -299,6 +299,18 @@ public partial class HahaContext : DbContext
                 .HasForeignKey(d => d.CgrId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_CATEGORY__PRODUCT");
+        });
+
+        modelBuilder.Entity<WebAccess>(entity =>
+        {
+            entity.HasKey(e => e.WaDate);
+
+            entity.ToTable("WEB_ACCESS");
+
+            entity.Property(e => e.WaDate)
+                .HasColumnType("date")
+                .HasColumnName("WA_DATE");
+            entity.Property(e => e.WaCount).HasColumnName("WA_COUNT");
         });
 
         OnModelCreatingPartial(modelBuilder);

@@ -15,12 +15,14 @@
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <link rel="stylesheet" href="~/assets/css/customerManage.css" runat="server" asp-append-version="true">
     <script src="~/assets/js/customerManage.js" runat="server" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Customer Management</title>
 </head>
 <body>
     @if (TempData["msg"] != null)
     {
-        @Html.Raw(TempData["msg"]);
+        @Html.Raw(TempData["msg"])
+        ;
     }
     <div class="qun-l">
         <div class="div">
@@ -33,7 +35,7 @@
               <img class="search-icon" src="./assets/img/customerManage/SearchIcon.svg" />
               <input type="text" class="search-bar--input" placeholder="Tìm kiếm người dùng">
             </div> -->
-            <input type="text" class="search-bar search-bar--input" placeholder="Tìm kiếm người dùng">
+            <input type="text" class="search-bar search-bar--input" id="search_js" placeholder="Tìm kiếm người dùng">
             <div class="customer__table">
                 <!-- tên cột -->
                 <div class="customer__tuple">
@@ -67,7 +69,7 @@
                             <div class="ctr_vector _4"></div>
                             <div class="ctr_text" id="ctr_status-1">@(item.CtrStatus == 1 ? "Bình thường" : (item.CtrStatus == 2) ? "Hạn chế đặt hàng" : "Vô hiệu")</div>
                             <div class="ctr_vector _5"></div>
-                            <button class="__main--btn" id="ctr_btn" onclick="Info(@item.CtrId, '@item.CtrUsername', '@item.CtrPhonenumber', @item.CtrStatus, '@item.CtrEmail', '@item.CtrGender', @item.CtrAccess, '@item.CtrAddress', '@item.CtrPassword')">Chi tiết</button>
+                            <button class="__main--btn" id="ctr_btn" onclick="Info(@item.CtrId, '@item.CtrUsername', '@item.CtrPhonenumber', @item.CtrStatus, '@item.CtrEmail', '@item.CtrGender', @item.CtrAccess, '@item.CtrAddress', '@item.CtrPassword', '@item.CtrImage')">Chi tiết</button>
                         </div>
                         <!-- khách hàng đầu list-->
                     }
@@ -85,7 +87,7 @@
                             <div class="ctr_vector _4"></div>
                             <div class="ctr_text" id="ctr_status-1">@(item.CtrStatus == 1 ? "Bình thường" : (item.CtrStatus == 2) ? "Hạn chế đặt hàng" : "Vô hiệu")</div>
                             <div class="ctr_vector _5"></div>
-                            <button class="__main--btn" id="ctr_btn" onclick="Info(@item.CtrId, '@item.CtrUsername', '@item.CtrPhonenumber', @item.CtrStatus, '@item.CtrEmail', '@item.CtrGender', @item.CtrAccess, '@item.CtrAddress', '@item.CtrPassword')">Chi tiết</button>
+                            <button class="__main--btn" id="ctr_btn" onclick="Info(@item.CtrId, '@item.CtrUsername', '@item.CtrPhonenumber', @item.CtrStatus, '@item.CtrEmail', '@item.CtrGender', @item.CtrAccess, '@item.CtrAddress', '@item.CtrPassword', '@item.CtrImage')">Chi tiết</button>
                         </div>
                         <!-- khách hàng đuôi list-->
                     }
@@ -156,8 +158,39 @@
     @await Html.PartialAsync("_AccountCE", Model.accountAddVM)
     @* Create *@
     @* Info *@
-    @await Html.PartialAsync("_AccountInfo_1", Model.accountAddVM)
+    @await Html.PartialAsync("AccountInfo_1", Model.accountAddVM)
     @* Info *@
 
 </body>
 </html>
+<script>
+    $(document).ready(function () {
+        function Contains(text_one, text_two) {
+            if (text_one.indexOf(text_two) != -1)
+                return true;
+        }
+        $("#search_js").keyup(function () {
+            var searchText = $("#search_js").val().toLowerCase();
+
+            $(".customer__table").children(".customer__tuple-1").each(function () {
+                if (!Contains($(this).text().toLowerCase(), searchText)) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+            });
+            $(".customer__table").children(".customer__tuple-2").each(function () {
+                if (!Contains($(this).text().toLowerCase(), searchText)) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+            });
+
+
+
+        });
+    });
+</script>

@@ -1,17 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     font-family: "JetBrains Mono";
 }
 
-body{
-    
+body {
     background-color: white;
     /* position: relative; */
     /* temp */
 }
 /* navbar */
-.nav{
+.nav {
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -20,54 +19,55 @@ body{
     box-shadow: 1px 2px 3px #000000;
     z-index: 999;
 }
-.nav__bar--1{
+
+.nav__bar--1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     height: 70px;
 }
-.nav__flag--lang
-{
+
+.nav__flag--lang {
     display: flex;
     justify-content: space-evenly;
 }
-.nav__flag{
+
+.nav__flag {
     margin-top: 20px;
     margin-left: 10px;
     width: 30px;
     height: 25px;
 }
-.nav__flag:hover{
-    opacity: 0.5;
-}
-#nav__flag1
-{
 
+    .nav__flag:hover {
+        opacity: 0.5;
+    }
+
+#nav__flag1 {
     background-image: url("..\\img\\nav-bar\\vietnam.png");
     background-size: 105%;
     background-position: -1px;
     /* background: transparent; */
     border: none;
 }
-#nav__flag2
-{
 
+#nav__flag2 {
     background-image: url("..\\img\\nav-bar\\england.png");
     background-size: 105%;
     background-position: -1px;
     /* background: transparent; */
     border: none;
 }
-#nav__flag3
-{
 
+#nav__flag3 {
     background-image: url("..\\img\\nav-bar\\china.png");
     background-size: 105%;
     background-position: -1px;
     /* background: transparent; */
     border: none;
 }
-.nav__logo{
+
+.nav__logo {
     background-image: url("..\\img\\nav-bar\\Group1.png");
     background-size: 100%;
     margin-top: 5px;
@@ -76,17 +76,14 @@ body{
     height: 69px;
 }
 
-.accountlink
-{
+.accountlink {
     color: black;
     margin-top: 5px;
-    font-size : 14px;
+    font-size: 14px;
     margin-left: 20px;
-
 }
 
-.cart_icon
-{
+.cart_icon {
     margin-top: 20px;
     margin-left: 150px;
     margin-right: -100px;
@@ -94,8 +91,7 @@ body{
     height: 25px;
 }
 
-#cart_icon
-{
+#cart_icon {
     background-image: url("..\\img\\cart\\cart.png");
     background-size: 105%;
     background-position: -1px;
@@ -104,19 +100,19 @@ body{
     border: none;
 }
 
-.nav__bar--2
-{
+.nav__bar--2 {
     background-color: black;
     color: white;
     height: 50px;
 }
-.nav__list
-{
+
+.nav__list {
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-evenly;
 }
+
 .nav__item {
     margin-top: 10px;
     padding: 5px;
@@ -127,7 +123,7 @@ body{
     background: black;
 }
 
-.nav__item:hover {
-    color: black;
-    background: white;
-}
+    .nav__item:hover {
+        color: black;
+        background: white;
+    }

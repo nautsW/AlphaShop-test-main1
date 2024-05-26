@@ -3,41 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/assets/css/cartinfo.css">
+    <link rel="stylesheet" href="~/assets/css/cartinfo.css" runat="server" asp-append-version="true">
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <title>Home</title>
 </head>
-@* @inject AccountService _AccountService *@
-<div class="Cart" style="margin-top : 30px;">
-    <div class="cartText">Giỏ hàng</div>
-    <img class="cartImg" src="~/assets/img/cart/cart.png" />
-    <ul class="CartList" id="CartList">
-        @foreach(var item in Model.cartDetail)
-        {   
-            <li class="CartItem">
-                <form asp-action="DeleteCartItem" asp-controller="Cart" method="post">
-                    <input type="hidden" name="cartid" value="@item.CartId" />
-                    <input type="hidden" name="prdid" value="@item.PrdId" />
-                    <input type="hidden" name="optsize" value="@item.OptionSize" />
-                    <input type="hidden" name="opttype" value="@item.OptionType" />
-                    <div class="Itembox"></div>
-                    <img class="ItemImg" src="~/@item.PrdImage" />
-                    <div class="ItemName">@item.PrdName'</div>
-                    <div class="Total"> Total: @item.PrdPrice x @item.Quantity</div>
-                    <div class="Size"> ID: @item.OptionSize @item.OptionType</div>
-                    <button type="submit" class="X"></button>
-                </form>
-            </li>
-        }
+<body>
+
+    <div class="Cart" style="margin-top : 30px;">
+        <div class="cartText">Giỏ hàng</div>
+        <img class="cartImg" src="~/assets/img/cart/cart.png" />
+        <ul class="CartList" id="CartList">
+            @foreach(var item in Model.cartDetail)
+            {   
+                <li class="CartItem">
+                    <form asp-action="DeleteCartItem" asp-controller="Cart" method="post">
+                        <input type="hidden" name="cartid" value="@item.CartId" />
+                        <input type="hidden" name="prdid" value="@item.PrdId" />
+                        <input type="hidden" name="optsize" value="@item.OptionSize" />
+                        <input type="hidden" name="opttype" value="@item.OptionType" />
+                        <div class="Itembox"></div>
+                        <img class="ItemImg" src="~/assets/img/drinklist/@item.PrdImage" />
+                        <div class="ItemName">@item.PrdName</div>
+                        <div class="Total"> Total: @item.PrdPrice x @item.Quantity</div>
+                        @if (item.OptionSize == 1){
+                            <div class="Size"> Size:M</div>
+                        }
+                        @if (item.OptionSize == 2)
+                        {
+                            <div class="Size"> Size:X</div>
+                        }
+                        @if(item.OptionSize == 3){
+                            <div class="Size"> Size:XL</div>
+                        }
+                        @if(item.OptionType == 1)
+                        {
+                            <div class="Option"> Option:Đá riêng</div>
+                        }
+                        @if(item.OptionType == 2)
+                        {
+                            <div class="Option"> Option:Đá chung</div>
+                        }
+                        @* <div class="Size"> Size: @item.OptionSize Option: @item.OptionType</div> *@
+                        <button type="submit" class="X"></button>
+                    </form>
+                </li>
+            }
         
 
-        <li class="Line"></li>
-        <li class="OrderBox">
-            <div class="Rectbackground"></div>
-            <form><button asp-area="" asp-controller="Order" asp-action="Index" class="Btn">Đặt hàng ngay</button></form>
-        </li>
-    </ul>
-
-    
-
-</div>
+            <li class="Line"></li>
+            <li class="OrderBox">
+                <div class="Rectbackground"></div>
+                <form><button asp-area="" asp-controller="Order" asp-action="Index" class="Btn">Đặt hàng ngay</button></form>
+            </li>
+        </ul>
+    </div>
+</body>
+@* @inject AccountService _AccountService *@
