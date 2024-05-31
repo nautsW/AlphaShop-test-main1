@@ -177,5 +177,13 @@ namespace AlphaShop.Controllers
 
             return RedirectToAction("Index", "Category");
         }
+        [HttpGet]
+        public IActionResult GetQuantity(int id)
+        {
+            int cartid = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
+            var check = db.CartDetails.Where(p => p.CartId == cartid).Count();
+            return Json(check);
+        }
     }
+
 }

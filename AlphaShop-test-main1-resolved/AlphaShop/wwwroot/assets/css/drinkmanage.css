@@ -298,6 +298,7 @@
 .holder__main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-left: -30px;
 }
 

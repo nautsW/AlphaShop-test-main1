@@ -486,7 +486,7 @@ namespace AlphaShop.Controllers
             {
                 var mainlist = _context.Ords.Where(p => p.OrdDate.Value.Month == i);
                 int accept = mainlist.Where(p => p.OrdStatus == 1).Count();
-                int denied = mainlist.Where(p => p.OrdStatus == 0).Count();
+                int denied = mainlist.Where(p => p.OrdStatus == 2).Count();
                 OrdStatisticsModel ordStatisticsModel = new OrdStatisticsModel
                 {
                     Month = GetMonthName(i),

@@ -26,7 +26,7 @@
                 {
                     if (@Model.products.Count(p => p.CgrId == item.CgrId) != 0)
                     {
-                        <button class="DrinkName" id="drink3">@item.CgrName<div class="number">@Model.products.Count(p => p.CgrId == item.CgrId)</div></button>
+                        <button class="DrinkName" id="drink3">@item.CgrName<div class="number">@Model.products.Count(p => p.CgrId == item.CgrId && p.PrdVisible == true)</div></button>
                     }
 
                 }
