@@ -1,9 +1,12 @@
 ﻿using AlphaShop.Data;
 using AlphaShop.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlphaShop.Controllers
 {
+    [Authorize]
+    [RoleAuthorizationFilter("2")]
     public class StaffController : Controller
     {
         private readonly HahaContext _context;

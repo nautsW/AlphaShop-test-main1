@@ -294,7 +294,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     position: absolute;
-    left: -3%;
+    top: -45px;
 }
 
 .modal {
@@ -345,17 +345,16 @@ h2 {
 
 .OrderInfoBox {
     width: 630px;
-    height: 700px;
-    left: 10px;
-    top: 251px;
+    
     position: relative;
+    margin-top:180px;
 }
 
 .OrderRect {
     width: 630px;
     left: 0px;
     top: 0px;
-    position: absolute;
+    position: relative;
     background: white;
 }
 
@@ -371,7 +370,6 @@ h2 {
 
 .OrderList {
     width: 100%;
-    top: 40px;
     position: relative;
 }
 
@@ -451,7 +449,7 @@ h2 {
 .total__DH {
     width: 630px;
     left: 100px;
-    position: absolute;
+    position: relative;
 }
 
 #Soluong {
@@ -513,34 +511,33 @@ h2 {
     width: 870px;
     height: 0px;
     left: 25px;
-    position: absolute;
+    position: relative;
     border: 1px rgba(0, 0, 0, 0.25) solid;
 }
 
 #Line1 {
-    top: 240px;
+    top: 120px;
 }
 
 #Line2 {
-    top: 520px;
-    margin-top: 200px;
+   
 }
 
 .P_btn {
     margin-top: 100px;
-    margin-left: 610px;
+    margin-left: 590px;
     width: 500px
 }
 
 .P_btn1 {
     margin-top: -25px;
-    margin-left: 355px;
+    margin-left: 335px;
     width: 550px;
 }
 
 .P_btn2 {
     margin-top: -25px;
-    margin-left: 495px;
+    margin-left: 475px;
     width: 500px;
 }
 
@@ -581,6 +578,8 @@ h2 {
 }
 
 .Detail {
+    overflow-y: scroll;
+    overflow-x: hidden;
     text-align: center;
     width: 100%;
     height: 100%;
@@ -588,7 +587,7 @@ h2 {
     background: white;
     box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    overflow: hidden;
+   
     border: 1px black solid;
 }
 

@@ -359,7 +359,6 @@ body {
 .Rectangle18 {
     width: 395px;
     height: 350px;
-    left: 103px;
     top: 239px;
     position: absolute;
     background: #FEFFC8;
@@ -371,7 +370,7 @@ body {
 }
 .drink__holder{
     position: absolute;
-    left: 7%;
+    left: 2vw;
     top: 100px;
 }
 #drinkList {
@@ -453,7 +452,7 @@ body {
 .holder__main {
     display: flex;
     flex-direction: row;
-    margin-left: -30px;
+    margin-left: -70px;
     width: 875px;
     flex-wrap: wrap;
 }
@@ -559,7 +558,7 @@ body {
     width: 815px;
     height: 32px;
     top: 195px;
-    left: 550px;
+    left: 500px;
     margin-bottom: 50px;
     background-color: #ffffff;
     border-radius: 20px;
@@ -576,3 +575,14 @@ body {
     left: 9px;
 }
 /*search*/
+/*.footer {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    background-color: #000000;*/ /* Màu nền cho footer */
+    /*color: white;
+    padding: 20px;*/ /* Padding cho footer */
+    /*text-align: center;*/ /* Căn giữa nội dung trong footer */
+    /*font-family: 'JetBrains Mono', monospace;*/ /* Font chữ cho footer */
+    /*z-index: 999;*/ /* Đảm bảo footer hiển thị trên tất cả các phần tử khác */
+/*}*/

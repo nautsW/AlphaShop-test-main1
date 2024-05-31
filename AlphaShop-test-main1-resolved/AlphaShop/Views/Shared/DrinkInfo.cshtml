@@ -79,9 +79,11 @@
                         <label for="img-opt__holder" class="label--3">Ảnh</label>
                     </div>
                     <div class="img-opt__holder">
-                        <img class="image-holder" id="image-perform-1" />
+                        <div id="imagePreview">
+                            <img class="image-holder" id="image-perform-1" />  
+                        </div>
                         <!-- <label class="label--2" for="file__btn">Chọn ảnh</label> -->
-                        <input type="file" class="file__btn" id="imageFile" accept="image/*" asp-for="PrdImage">
+                        <input type="file" class="file__btn" id="imageFile" style="margin-left: 20px;"accept="image/*" asp-for="PrdImage">
                     </div>
                     <div class="label--3">Mô tả</div>
                     <textarea asp-for=PrdDesc class="desc-box" id="desc-input" placeholder="Nhập mô tả"></textarea>

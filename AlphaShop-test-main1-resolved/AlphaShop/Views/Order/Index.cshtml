@@ -32,17 +32,42 @@
     <div class="InfoText" id="OrderInfo">Thông tin đơn hàng</div>
     <div class="Line" id="Line4"></div>
     <ul class="OrderList" id="OrderList">
-
+        @{
+            int total_drink = 0;
+        }
         @foreach (var item in Model.Cart.cartDetail)
-        {
+        {   
 
             <li class="OrderItem">
                 <div class="Itembox"></div>
                 <img class="DrinkImg" id="DrinkImg" src="~/@item.PrdImage">
                 <div class="InfoText" id="DrinkName">@item.PrdName</div>
                 <div class="Price">@item.PrdPrice x @item.Quantity</div>
-                <div class="Size">@item.OptionSize</div>
+                @if (item.OptionSize == 1)
+                {
+                    <div class="Size"> Size:M</div>
+                }
+                @if (item.OptionSize == 2)
+                {
+                    <div class="Size"> Size:X</div>
+                }
+                @if (item.OptionSize == 3)
+                {
+                    <div class="Size"> Size:XL</div>
+                }
+                @if (item.OptionType == 1)
+                {
+                    <div class="Option"> Option:Đá riêng</div>
+                }
+                @if (item.OptionType == 2)
+                {
+                    <div class="Option"> Option:Đá chung</div>
+                }
+                @* <div class="Size"> Size: @item.OptionSize Option: @item.OptionType</div> *@
             </li>
+
+            total_drink += (int)item.Quantity;
+
         }
 
 
@@ -50,8 +75,8 @@
 
         <li class="Line" id="Line5"></li>
 
-        <li class="InfoText" id="Soluong">Số lượng: @Model.Cart.cart.CartQuantity cốc </li>
-        <li class="InfoText" id="TotalDrink">Tổng:  </li>
+        <li class="InfoText" id="Soluong">Số lượng: @total_drink cốc </li>
+        <li class="InfoText" id="TotalDrink">Tổng: </li>
         <li class="InfoText" id="TransportCost">Phí vận chuyển: </li>
         <li class="InfoText" id="Total">Tổng cộng: </li>
         <li class="Line" id="Line6"></li>
@@ -119,6 +144,3 @@
     <div class="InfoText" id="CodText">Thanh toán khi nhận hàng</div>
 </div>
 
-<div class="footer">
-    <p>© 2024 Hỏa Tiễn 101</p>
-</div>
