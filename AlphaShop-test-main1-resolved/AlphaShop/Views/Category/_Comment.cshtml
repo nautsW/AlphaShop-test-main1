@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@*Comment submit form*@
+
+@model CommentModel
+<div id="modal1" class="modal" style="display: none;">
+    <div class="modal__overlay"></div>
+    <div class="modal__body">
+        <div class="modal__inner">
+            <div class="container">
+                <form class="login-box" method="post" asp-action="AddComment" asp-controller="Category" enctype="multipart/form-data">
+                    <h2>Nhập bình luận của bạn</h2>
+                    <div class="input-group">
+                        @* <textarea type="text" class="input" name="comment" required> *@
+                        <textarea asp-for="Comment" class="input" placeholder="Viết gì đó..."></textarea>
+                        <input type="hidden" asp-for="CtrId" id="ctr_cmt_js" />
+                        <input type="hidden" asp-for="PrdId" id="prd_cmt_js" />
+                    </div>
+                    <button type="submit" class="btn1">Đồng ý</button>
+                    <button type="button" class="btn1" id="ev">Hủy</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

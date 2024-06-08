@@ -121,30 +121,42 @@ namespace AlphaShop.Controllers
             }
 
             //await _context.Database.ExecuteSqlRawAsync($"set IDENTITY_INSERT dbo.CUSTOMER on;");
+            Customer customer = new Customer
+            {
+                CtrLogusername = registerModel.LogUsername,
+                CtrUsername = registerModel.Username,
+                CtrPassword = registerModel.Password,
+                CtrEmail = registerModel.Email,
+                CtrPhonenumber = registerModel.PhoneNumber,
+                CtrGender = registerModel.Gender,
+                CtrAccess = 1,
+                CtrStatus = 1,
+                CtrAddress = registerModel.Address,
+                Addresses = new HashSet<Address>(),
+                CtrId = _context.Customers.Count(),
+                CtrUsed = 0,
+                CtrImage = null,
+                CtrVisible = true
+
+
+            };
+            
+            
+            Address newadd = new Address
+            {
+                CtrId = customer.CtrId,
+                AddId = 1,
+                AddressName = registerModel.Address
+            };
+            //_context.Customers.FirstOrDefault(x=> x.CtrId == customer.CtrId).Addresses.Add(newadd);
+            customer.Addresses.Add(newadd);
             await _context.Customers.AddAsync(
-                new Customer
-                {
-                    CtrLogusername = registerModel.LogUsername,
-                    CtrUsername = registerModel.Username,
-                    CtrPassword = registerModel.Password,
-                    CtrEmail = registerModel.Email,
-                    CtrPhonenumber = registerModel.PhoneNumber,
-                    CtrGender = registerModel.Gender,
-                    CtrAccess = 1,
-                    CtrStatus = 1,
-                    CtrAddress = registerModel.Address,
-                    CtrId = _context.Customers.Count(),
-                    CtrUsed = 0,
-                    CtrImage = null,
-                    CtrVisible = true
-
-
-                }
+                customer
             );
             await _context.Carts.AddAsync(
             new Cart
             {
-                CartId = _context.Customers.Count(),
+                CartId = customer.CtrId,
                 CartQuantity = 0,
             }
             );

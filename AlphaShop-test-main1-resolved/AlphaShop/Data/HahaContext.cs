@@ -142,16 +142,16 @@ public partial class HahaContext : DbContext
 
         modelBuilder.Entity<Comment>(entity =>
         {
+            entity.HasKey(e => new { e.CmtDate, e.CtrId, e.PrdId });
+
             entity.ToTable("COMMENT");
 
-            entity.Property(e => e.CommentId)
-                .ValueGeneratedNever()
-                .HasColumnName("COMMENT_ID");
-            entity.Property(e => e.CommentText)
-                .HasColumnType("text")
-                .HasColumnName("COMMENT_TEXT");
+            entity.Property(e => e.CmtDate)
+                .HasColumnType("datetime")
+                .HasColumnName("CMT_DATE");
             entity.Property(e => e.CtrId).HasColumnName("CTR_ID");
             entity.Property(e => e.PrdId).HasColumnName("PRD_ID");
+            entity.Property(e => e.CommentText).HasColumnName("COMMENT_TEXT");
             entity.Property(e => e.Upvote).HasColumnName("UPVOTE");
 
             entity.HasOne(d => d.Ctr).WithMany(p => p.Comments)
@@ -223,9 +223,7 @@ public partial class HahaContext : DbContext
             entity.Property(e => e.OrdDate)
                 .HasColumnType("datetime")
                 .HasColumnName("ORD_DATE");
-            entity.Property(e => e.OrdDest)
-                .HasColumnType("text")
-                .HasColumnName("ORD_DEST");
+            entity.Property(e => e.OrdDest).HasColumnName("ORD_DEST");
             entity.Property(e => e.OrdNote)
                 .HasColumnType("text")
                 .HasColumnName("ORD_NOTE");
@@ -282,9 +280,7 @@ public partial class HahaContext : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("PRD_ID");
             entity.Property(e => e.CgrId).HasColumnName("CGR_ID");
-            entity.Property(e => e.PrdDesc)
-                .HasColumnType("text")
-                .HasColumnName("PRD_DESC");
+            entity.Property(e => e.PrdDesc).HasColumnName("PRD_DESC");
             entity.Property(e => e.PrdImage)
                 .HasColumnType("text")
                 .HasColumnName("PRD_IMAGE");
