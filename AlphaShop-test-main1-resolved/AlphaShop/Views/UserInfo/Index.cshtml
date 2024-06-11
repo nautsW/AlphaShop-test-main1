@@ -142,7 +142,7 @@
             </div>
             <div class="userinfor">Danh sách địa chỉ</div>
             <div class="button-container">
-                <button class="btn" id="btncx">Chi tiết</button>
+                <button onclick="Pass(@Model.customer.CtrId)" class="btn" id="btncx">Chi tiết</button>
             </div>
         </div>
     </div>
@@ -163,14 +163,15 @@
 @*partial view change pass*@
 @await Html.PartialAsync("_changePassword", Model.ChangePassword)
 @*partial view change pass*@
-
+@await Html.PartialAsync("_changeEmail", Model.emailModel)
+@await Html.PartialAsync("_changePhoneNumber", Model.phoneNumberModel)
 @*PartialView Change PhoneNumb*@
-@await Html.PartialAsync("_changePhoneNumber", Model.ChangePassword)
+@await Html.PartialAsync("_addressModal", Model)
 @*PartialView Change PhoneNumb*@
 
 @*PartialView Change email*@
 
-<div id="modal3" class="modal">
+@* <div id="modal3" class="modal">
     <div class="modal__overlay">
     </div>
     <div class="modal__body">
@@ -193,11 +194,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> *@
 
 @*PartialView Change email*@
 
-<div id="modal4" class="modal" style="align-items: center;">
+@* <div id="modal4" class="modal" style="align-items: center;">
     <div class="modal__overlay">
     </div>
     <div class="addr_page">
@@ -249,7 +250,7 @@
                     </div>
                     <div class="userinfor">Thêm địa chỉ</div>
                 </div>
-            </div>
+            </div> *@
 
             @* <div class="add_addr" id="btnadd">
             <div class="Rec1">
@@ -258,7 +259,7 @@
             </div>
             <div class="userinfor">Thêm địa chỉ</div>
             </div>
-            </div> *@
+            </div>
         </div>
 
         <div class="btn_group">
@@ -320,4 +321,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> *@

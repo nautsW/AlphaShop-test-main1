@@ -15,8 +15,8 @@
 
 <div class="bg--1">
     <img src="~/assets/img/background/Background_1.png" alt="bg" />
-    <button class="bg__move--btn" id="bg__btn--left"></button>
-    <button class="bg__move--btn" id="bg__btn--right"></button>
+    <button class="bg__move--btn" id="bg__btn--left" style="opacity: 0;"></button>
+    <button class="bg__move--btn" id="bg__btn--right" style="opacity: 0;"></button>
 </div>
 <!-- #background -->
 <!-- #content1-->
@@ -27,7 +27,9 @@
             <h2>Siêu phẩm mới cho dịp năm tới</h2>
             <p>Siêu phẩm Ô Long Tuyết Sơn Siêu Size 1L nhưng với giá chỉ 727000$ làm cho các bạn phải bất ngờ. Kết hợp vị trà thảo mộc cùng với những lát chanh vàng tươi, cộng thêm sự mát mẻ với “núi tuyết” ở đỉnh tạo nên một tuyệt tác không thể ngờ tới</p>
         </div>
-        <button class="__main--btn--2 content__1--btn">Đặt hàng ngay</button>
+        <form>
+            <button type="submit" asp-action="Index" asp-controller="Category" class="__main--btn--2 content__1--btn">Đặt hàng ngay</button>
+        </form>
     </div>
 </div>
 <!-- #endcontent1-->
@@ -38,7 +40,9 @@
             <h2>Nhân viên năng suất, tận tình</h2>
             <p>Luôn có mặt hỗ trợ khi bạn cần ngay cả khi online, giúp bạn có những trải nghiệm tốt tại Hỏa Tiễn 101. Lúc nào khó, có nhân viên hỗ trợ ngay. Đội ngũ nhân viên luôn mở rộng tuyển dụng.</p>
         </div>
-        <button class="__main--btn--2 content__2--btn">Tham gia ngay</button>
+        <form>
+            <button asp-action="Recruitment" asp-controller="Home" class="__main--btn--2 content__2--btn">Tham gia ngay</button>
+        </form>
     </div>
     <img class="content__img" src="~/assets/img/content/content2__1.png" alt="">
 </div>

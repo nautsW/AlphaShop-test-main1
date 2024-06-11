@@ -40,7 +40,22 @@ public class HomeController : Controller
         }
         return View();
     }
-
+    public IActionResult AboutUs()
+    {
+        return View();
+    }
+    public IActionResult Agencies()
+    {
+        return View();
+    }
+    public IActionResult NewProduct()
+    {
+        return View();
+    }
+    public IActionResult Recruitment()
+    {
+        return View();
+    }
     public IActionResult Privacy()
     {
         return View();

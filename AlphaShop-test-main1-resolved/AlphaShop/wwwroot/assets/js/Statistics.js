@@ -156,7 +156,7 @@ function InitialLoad__forRvnData(lsData) {
         labels: lsLabel,
         datasets: [
             {
-                label: 'Doanh thu(VNĐ)',
+                label: 'Doanh thu(Triệu VNĐ)',
                 borderColor: 'rgb(0, 191, 255)',
                 backgroundColor: 'rgba(0, 191, 255, 0.5)',
                 borderWidth: 2,
@@ -178,7 +178,7 @@ function InitialLoad__forPotData(lsData) {
 
     $.each(lsData, function (index, item) {
         lsLabel.push(item.month);
-        lsDataSource.push(item.total);
+        lsDataSource.push(item.count);
     });
 
     //lấy id của từng chart

@@ -24,7 +24,7 @@ namespace AlphaShop.Controllers
         }
         public IActionResult Index()
         {
-            int CtrId_global = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId")?.Value);
+            int CtrId_global = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
             Customer customer = _context.Customers.SingleOrDefault(p => p.CtrId == CtrId_global);
             customer.Addresses = _context.Addresses.Where(p => p.CtrId == CtrId_global).ToList();
             UserInfoVM userInfoVM = new UserInfoVM
@@ -72,6 +72,72 @@ namespace AlphaShop.Controllers
             else
             {
                 TempData["Alert"] = "<script>alert('Mật khẩu cũ không đúng!')</script>";
+
+            }
+            return RedirectToAction("Index", "UserInfo");
+        }
+
+        [HttpPost]
+        public IActionResult ReplaceEmail(ChangeEmailModel model)
+        {
+            int CartId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
+            var user = _context.Customers.SingleOrDefault(x => x.CtrEmail == model.OldEmail && x.CtrId == CartId);
+
+            if (user != null)
+            {
+                // Kiểm tra xác nhận mật khẩu mới
+                if (model.NewEmail == model.ConfirmNewEmail)
+                {
+                    // Cập nhật mật khẩu mới vào cơ sở dữ liệu
+                    user.CtrEmail = model.NewEmail;
+                    _context.SaveChanges();
+
+                    TempData["Alert"] = "<script>alert('Email đã được thay đổi thành công!')</script>";
+
+                    // Cập nhật lại claim "SerialNumber" (mật khẩu) trong mã điều khiển
+                }
+                else
+                {
+                    TempData["Alert"] = "<script>alert('Email mới không khớp!')</script>";
+
+                }
+            }
+            else
+            {
+                TempData["Alert"] = "<script>alert('Email cũ không đúng!')</script>";
+
+            }
+            return RedirectToAction("Index", "UserInfo");
+        }
+
+        [HttpPost]
+        public IActionResult ReplacePhoneNumber(ChangePhoneNumberModel model)
+        {
+            int CartId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
+            var user = _context.Customers.SingleOrDefault(x => x.CtrPhonenumber == model.OldPhoneNumber && x.CtrId == CartId);
+
+            if (user != null)
+            {
+                // Kiểm tra xác nhận mật khẩu mới
+                if (model.NewPhoneNumber == model.ConfirmNewPhoneNumber)
+                {
+                    // Cập nhật mật khẩu mới vào cơ sở dữ liệu
+                    user.CtrPhonenumber = model.NewPhoneNumber;
+                    _context.SaveChanges();
+
+                    TempData["Alert"] = "<script>alert('SDT đã được thay đổi thành công!')</script>";
+
+                    // Cập nhật lại claim "SerialNumber" (mật khẩu) trong mã điều khiển
+                }
+                else
+                {
+                    TempData["Alert"] = "<script>alert('SDT mới không khớp!')</script>";
+
+                }
+            }
+            else
+            {
+                TempData["Alert"] = "<script>alert('SDT cũ không đúng!')</script>";
 
             }
             return RedirectToAction("Index", "UserInfo");
@@ -179,7 +245,12 @@ namespace AlphaShop.Controllers
 
             if (customer != null)
             {
-                int index = _context.Addresses.Where(x => x.CtrId == CtrId).Last().AddId + 1;
+                int index = _context.Addresses
+    .Where(x => x.CtrId == CtrId)
+    .OrderBy(x => x.AddId) // Replace SomeProperty with the property you want to order by
+    .Last()
+    .AddId + 1;
+
                 // Tạo đối tượng Address mới
                 Address newadd = new Address
                 {

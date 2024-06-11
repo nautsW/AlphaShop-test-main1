@@ -1,15 +1,19 @@
 @model AlphaShop.Models.ProductModel
+@using AlphaShop.Data
 @using AlphaShop.Models
 @{
     ViewData["Title"] = "Info";
+
 }
 @inject AccountService AccountService
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/assets/css/drinkinfo.css">
+    <link rel="stylesheet" href="~/assets/css/drinkinfo.css" runat="server" asp-append-version="true" />
+    <link href="~/assets/css/footer.css" rel="stylesheet" runat="server" asp-append-version="true" />
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-    <script src="~/assets/js/drinkinfo.js"></script>
+    <link href="~/assets/css/comment.css" rel="stylesheet" runat="server" asp-append-version="true" />
+    <script src="~/assets/js/DrinkInfoComment.js" runat="server" asp-append-version="true"></script>
     <title>Home</title>
 </head>
 <body>
@@ -19,7 +23,7 @@
     <!-- #done-->
     @* <form method="post" asp-controller="Cart"> *@
     <!--#drinkChoice-->
-    <img class="DrinkImg" src="~/assets/img/drinklist/@Model.product.PrdImage" />
+    <img class="DrinkImg" src="~/@Model.product.PrdImage" />
     <div class="DescChoice">
 
         <div class="DrinkName">@Model.product.PrdName</div>
@@ -56,11 +60,12 @@
                 <span class="size_box" id="boxdacbiet">Đá chung</span>
             </label>
         </div>
-
-        <div class="Ghichu">Ghi chú thêm cho người bán:</div>
+        @*desc*@
+        <div class="Ghichu">Mô tả đồ uống:</div>
         <div class="ghichu_box">
-            <textarea class="inputGhichu" id="inputGhichu" placeholder="Nhập ghi chú tại đây (vd: thêm đường,...) @Model.option_size @Model.option_type"></textarea>
+            @Model.product.PrdDesc
         </div>
+        @*desc*@
         <form class="option_btn" method="post" asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.product.PrdId" style="width:200px; height: 46px; left: 750px; top: 382px;">
             <input type="hidden" name="optsize" id="optsize_addtocart" value="">
             <input type="hidden" name="opttype" id="opttype_addtocart" value="">
@@ -73,38 +78,86 @@
             <button type="submit" class="order_box">THÊM VÀO GIỎ</button>
         </form>
 
+        <div class="Rectangle21" style="width: 100%; height: 40px; left: 0px; top: 799px; position: absolute; background: #8C8A8A"></div>
+        <div class="CustomerReview" style="left: 208px; top: 809px; position: absolute; color: white; font-size: 20px; font-family: JetBrains Mono; font-style: italic; font-weight: 500; line-height: 20px; word-wrap: break-word">Đánh giá của khách hàng</div>
 
-        @if (AccountService.IsLoggedIn)
-        {
-            <div class="option_btn" style="width: 289px; height: 46px; left: 0px; top: 1403px;">
-                <button class="login_box" id="cmt_id">BÌNH LUẬN</button>
+        <div class="comment__section">
+            @*flex: column*@
+            @*1 comment*@
+            @* <div class="comment__comp">
+            <div class="voting__section">
+            <button class="vote" id="up_v"></button>
+            <span class="num_vote">999</span>
+            <button class="vote" id="down_v"></button>
             </div>
-            <div id="modal1" class="modal">
-                <div class="modal__overlay">
-                </div>
-                <div class="modal__body">
-                    <div class="modal__inner">
-                        <div class="container">
-                            <div class="login-box">
-                                <h2>Nhập bình luận của bạn</h2>
-                                <div class="input-group">
-                                    @* <textarea type="text" class="input" name="comment" required> *@
-                                    <textarea class="input" placeholder="Viết gì đó..."></textarea>
-                                </div>
-                                <button class="btn1">Đồng ý</button>
-                                <button class="btn1" id="ev">Hủy</button>
-                            </div>
+            <div class="comment__holder-1">
+            <img src="~/assets/img/user/Lmao.png" class="comment__img" />
+            </div>
+            <div class="comment__holder-2">
+            <div class="comment__username">
+            Nguyễn Hữu Khoa
+            </div>
+            <div class="comment__context">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex quas repellendus, consectetur atque a! Dolorum exercitationem excepturi ipsam, amet dignissimos modi sit quasi nobis aliquid, omnis adipisci, molestias odit.
+            </div>
+            </div>
+            </div> *@
+
+
+            @foreach (Comment item in Model.product.Comments)
+            {
+                <div class="comment__comp">
+                    @* <div class="voting__section">
+                         <input type="hidden" value="@item.CtrId" />
+                    <input type="hidden" value="@item.PrdId" />
+                    <input type="hidden" value="@item.CmtDate" /> 
+                        <form method=post asp-action="CommentUpvote" asp-controller="Category">
+                            <input type="hidden" name="ctrId" value="@item.CtrId" />
+                            <input type="hidden" name="prdId" value="@item.PrdId" />
+                            <input type="hidden" name="date" value="@item.CmtDate" />
+                            <button type="submit" class="vote" id="up_v"></button>
+                        </form>
+                        <span class="num_vote">@item.Upvote</span>
+                        <form method=post asp-action="CommentDownvote" asp-controller="Category">
+                            <input type="hidden" value="@item.CtrId" />
+                            <input type="hidden" value="@item.PrdId" />
+                            <input type="hidden" value="@item.CmtDate" />
+                            <button type="submit" class="vote" id="down_v"></button>
+                        </form>
+                    </div> *@
+                    <div class="comment__holder-1">
+                        <img src="~/@item.Ctr.CtrImage" class="comment__img" />
+                    </div>
+                    <div class="comment__holder-2">
+                        <div class="comment__username">
+                            <span class="username">@item.Ctr.CtrUsername</span>
+                            <span class="time">@item.CmtDate</span>
+                        </div>
+                        <div class="comment__context">
+                            @item.CommentText
                         </div>
                     </div>
                 </div>
+            }
+
+
+            @*button comment/đăng nhập*@
+            <div class="comment__btn">
+                @if (Context.User.Identity.IsAuthenticated)
+                {
+                    <button class="__main--btn" onclick="OpenComment('@Model.product.PrdId', '@Context.User.Claims.SingleOrDefault(p => p.Type == "CtrId")?.Value')">BÌNH LUẬN</button>
+                    @await Html.PartialAsync("_Comment", Model.comment)
+                    ;
+                }
+                else
+                {
+                    <form>
+                        <button style="width: 200px;" asp-action="Login" asp-controller="Log" class="__main--btn">ĐĂNG NHẬP ĐỂ BÌNH LUẬN</button>
+                    </form>
+                }
             </div>
-        }
-        else
-        {
-            <form class="option_btn" style="width: 289px; height: 46px; left: 0px; top: 1403px;">
-                <button class="login_box" asp-action="Login" asp-controller="Log">ĐĂNG NHẬP ĐỂ NHẬN XÉT</button>
-            </form>
-        }
+        </div>
+        
 
 
 
@@ -127,70 +180,67 @@
         <!--#drinkChoiceEnd-->
         @* </form> *@
         <!--ReviewBox-->
-        <div class="Rectangle21" style="width: 100%; height: 40px; left: 0px; top: 799px; position: absolute; background: #8C8A8A"></div>
-        <div class="CustomerReview" style="left: 208px; top: 809px; position: absolute; color: white; font-size: 20px; font-family: JetBrains Mono; font-style: italic; font-weight: 500; line-height: 20px; word-wrap: break-word">Đánh giá của khách hàng</div>
-
-        <ul class="review-list">
-            <il class="Component">
-                <div class="Comment">
-                    <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
-                    <ul class="ratings">
-                        <img class="Star1" src="~/assets/img/review/star-1.png" />
-                        <img class="Star2" src="~/assets/img/review/star-1.png" />
-                        <img class="Star3" src="~/assets/img/review/star-1.png" />
-                        <img class="Star4" src="~/assets/img/review/star-1.png" />
-                        <img class="Star5" src="~/assets/img/review/star-1.png" />
-                    </ul>
-                    <div class="Legiahan617">legiahan617</div>
-                    <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
-                </div>
-            </il>
-
-            <il class="Component">
-                <div class="Comment">
-                    <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
-                    <ul class="ratings">
-                        <img class="Star1" src="~/assets/img/review/star-1.png" />
-                        <img class="Star2" src="~/assets/img/review/star-1.png" />
-                        <img class="Star3" src="~/assets/img/review/star-1.png" />
-                        <img class="Star4" src="~/assets/img/review/star-1.png" />
-                        <img class="Star5" src="~/assets/img/review/star-1.png" />
-                    </ul>
-                    <div class="Legiahan617">legiahan617</div>
-                    <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
-                </div>
-            </il>
-
-            <il class="Component">
-                <div class="Comment">
-                    <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
-                    <ul class="ratings">
-                        <img class="Star1" src="~/assets/img/review/star-1.png" />
-                        <img class="Star2" src="~/assets/img/review/star-1.png" />
-                        <img class="Star3" src="~/assets/img/review/star-1.png" />
-                        <img class="Star4" src="~/assets/img/review/star-1.png" />
-                        <img class="Star5" src="~/assets/img/review/star-1.png" />
-                    </ul>
-                    <div class="Legiahan617">legiahan617</div>
-                    <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
-                </div>
-            </il>
-
-            <il class="Component">
-                <div class="Comment">
-                    <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
-                    <ul class="ratings">
-                        <img class="Star1" src="~/assets/img/review/star-1.png" />
-                        <img class="Star2" src="~/assets/img/review/star-1.png" />
-                        <img class="Star3" src="~/assets/img/review/star-1.png" />
-                        <img class="Star4" src="~/assets/img/review/star-1.png" />
-                        <img class="Star5" src="~/assets/img/review/star-1.png" />
-                    </ul>
-                    <div class="Legiahan617">legiahan617</div>
-                    <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
-                </div>
-            </il>
+        @* <ul class="review-list">
+        <il class="Component">
+        <div class="Comment">
+        <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
+        <ul class="ratings">
+        <img class="Star1" src="~/assets/img/review/star-1.png" />
+        <img class="Star2" src="~/assets/img/review/star-1.png" />
+        <img class="Star3" src="~/assets/img/review/star-1.png" />
+        <img class="Star4" src="~/assets/img/review/star-1.png" />
+        <img class="Star5" src="~/assets/img/review/star-1.png" />
         </ul>
+        <div class="Legiahan617">legiahan617</div>
+        <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
+        </div>
+        </il>
+
+        <il class="Component">
+        <div class="Comment">
+        <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
+        <ul class="ratings">
+        <img class="Star1" src="~/assets/img/review/star-1.png" />
+        <img class="Star2" src="~/assets/img/review/star-1.png" />
+        <img class="Star3" src="~/assets/img/review/star-1.png" />
+        <img class="Star4" src="~/assets/img/review/star-1.png" />
+        <img class="Star5" src="~/assets/img/review/star-1.png" />
+        </ul>
+        <div class="Legiahan617">legiahan617</div>
+        <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
+        </div>
+        </il>
+
+        <il class="Component">
+        <div class="Comment">
+        <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
+        <ul class="ratings">
+        <img class="Star1" src="~/assets/img/review/star-1.png" />
+        <img class="Star2" src="~/assets/img/review/star-1.png" />
+        <img class="Star3" src="~/assets/img/review/star-1.png" />
+        <img class="Star4" src="~/assets/img/review/star-1.png" />
+        <img class="Star5" src="~/assets/img/review/star-1.png" />
+        </ul>
+        <div class="Legiahan617">legiahan617</div>
+        <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
+        </div>
+        </il>
+
+        <il class="Component">
+        <div class="Comment">
+        <img class="Ellipse5" src="~/assets/img/review/hanabi.png" />
+        <ul class="ratings">
+        <img class="Star1" src="~/assets/img/review/star-1.png" />
+        <img class="Star2" src="~/assets/img/review/star-1.png" />
+        <img class="Star3" src="~/assets/img/review/star-1.png" />
+        <img class="Star4" src="~/assets/img/review/star-1.png" />
+        <img class="Star5" src="~/assets/img/review/star-1.png" />
+        </ul>
+        <div class="Legiahan617">legiahan617</div>
+        <div class="reviewtext">Không gì tuyệt vời bằng 1 lượng caffein buổi sáng!!!</div>
+        </div>
+        </il>
+        </ul> *@
         <!-- Trường ẩn để lưu trữ giá trị của option_size và option_type -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {

@@ -47,46 +47,60 @@
     });
 })
 Info = function (id, username, phonenumber, status, email, gender, access, address, password1, image) {
-    /*alert(password1);*/
-    const image_change = image.replace('assets', '/assets/').replace('img', 'img/').replace('pfp', 'pfp/');
+
+    //alert(password1);
     //alert(image_change);
-    document.getElementById('staff_attr-id').textContent = id;
-    document.getElementById('staff_attr-username').textContent = username;
-    document.getElementById('staff_attr-pn').textContent = phonenumber;
-    if (status == 1) {
-        document.getElementById('staff_attr-status').textContent = "Bình thường";
-    }
-    else {
-        document.getElementById('staff_attr-status').textContent = " Bị Khóa";
-    }
-    document.getElementById('staff_attr-email').textContent = email;
-    if (gender === 'True') {
-        document.getElementById('staff_attr-sex').textContent = 'Nam';
+    try {
+    const image_change = image.replace('assets', '/assets/').replace('img', 'img/').replace('pfp', 'pfp/');
 
+        document.getElementById('staff_attr-id').textContent = id;
+        document.getElementById('staff_attr-username').textContent = username;
+        document.getElementById('staff_attr-pn').textContent = phonenumber;
+        if (status == 1) {
+            document.getElementById('staff_attr-status').textContent = "Bình thường";
+        }
+        else {
+            document.getElementById('staff_attr-status').textContent = " Bị Khóa";
+        }
+        document.getElementById('staff_attr-email').textContent = email;
+        if (gender === 'True') {
+            document.getElementById('staff_attr-sex').textContent = 'Nam';
+            document.forms["_EditAcc"]["rd__1"].checked = true;
+        }
+        else {
+            document.getElementById('staff_attr-sex').textContent = 'Nữ';
+            document.forms["_EditAcc"]["rd__2"].checked = true;
+
+
+        }
+        document.getElementById('staff_image').src = image_change;
+        modal1.style.display = "flex";
+        document.getElementById('staff_attr-addr').textContent = address;
+
+        document.getElementById('staff_attr-id-1').value = id;
+        document.getElementById('staff_attr-username-1').value = username;
+        document.getElementById('staff_attr-pn-1').value = phonenumber;
+        document.getElementById('staff_attr-pass').value = password1;
+        document.getElementById('staff_attr-email-1').value = email;
+        document.getElementById('staff_attr-addr-1').textContent = address;
+
+
+        if (access === 1) {
+            document.forms["_EditAcc"]["rd__3"].checked = true;
+        }
+        else if (access === 2) {
+            document.forms["_EditAcc"]["rd__4"].checked = true;
+        }
+
+        document.getElementById('change__4').value = id;
+        document.getElementById('change__5').value = id;
     }
-    else {
-        document.getElementById('staff_attr-sex').textContent = 'Nữ';
-
-
+    catch (err) {
+        console.log(err);
     }
-    document.getElementById('staff_image').src = image_change;
-    modal1.style.display = "flex";
-    document.getElementById('staff_attr-addr').textContent = address;
 
-    document.getElementById('staff_attr-id-1').value = id;
-    document.getElementById('staff_attr-username-1').value = username;
-    document.getElementById('staff_attr-pn-1').value = phonenumber;
 
-    document.getElementById('staff_attr-addr-1').textContent = address;
-    document.getElementById('staff_attr-email-1').value = email;
-    const passwordInput = document.getElementById('staff-attr-pass');
-    document.getElementById('change__4').value = id;
-    document.getElementById('change__5').value = id;
-    if (passwordInput) {
-        passwordInput.value = password1;
-    } else {
-        console.error('Password input element not found');
-    }
+
 
 
 }

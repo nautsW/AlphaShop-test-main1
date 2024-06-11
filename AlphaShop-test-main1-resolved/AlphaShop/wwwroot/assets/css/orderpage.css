@@ -309,7 +309,19 @@ body {
 
 .Size {
     left: 108px;
-    top: 42px;
+    top: 32px;
+    position: absolute;
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+    font-family: JetBrains Mono;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Option {
+    left: 108px;
+    top: 52px;
     position: absolute;
     text-align: center;
     color: #999999;
@@ -324,7 +336,7 @@ body {
     top: 72px;
     position: absolute;
     text-align: center;
-    color: #D4B959;
+    color: #e100ff;
     font-size: 12px;
     font-family: JetBrains Mono;
     font-weight: 400;
@@ -334,24 +346,28 @@ body {
 #Soluong {
     margin-top: 20px;
     font-size: 12px;
+   
 }
 
 #TotalDrink {
     margin-top: 20px;
     font-size: 12px;
     margin-left: 350px;
+   
 }
 
 #TransportCost {
     margin-top: 40px;
     font-size: 12px;
     margin-left: 350px;
+    
 }
 
 #Total {
     margin-top: 60px;
     font-size: 12px;
     margin-left: 350px;
+    
 }
 
 #Line6 {
@@ -361,7 +377,7 @@ body {
 .xxxxx {
     position: relative;
     text-align: center;
-    color: #D4B959;
+    color: #e100ff;
     font-size: 12px;
     font-weight: 400;
     word-wrap: break-word;

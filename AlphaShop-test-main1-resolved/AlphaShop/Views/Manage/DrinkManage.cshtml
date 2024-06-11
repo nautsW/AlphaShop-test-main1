@@ -73,8 +73,8 @@
                                     if (item2 != null)
                                     {
                                         <div class="Drinkunit">
-                                            <button class="Drinkbox" id="drink_btn" onclick="Info(@item2.PrdId,'@item2.PrdName', @item2.PrdPrice, @item2.PrdStatus, '/assets/img/drinklist/@item2.PrdImage','@item2.PrdDesc')">
-                                                <img class="Imageholder" src="~/assets/img/drinklist/@item2.PrdImage" />
+                                            <button class="Drinkbox" id="drink_btn" onclick="Info(@item2.PrdId,'@item2.PrdName', @item2.PrdPrice, @item2.PrdStatus, '/@item2.PrdImage','@item2.PrdDesc')">
+                                                <img class="Imageholder" src="/@item2.PrdImage" />
                                                 <div class="holder__1">
                                                     <div class="BoxTitle">@item2.PrdName</div>
                                                     <div class="price">@item2.PrdPrice</div>

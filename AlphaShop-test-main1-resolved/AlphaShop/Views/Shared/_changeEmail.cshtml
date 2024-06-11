@@ -1,0 +1,29 @@
+﻿@model ChangeEmailModel
+
+<div id="modal3" class="modal">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__body">
+        <div class="modal__inner">
+            <form asp-action="ReplaceEmail" method="post" class="container">
+                <div class="login-box">
+                    <h2>Đổi mật khẩu</h2>
+                    <div class="input-group">
+                        <label for="old_pass">Email cũ </label>
+                        <input asp-for="OldEmail" type="password" class="input" name="OldEmail" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="new_pass">Email mới</label>
+                        <input asp-for="NewEmail" type="password" class="input" name="NewEmail" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="new_pass1">Xác nhận Email mới</label>
+                        <input asp-for="ConfirmNewEmail" type="password" class="input" name="ConfirmNewEmail" required>
+                    </div>
+                    <button type="submit" class="btn1">Đồng ý</button>
+                    <button type="button" class="btn1" id="ev2">Hủy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

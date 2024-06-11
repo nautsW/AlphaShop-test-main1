@@ -1,0 +1,11 @@
+﻿.footer {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    background-color: #000000; /* Màu nền cho footer */
+    color: white;
+    padding: 20px; /* Padding cho footer */
+    text-align: center; /* Căn giữa nội dung trong footer */
+    font-family: 'JetBrains Mono', monospace; /* Font chữ cho footer */
+    z-index: 999; /* Đảm bảo footer hiển thị trên tất cả các phần tử khác */
+}

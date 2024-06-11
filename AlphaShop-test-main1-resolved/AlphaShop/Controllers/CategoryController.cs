@@ -33,14 +33,50 @@ namespace AlphaShop.Controllers
         public IActionResult DrinkInfo(int? id)
         {
             var product = objModel.Products.FirstOrDefault(x => x.PrdId == id);
+            //objModel.Entry(product).State = EntityState.Modified;
+            if (product != null)
+            {
+                var comment = objModel.Comments.Where(p => p.PrdId == id);
+                List<Comment> comments = comment.ToList();
+                if (comment != null)
+                {
+                    //objModel.Entry(comment).State = EntityState.Modified
+                    foreach (var item in comments)
+                    {
+                        item.Ctr = objModel.Customers.SingleOrDefault(p => p.CtrId == item.CtrId);
+                    }
+                    product.Comments = comments;
+                }
+            }
             ProductModel objProduct = new ProductModel
             {
                 product = product,
                 option_size = 0,
                 option_type = 0,
+                comment = new CommentModel()
             };
 
             return View(objProduct);
+        }
+        [HttpPost]
+        public IActionResult AddComment(CommentModel commentModel)
+        {
+            if (ModelState.IsValid)
+            {
+                Comment cmt = new Comment
+                {
+                    CmtDate = DateTime.Now,
+                    CommentText = commentModel.Comment,
+                    CtrId = commentModel.CtrId,
+                    PrdId = commentModel.PrdId,
+                    Upvote = 0
+                };
+                objModel.Comments.Add(cmt);
+                objModel.SaveChanges();
+
+            }
+
+            return RedirectToAction("DrinkInfo", new { id = commentModel.PrdId });
         }
     }
 }

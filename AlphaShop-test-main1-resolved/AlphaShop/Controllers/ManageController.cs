@@ -10,6 +10,7 @@ using System.Diagnostics;
 namespace AlphaShop.Controllers
 {
     [Authorize]
+    [RoleAuthorizationFilter("3")]
     public class ManageController : Controller
     {
         private readonly HahaContext _context;
@@ -58,7 +59,7 @@ namespace AlphaShop.Controllers
                     PrdPrice = vM.PrdPrice,
                     PrdDesc = vM.PrdDesc,
                     PrdStatus = vM.PrdStatus,
-                    PrdImage = (vM.PrdImage == null) ? "assets/img/drinklist/png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png" : "assets/img/drinklist/" + "_" + filename,
+                    PrdImage = (vM.PrdImage == null) ? "assets/img/drinklist/png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png" : "assets/img/drinklist/" + filename,
                     PrdVisible = true
                 };
                 _context.Products.Add(product);
@@ -71,7 +72,7 @@ namespace AlphaShop.Controllers
                 check.PrdPrice = vM.PrdPrice;
                 check.PrdStatus = vM.PrdStatus;
                 check.PrdDesc = vM.PrdDesc;
-                check.PrdImage = (vM.PrdImage == null) ? "assets/img/drinklist/png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png" : "assets/img/drinklist/" + "_" + filename;
+                check.PrdImage = (vM.PrdImage == null) ? "assets/img/drinklist/png-clipart-fizzy-drinks-logo-cocktail-glass-cocktail-glass-logo.png" : "assets/img/drinklist/" + filename;
                 check.PrdVisible = true;
                 _context.Update(check);
                 _context.Entry(check).State = EntityState.Modified;
@@ -87,7 +88,7 @@ namespace AlphaShop.Controllers
             {
 
                 string uploadDir = Path.Combine(wwwroot.WebRootPath, "assets", "img", "drinklist");
-                filename = Guid.NewGuid().ToString() + "-" + vM.PrdImage.FileName;
+                filename = "_" + Guid.NewGuid().ToString() + "-" + vM.PrdImage.FileName;
                 string filePath = Path.Combine(uploadDir, filename);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
@@ -134,7 +135,7 @@ namespace AlphaShop.Controllers
                 check.PrdPrice = vm.PrdPrice;
                 check.PrdStatus = vm.PrdStatus;
                 check.PrdDesc = vm.PrdDesc;
-                if (vm.PrdImage != null) check.PrdImage = "assets/img/drinklist/" + "_" + filename;
+                if (vm.PrdImage != null) check.PrdImage = "assets/img/drinklist/" + filename;
                 _context.Update(check);
                 _context.Entry(check).State = EntityState.Modified;
                 _context.SaveChanges();
@@ -485,7 +486,7 @@ namespace AlphaShop.Controllers
             {
                 var mainlist = _context.Ords.Where(p => p.OrdDate.Value.Month == i);
                 int accept = mainlist.Where(p => p.OrdStatus == 1).Count();
-                int denied = mainlist.Where(p => p.OrdStatus == 0).Count();
+                int denied = mainlist.Where(p => p.OrdStatus == 2).Count();
                 OrdStatisticsModel ordStatisticsModel = new OrdStatisticsModel
                 {
                     Month = GetMonthName(i),

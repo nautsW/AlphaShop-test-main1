@@ -25,9 +25,9 @@ public partial class Customer
 
     public string? CtrImage { get; set; }
 
-    public int? CtrStatus { get; set; }
-
     public string? CtrAddress { get; set; }
+
+    public int? CtrStatus { get; set; }
 
     public bool? CtrVisible { get; set; }
 

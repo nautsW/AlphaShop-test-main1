@@ -39,7 +39,7 @@ public partial class HahaContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-V3LDFHK\\RESOLVED;Initial Catalog=haha;User ID=khoa;Password=huukhoa1+2;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
+        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-4TH1B9N;Initial Catalog=haha;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -60,12 +60,12 @@ public partial class HahaContext : DbContext
 
         modelBuilder.Entity<Address>(entity =>
         {
-            entity.HasKey(e => new { e.AddId, e.CtrId });
+            entity.HasKey(e => new { e.CtrId, e.AddId });
 
             entity.ToTable("ADDRESS");
 
-            entity.Property(e => e.AddId).HasColumnName("ADD_ID");
             entity.Property(e => e.CtrId).HasColumnName("CTR_ID");
+            entity.Property(e => e.AddId).HasColumnName("ADD_ID");
             entity.Property(e => e.AddressName).HasColumnName("ADDRESS_NAME");
 
             entity.HasOne(d => d.Ctr).WithMany(p => p.Addresses)
@@ -142,16 +142,16 @@ public partial class HahaContext : DbContext
 
         modelBuilder.Entity<Comment>(entity =>
         {
+            entity.HasKey(e => new { e.CmtDate, e.CtrId, e.PrdId });
+
             entity.ToTable("COMMENT");
 
-            entity.Property(e => e.CommentId)
-                .ValueGeneratedNever()
-                .HasColumnName("COMMENT_ID");
-            entity.Property(e => e.CommentText)
-                .HasColumnType("text")
-                .HasColumnName("COMMENT_TEXT");
+            entity.Property(e => e.CmtDate)
+                .HasColumnType("datetime")
+                .HasColumnName("CMT_DATE");
             entity.Property(e => e.CtrId).HasColumnName("CTR_ID");
             entity.Property(e => e.PrdId).HasColumnName("PRD_ID");
+            entity.Property(e => e.CommentText).HasColumnName("COMMENT_TEXT");
             entity.Property(e => e.Upvote).HasColumnName("UPVOTE");
 
             entity.HasOne(d => d.Ctr).WithMany(p => p.Comments)
@@ -224,9 +224,7 @@ public partial class HahaContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("ORD_DATE");
             entity.Property(e => e.OrdDest).HasColumnName("ORD_DEST");
-            entity.Property(e => e.OrdNote)
-                .HasColumnType("text")
-                .HasColumnName("ORD_NOTE");
+            entity.Property(e => e.OrdNote).HasColumnName("ORD_NOTE");
             entity.Property(e => e.OrdPrice)
                 .HasColumnType("decimal(6, 3)")
                 .HasColumnName("ORD_PRICE");
@@ -280,9 +278,7 @@ public partial class HahaContext : DbContext
                 .ValueGeneratedNever()
                 .HasColumnName("PRD_ID");
             entity.Property(e => e.CgrId).HasColumnName("CGR_ID");
-            entity.Property(e => e.PrdDesc)
-                .HasColumnType("text")
-                .HasColumnName("PRD_DESC");
+            entity.Property(e => e.PrdDesc).HasColumnName("PRD_DESC");
             entity.Property(e => e.PrdImage)
                 .HasColumnType("text")
                 .HasColumnName("PRD_IMAGE");

@@ -10,7 +10,7 @@ namespace AlphaShop.Models
         public string? LogUsername { get; set; }
         [Required(ErrorMessage = "This field is required!")]
         [StringLength(40)]
-        [RegularExpression(@"^[\u0103\u1EA0-\u1EF9\p{L}\p{Nd}\w\s]+$", ErrorMessage = "Username can only contain letters, numbers, spaces, and hyphens.")]
+        [RegularExpression(@"^[\u00C0-\u1EF9\p{L}\p{Nd}\p{Pc}\w\s]+$", ErrorMessage = "Username can only contain letters, numbers, spaces, and hyphens.")]
         public string? Username { get; set; }
         [Required(ErrorMessage = "This field is required!")]
         [StringLength(20)]

@@ -21,6 +21,7 @@
             <div class="container">
                 <div class="Detail">
                     <h2>Chi tiết đơn hàng</h2>
+                    <li class="Line" id="Line"></li>
                     <div class="user_info">Thông tin khách hàng: </div>
                     <div class="box_info">
                         <div class="user_name">
@@ -52,7 +53,7 @@
                     @{
                         int totalQuantity = 0; // Khởi tạo biến tổng số lượng
                     }
-                    <li class="Line" id="Line"></li>
+                    <li class="Line" id="Line1"></li>
                     <div class="ThNgTinNHNg" style="left: 110px; top: 255px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: JetBrains Mono; font-weight: 700; word-wrap: break-word">Thông tin đơn hàng</div>
                     <div class="OrderInfoBox">
 
@@ -69,7 +70,26 @@
                                             <img class="DrinkImg" id="DrinkImg" src="~/@item.Prd.PrdImage" />
                                             <div class="InfoText" id="DrinkName"> @item.Prd.PrdName </div>
                                             <div class="Price">  @item.Prd.PrdPrice  x   @item.Quantity </div>
-                                            <div class="Size">@item.OptionSize</div>
+                                            @if (item.OptionSize == 1)
+                                            {
+                                                <div class="Size"> Size:M</div>
+                                            }
+                                            @if (item.OptionSize == 2)
+                                            {
+                                                <div class="Size"> Size:X</div>
+                                            }
+                                            @if (item.OptionSize == 3)
+                                            {
+                                                <div class="Size"> Size:XL</div>
+                                            }
+                                            @if (item.OptionType == 1)
+                                            {
+                                                <div class="Option"> Option:Đá riêng</div>
+                                            }
+                                            @if (item.OptionType == 2)
+                                            {
+                                                <div class="Option"> Option:Đá chung</div>
+                                            }
                                         </li>
                                         totalQuantity += (int)item.Quantity;
 
@@ -83,21 +103,28 @@
                             <!-- Các mục đơn hàng sẽ được thêm thông qua JavaScript -->
                         </ul>
                     </div>
-                    <li class="Line" id="Line1"></li>
+                    <li class="Line" id="Line2"></li>
                     <div class="total__DH">
                         <li class="InfoText" id="Soluong">Số lượng: @totalQuantity cốc </li>
-                        <li class="InfoText" id="TotalDrink">Tổng: </li>
-                        <li class="InfoText" id="TransportCost">Phí vận chuyển:</li>
-                        <li class="InfoText" id="Total">Tổng cộng:</li>
-                        <li class="xxxxx" id="TotalDrinkPrice">@Model.order.OrdPrice$</li>
-                        <li class="xxxxx" id="TransportPrice">45.000$</li>
-                        <li class="xxxxx" id="TotalPrice">
-                            @{
+                        <li class="InfoText" id="TotalDrink">Tổng: @Model.order.OrdPrice$ </li>
+                        <li class="InfoText" id="TransportCost">Phí vận chuyển: 45.000$</li>
+                        <li class="InfoText" id="Total">
+                            Tổng cộng:  @{
                                 var totalPrice = Model.order.OrdPrice + 45;
                             }@totalPrice$
                         </li>
+                        @* <li class="xxxxx" id="TotalDrinkPrice">@Model.order.OrdPrice$</li> *@
+                        @* <li class="xxxxx" id="TransportPrice">45.000$</li> *@
+                        @* <li class="xxxxx" id="TotalPrice">
+                            @{
+                                var totalPrice = Model.order.OrdPrice + 45;
+                            }@totalPrice$
+                        </li> *@
                     </div>
-                    <li class="Line" id="Line2"></li>
+                    <div class="InfoText1" id="GhiChu">Ghi chú</div>
+                    <div class="GhiChuBox">
+                        @Model.order.OrdNote
+                    </div>
                     <form method="post" asp-action="Index" asp-controller="Staff" class="P_btn">
                         <button class="btn1" id="close_btn">Thoát</button>
                     </form>

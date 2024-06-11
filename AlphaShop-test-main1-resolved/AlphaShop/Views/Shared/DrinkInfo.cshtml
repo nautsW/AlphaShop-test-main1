@@ -52,7 +52,7 @@
         </div>
         <div class="modal__body4">
             <div class="modal__inner">
-                <form class="drink-add" method="post" asp-action="Update" asp-controller="Manage" enctype="multipart/form-data">
+                <form class="drink-add" id="_DrinkEdit" method="post" asp-action="Update" asp-controller="Manage" enctype="multipart/form-data">
                     <div class="main-text">Chỉnh sửa thức uống</div>
                     <div class="input_area">
                         <div class="staff_group" style="display: none;">
@@ -79,9 +79,11 @@
                         <label for="img-opt__holder" class="label--3">Ảnh</label>
                     </div>
                     <div class="img-opt__holder">
-                        <img class="image-holder" id="image-perform-1" />
+                        <div id="imagePreview_1">
+                            <img class="image-holder" id="image-perform-1" />  
+                        </div>
                         <!-- <label class="label--2" for="file__btn">Chọn ảnh</label> -->
-                        <input type="file" class="file__btn" id="imageFile" accept="image/*" asp-for="PrdImage">
+                        <input type="file" class="file__btn" id="imageFile_1" style="margin-left: 20px;"accept="image/*" asp-for="PrdImage">
                     </div>
                     <div class="label--3">Mô tả</div>
                     <textarea asp-for=PrdDesc class="desc-box" id="desc-input" placeholder="Nhập mô tả"></textarea>
@@ -114,8 +116,9 @@
         if (image && image.type.startsWith('image/')) {
             const reader = new FileReader();
             reader.onload = function (e) {
-                const preview = document.getElementById('imagePreview');
-                preview.innerHTML = `<img class="image-holder" src="${e.target.result}" alt="Uploaded Image" />`;
+                const preview = document.getElementById('imagePreview_1');
+                preview.innerHTML = `<img class="image-holder" id="image-perform-1" src="${e.target.result}" alt="Uploaded Image" />`;
+                // preview.innerHTML = `<img class="image-holder" src="${e.target.result}" alt="Uploaded Image" />`;
             };
             reader.readAsDataURL(image);
         } else {
@@ -124,7 +127,7 @@
         }
     }
 
-    document.getElementById('imageFile').addEventListener('change', handleImageUpload);
+    document.getElementById('imageFile_1').addEventListener('change', handleImageUpload);
 
 </script>
 

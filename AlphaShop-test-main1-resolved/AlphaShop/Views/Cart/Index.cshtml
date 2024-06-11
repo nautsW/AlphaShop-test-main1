@@ -22,7 +22,7 @@
                         <input type="hidden" name="optsize" value="@item.OptionSize" />
                         <input type="hidden" name="opttype" value="@item.OptionType" />
                         <div class="Itembox"></div>
-                        <img class="ItemImg" src="~/assets/img/drinklist/@item.PrdImage" />
+                        <img class="ItemImg" src="~/@item.PrdImage" />
                         <div class="ItemName">@item.PrdName</div>
                         <div class="Total"> Total: @item.PrdPrice x @item.Quantity</div>
                         @if (item.OptionSize == 1){
