@@ -185,8 +185,8 @@ body {
 }
 
 .ItemName {
-    width: 104.88px;
-    left: 112.15px;
+    width: auto;
+    left: 112px;
     top: 12px;
     position: absolute;
     text-align: center;

@@ -55,31 +55,39 @@
 })
 
 Info = function (id, name, price, status, image, desc) {
+    try {
+        document.getElementById("st__value_0").textContent = id;
+        document.getElementById("st__value_1").textContent = name;
+        document.getElementById("st__value_2").textContent = price;
+        document.getElementById("image-perform").src = image;
+        document.getElementById("image-perform-1").src = image;
 
-    document.getElementById("st__value_0").textContent = id;
-    document.getElementById("st__value_1").textContent = name;
-    document.getElementById("st__value_2").textContent = price;
-    document.getElementById("image-perform").src = image;
-    document.getElementById("image-perform-1").src = image;
+        if (status === 1) {
+            document.getElementById("st__value_3").textContent = "Còn hàng";
+            document.forms["_DrinkEdit"]["rd__3"].checked = true;
+        }
+        else {
+            document.getElementById("st__value_3").textContent = "Hết hàng";
+            document.forms["_DrinkEdit"]["rd__4"].checked = true;
 
-    if (status == 1) {
-        document.getElementById("st__value_3").textContent = "Còn hàng";
+        }
+        modal3.style.display = "flex";
+        document.getElementById("change__0").value = id;
+        document.getElementById("change__1").value = name;
+        document.getElementById("change__2").value = price;
+        document.getElementById("change__4").value = id;
+
+        //if (status == 1) {
+        //    document.getElementById('rd__3').checked = true;
+        //}
+        //else {
+        //    document.getElementById('rd__4').checked = true;
+        //}
+        document.getElementById("desc-input").textContent = desc;
     }
-    else {
-        document.getElementById("st__value_3").textContent = "Hết hàng";
+    catch (err) {
+        console.log(err);
     }
-    modal3.style.display = "flex";
-    document.getElementById("change__0").value = id;
-    document.getElementById("change__1").value = name;
-    document.getElementById("change__2").value = price;
-    document.getElementById("change__4").value = id;
-
-    //if (status == 1) {
-    //    document.getElementById('rd__3').checked = true;
-    //}
-    //else {
-    //    document.getElementById('rd__4').checked = true;
-    //}
-    document.getElementById("desc-input").textContent = desc;
+    
 
 }

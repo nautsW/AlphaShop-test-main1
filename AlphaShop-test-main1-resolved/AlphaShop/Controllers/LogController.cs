@@ -71,6 +71,10 @@ namespace AlphaShop.Controllers
             var usercheck = _context.Customers.SingleOrDefault(x => x.CtrLogusername == taikhoanForm && x.CtrPassword == matkhauForm);
             if (usercheck != null && usercheck.CtrVisible == true)
             {
+                if (usercheck.CtrStatus == 0)
+                {
+                    return RedirectToAction("Restricted", "Log");
+                }
                 List<Claim> claims = new List<Claim>()
                 {
                     new Claim(ClaimTypes.Name, usercheck.CtrUsername.ToString()),
@@ -177,6 +181,10 @@ namespace AlphaShop.Controllers
 
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Login", "Log");
+        }
+        public IActionResult Restricted()
+        {
+            return View();
         }
     }
 }

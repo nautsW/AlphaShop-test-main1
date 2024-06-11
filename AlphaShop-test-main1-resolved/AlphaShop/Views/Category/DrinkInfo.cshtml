@@ -61,9 +61,9 @@
             </label>
         </div>
         @*desc*@
-        <div class="Ghichu">Ghi chú thêm cho người bán:</div>
+        <div class="Ghichu">Mô tả đồ uống:</div>
         <div class="ghichu_box">
-            <textarea class="inputGhichu" id="inputGhichu" placeholder="Nhập ghi chú tại đây (vd: thêm đường,...) @Model.option_size @Model.option_type"></textarea>
+            @Model.product.PrdDesc
         </div>
         @*desc*@
         <form class="option_btn" method="post" asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.product.PrdId" style="width:200px; height: 46px; left: 750px; top: 382px;">

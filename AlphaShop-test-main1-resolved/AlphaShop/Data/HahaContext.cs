@@ -224,9 +224,7 @@ public partial class HahaContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("ORD_DATE");
             entity.Property(e => e.OrdDest).HasColumnName("ORD_DEST");
-            entity.Property(e => e.OrdNote)
-                .HasColumnType("text")
-                .HasColumnName("ORD_NOTE");
+            entity.Property(e => e.OrdNote).HasColumnName("ORD_NOTE");
             entity.Property(e => e.OrdPrice)
                 .HasColumnType("decimal(6, 3)")
                 .HasColumnName("ORD_PRICE");

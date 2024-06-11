@@ -21,8 +21,13 @@ namespace AlphaShop.Controllers
         }
         public IActionResult Index()
         {
-            decimal? total = 0;
             int CtrId = Convert.ToInt32(HttpContext.User.Claims.SingleOrDefault(p => p.Type == "CtrId").Value);
+            Customer customer = _context.Customers.SingleOrDefault(p => p.CtrId == CtrId);
+            if(customer.CtrStatus == 2)
+            {
+                return RedirectToAction("OrderRestricted", "Order");
+            }
+            decimal? total = 0;
             foreach (CartDetail item in _context.CartDetails)
             {
                 if (item.CartId == CtrId)
@@ -30,7 +35,6 @@ namespace AlphaShop.Controllers
                     total += item.Quantity * item.PrdPrice;
                 }
             }
-            Customer customer = _context.Customers.SingleOrDefault(p => p.CtrId == CtrId);
             CartModel cartModel = new CartModel()
             {
                 cart = _context.Carts.SingleOrDefault(p => p.CartId == CtrId),
@@ -94,6 +98,10 @@ namespace AlphaShop.Controllers
         }
 
         public IActionResult Ordered()
+        {
+            return View();
+        }
+        public IActionResult OrderRestricted()
         {
             return View();
         }

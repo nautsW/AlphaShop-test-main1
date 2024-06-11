@@ -1,4 +1,4 @@
-﻿@using AlphaShop.Models
+@using AlphaShop.Models
 @model AlphaShop.Models.OrderModel
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
     <div class="InfoText" id="GhiChu">Ghi chú</div>
     <div class="GhiChuBox">
         <textarea class="inputGhichu" id="inputGhichu" placeholder="Nhập ghi chú tại đây (vd: thêm đường,...)"></textarea>
-    </div> //ghichu 
+    </div>
     <div class="icon" id="icon1"></div>
     <div class="icon" id="icon2"></div>
     <div class="icon" id="icon3"></div>
@@ -36,7 +36,7 @@
             int total_drink = 0;
         }
         @foreach (var item in Model.Cart.cartDetail)
-        {
+        {   
 
             <li class="OrderItem">
                 <div class="Itembox"></div>
@@ -88,9 +88,9 @@
             <div class="Rectbackground"></div>
 
             @* <input type="submit" value="Đặt hàng" class="Btn"/> *@
-            <form id="orderForm" enctype="multipart/form-data" method="post" asp-action="ProcessOrder" asp-controller="Order">
+            <form enctype="multipart/form-data" method="post" asp-action="ProcessOrder" asp-controller="Order">
                 <input type="hidden" name="destination" value="@Model.destination" />
-                <input type="hidden" id="hiddenNote" name="note" />
+                <input type="hidden" name="note" value="@Model.note" />
                 <input type="hidden" name="quantity" value="@Model.quantity" />
                 <input type="hidden" name="Total" value="@Model.Total" />
                 <input type="hidden" name="Shipping" value="@Model.Shipping" />
@@ -131,11 +131,6 @@
             var orderRect = document.querySelector('.OrderRect');
             orderRect.style.height = orderRectHeight + 'px';
         };
-
-        document.getElementById('orderForm').addEventListener('submit', function (event) {
-            var note = document.getElementById('inputGhichu').value;
-            document.getElementById('hiddenNote').value = note;
-        });
     </script>
 </div>
 

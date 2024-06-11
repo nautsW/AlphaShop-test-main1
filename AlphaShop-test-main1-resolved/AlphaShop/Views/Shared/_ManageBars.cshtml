@@ -8,7 +8,7 @@
     var access3 = Context.User.IsInRole("3");
     var name = Context.User.Identity.Name;
 }
-
+<link href="~/assets/css/dropDownManage.css" rel="stylesheet" runat="server" asp-append-version="true" />
 <style>
     .menu_comp {
         width: 100px;
@@ -45,7 +45,14 @@
     @if (Context.User.Identity.IsAuthenticated)
         @if (access3)
         {
-            <div class="account__name">Xin chào, @name</div>
+            @* <div class="account__name">Xin chào, @name</div> *@
+            <div class="dropdown" style="margin-top: -13px;">
+                <button class="dropbtn account__name">Xin chào, @name</button>
+                <div class="dropdown-content">
+                    <a class="accountlink" asp-area="" asp-controller="Home" asp-action="Index">Trở lại trang chủ chính</a>
+                    <a class="accountlink" asp-area="" asp-controller="Log" asp-action="Logout">Đăng xuất</a>
+                </div>
+            </div>
 
         }
 </div>

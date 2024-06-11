@@ -417,7 +417,19 @@ h2 {
 
 .Size {
     left: 108px;
-    top: 42px;
+    top: 32px;
+    position: absolute;
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+    font-family: JetBrains Mono;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Option {
+    left: 108px;
+    top: 52px;
     position: absolute;
     text-align: center;
     color: #999999;
@@ -432,7 +444,7 @@ h2 {
     top: 72px;
     position: absolute;
     text-align: center;
-    color: #D4B959;
+    color: #e100ff;
     font-size: 12px;
     font-family: JetBrains Mono;
     font-weight: 400;
@@ -524,13 +536,15 @@ h2 {
 }
 
 .P_btn {
-    margin-top: 100px;
+    margin-top: 10px;
+    
     margin-left: 590px;
     width: 500px
 }
 
 .P_btn1 {
     margin-top: -25px;
+    
     margin-left: 335px;
     width: 550px;
 }
@@ -640,4 +654,32 @@ h2 {
     font-size: 12px;
     font-weight: 400;
     word-wrap: break-word;
+}
+.GhiChuBox {
+    width: 580px;
+    height: 200px;
+    position: relative;
+    text-align:left;
+    margin-left: 70px;
+    background: white;
+    border: 1px black solid;
+}
+
+.InfoText1 {
+    position: relative;
+    text-align: center;
+    color: black;
+    word-wrap: break-word;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    margin-left:70px;
+    text-align: left;
+}
+h3 {
+    text-align: right;
+    font-family: "JetBrains Mono";
+    font-size: 17px;
+    margin-bottom:20px;
+    margin-right:10px;
+    color: dodgerblue;
 }
